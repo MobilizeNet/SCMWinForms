@@ -277,6 +277,7 @@ namespace StarCarsManagement
 			this.Label1.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label1.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.Label1.Location = new System.Drawing.Point(16, 48);
+			this.Label1.MinimumSize = new System.Drawing.Size(169, 17);
 			this.Label1.Name = "Label1";
 			this.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label1.Size = new System.Drawing.Size(169, 17);
@@ -291,6 +292,7 @@ namespace StarCarsManagement
 			this.Label2.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label2.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.Label2.Location = new System.Drawing.Point(264, 48);
+			this.Label2.MinimumSize = new System.Drawing.Size(169, 17);
 			this.Label2.Name = "Label2";
 			this.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label2.Size = new System.Drawing.Size(169, 17);
@@ -310,7 +312,7 @@ namespace StarCarsManagement
 			this.chkUseAllFilters.TabIndex = 5;
 			this.chkUseAllFilters.Text = "Use all filters?";
 			this.chkUseAllFilters.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.chkUseAllFilters.Click += new System.EventHandler(this.chkUseAllFilters_Click);
+			this.chkUseAllFilters.CheckStateChanged += new System.EventHandler(this.chkUseAllFilters_CheckStateChanged);
 			// 
 			// btnDelete
 			// 
@@ -346,6 +348,7 @@ namespace StarCarsManagement
 			this.Label6.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label6.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.Label6.Location = new System.Drawing.Point(24, 64);
+			this.Label6.MinimumSize = new System.Drawing.Size(209, 17);
 			this.Label6.Name = "Label6";
 			this.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label6.Size = new System.Drawing.Size(209, 17);
@@ -360,6 +363,7 @@ namespace StarCarsManagement
 			this.lblTitle.Font = new System.Drawing.Font("Javanese Text", 24f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblTitle.Location = new System.Drawing.Point(16, 0);
+			this.lblTitle.MinimumSize = new System.Drawing.Size(481, 49);
 			this.lblTitle.Name = "lblTitle";
 			this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTitle.Size = new System.Drawing.Size(481, 49);
@@ -404,10 +408,8 @@ namespace StarCarsManagement
 			this.pnlFilters.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
-		void ReLoadForm(bool addEvents)
-		{
-			InitializeHelp();
-		}
+		void ReLoadForm(bool addEvents) => InitializeHelp();
+
 		#endregion
 	}
 }

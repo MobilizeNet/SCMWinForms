@@ -155,6 +155,7 @@ namespace StarCarsManagement
 			this.lblTitle.Font = new System.Drawing.Font("Javanese Text", 24f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblTitle.Location = new System.Drawing.Point(16, 0);
+			this.lblTitle.MinimumSize = new System.Drawing.Size(985, 49);
 			this.lblTitle.Name = "lblTitle";
 			this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTitle.Size = new System.Drawing.Size(985, 49);
@@ -194,10 +195,8 @@ namespace StarCarsManagement
 			((System.ComponentModel.ISupportInitialize) this.gridResults).EndInit();
 			this.ResumeLayout(false);
 		}
-		void ReLoadForm(bool addEvents)
-		{
-			InitializeHelp();
-		}
+		void ReLoadForm(bool addEvents) => InitializeHelp();
+
 		#endregion
 	}
 }

@@ -53,7 +53,10 @@ namespace StarCarsManagement
 		private void cmdCompaniesByCountry_Click(Object eventSender, EventArgs eventArgs)
 		{
 			ClearListView();
-			query = $"SELECT Count(Brand.Brand_Name) AS CountOfBrand_Name, Brand.Headquarter From Brand GROUP BY Brand.Headquarter ORDER BY Count(Brand.Brand_Name) DESC";
+			query = $"SELECT Count(Brand.Brand_Name) AS CountOfBrand_Name, Brand.Headquarter " +
+			        $"From Brand " +
+			        $"GROUP BY Brand.Headquarter " +
+			        $"ORDER BY Count(Brand.Brand_Name) DESC";
 
 			modMain.ExecuteSQL(query);
 
@@ -68,15 +71,17 @@ namespace StarCarsManagement
 			}
 		}
 
-		private void cmdExit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void cmdExit_Click(Object eventSender, EventArgs eventArgs) => this.Close();
+
 
 		private void cmdSoldByManufacturer_Click(Object eventSender, EventArgs eventArgs)
 		{
 			ClearListView();
-			query = $"SELECT DISTINCTROW Brand.Brand_Name, Sum(Receipt.Quantity) AS TotalSold FROM Brand INNER JOIN Receipt ON Brand.[ID] = Receipt.[Manufacturer_ID] WHERE Receipt.Status = 'Approved' GROUP BY Brand.Brand_Name ORDER BY Sum(Receipt.Quantity) DESC";
+			query = $"SELECT DISTINCTROW Brand.Brand_Name, Sum(Receipt.Quantity) AS TotalSold " +
+			        $"FROM Brand INNER JOIN Receipt ON Brand.[ID] = Receipt.[Manufacturer_ID] " +
+			        $"WHERE Receipt.Status = 'Approved' " +
+			        $"GROUP BY Brand.Brand_Name " +
+			        $"ORDER BY Sum(Receipt.Quantity) DESC";
 
 			modMain.ExecuteSQL(query);
 
@@ -94,7 +99,11 @@ namespace StarCarsManagement
 		private void cmdSoldByModel_Click(Object eventSender, EventArgs eventArgs)
 		{
 			ClearListView();
-			query = $"SELECT DISTINCTROW Vehicle.Vehicle_Name, Sum(Receipt.Quantity) AS TotalSold FROM Vehicle INNER JOIN Receipt ON Vehicle.[ID] = Receipt.[Model_ID] WHERE (((Receipt.Status)='Approved')) GROUP BY Receipt.Model_ID, Vehicle.ID, Vehicle.Vehicle_Name ORDER BY Sum(Receipt.Quantity) DESC ";
+			query = $"SELECT DISTINCTROW Vehicle.Vehicle_Name, Sum(Receipt.Quantity) AS TotalSold " +
+			        $"FROM Vehicle INNER JOIN Receipt ON Vehicle.[ID] = Receipt.[Model_ID] " +
+			        $"WHERE (((Receipt.Status)='Approved')) " +
+			        $"GROUP BY Receipt.Model_ID, Vehicle.ID, Vehicle.Vehicle_Name " +
+			        $"ORDER BY Sum(Receipt.Quantity) DESC ";
 
 			modMain.ExecuteSQL(query);
 
@@ -119,7 +128,11 @@ namespace StarCarsManagement
 		private void cmdSoldBySeller_Click(Object eventSender, EventArgs eventArgs)
 		{
 			ClearListView();
-			query = $"SELECT DISTINCTROW Staff.DNI, Sum(Receipt.Quantity) AS TotalSold FROM Staff INNER JOIN Receipt ON Staff.[ID] = Receipt.[Seller_ID] WHERE Receipt.Status = 'Approved' GROUP BY Staff.DNI, Receipt.Seller_ID, Staff.ID ORDER BY Sum(Receipt.Quantity) DESC ";
+			query = $"SELECT DISTINCTROW Staff.DNI, Sum(Receipt.Quantity) AS TotalSold " +
+			        $"FROM Staff INNER JOIN Receipt ON Staff.[ID] = Receipt.[Seller_ID] " +
+			        $"WHERE Receipt.Status = 'Approved' " +
+			        $"GROUP BY Staff.DNI, Receipt.Seller_ID, Staff.ID " +
+			        $"ORDER BY Sum(Receipt.Quantity) DESC ";
 
 			modMain.ExecuteSQL(query);
 

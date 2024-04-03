@@ -120,13 +120,13 @@ namespace StarCarsManagement
 
 		public bool AreThereVehiclesInStock(string value)
 		{
-			int VehicleQuantity = 0;
+			_ = 0;
 			bool result = false;
 			int BrandID = GetManufacturerID(value);
 			modMain.ExecuteSQL2($"Select * from Vehicle where Manufacturer_ID = {BrandID.ToString()}");
 			while (!modMain.rs2.EOF)
 			{
-				VehicleQuantity = Convert.ToInt32(modMain.rs2["Quantity"]);
+				int VehicleQuantity = Convert.ToInt32(modMain.rs2["Quantity"]);
 				if (VehicleQuantity > 0)
 				{
 					result = true;
@@ -252,7 +252,7 @@ namespace StarCarsManagement
 				{
 					li = lstResults.Items.Add(Convert.ToString(modMain.rs["Brand_Name"]));
 					ListViewHelper.GetListViewSubItem(li, 1).Text = Convert.ToString(modMain.rs["Headquarter"]);
-					//UPGRADE_WARNING: (1049) Use of Null/IsNull() detected. More Information: https://docs.mobilize.net/vbuc/ewis#1049
+					//UPGRADE_WARNING: (1049) Use of Null/IsNull() detected. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1049
 					if (!Convert.IsDBNull(modMain.rs["Parent_Company"]) && Convert.ToDouble(modMain.rs["Parent_Company"]) != 0)
 					{
 						ParentName = GetParentName(Convert.ToInt32(modMain.rs["Parent_Company"]));
@@ -276,7 +276,7 @@ namespace StarCarsManagement
 			lstResults.Items.Clear();
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			LoadManufacturers();
@@ -327,7 +327,7 @@ namespace StarCarsManagement
 			cmbParent.Clear();
 			while (!modMain.rs2.EOF)
 			{
-				//UPGRADE_WARNING: (1049) Use of Null/IsNull() detected. More Information: https://docs.mobilize.net/vbuc/ewis#1049
+				//UPGRADE_WARNING: (1049) Use of Null/IsNull() detected. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1049
 				if (!Convert.IsDBNull(modMain.rs2["Parent_Company"]) && Convert.ToDouble(modMain.rs2["Parent_Company"]) != 0)
 				{
 					ParentName = GetParentName(Convert.ToInt32(modMain.rs2["Parent_Company"]));
@@ -343,7 +343,7 @@ namespace StarCarsManagement
 		public void LoadHeadquarters(string ParentCompany = "", string AreaServed = "")
 		{
 			string query = "";
-			string value = "";
+			_ = "";
 			CreateQuery(ref query, "", ParentCompany, AreaServed);
 
 			modMain.ExecuteSQL(query);
@@ -351,7 +351,7 @@ namespace StarCarsManagement
 			cmbHeadquarter.Items.Clear();
 			while (!modMain.rs.EOF)
 			{
-				value = Convert.ToString(modMain.rs["Headquarter"]);
+				string value = Convert.ToString(modMain.rs["Headquarter"]);
 				if (!CommonFunctions.ExistsInCombo(value, cmbHeadquarter))
 				{
 					cmbHeadquarter.AddItem(value);
@@ -362,7 +362,7 @@ namespace StarCarsManagement
 
 		public void LoadAreasServed(string HeadquarterLocation = "", string ParentCompany = "")
 		{
-			string value = "";
+			_ = "";
 			string query = "";
 			CreateQuery(ref query, HeadquarterLocation, ParentCompany);
 
@@ -371,7 +371,7 @@ namespace StarCarsManagement
 			cmbAreaServed.Clear();
 			while (!modMain.rs.EOF)
 			{
-				value = Convert.ToString(modMain.rs["Area_Served"]);
+				string value = Convert.ToString(modMain.rs["Area_Served"]);
 				if (!CommonFunctions.ExistsInCombo(value, null, cmbAreaServed))
 				{
 					cmbAreaServed.AddItem(value);

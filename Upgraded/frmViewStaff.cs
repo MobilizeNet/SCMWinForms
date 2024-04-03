@@ -51,10 +51,8 @@ namespace StarCarsManagement
 		int SelectedRow = 0;
 		string query = "";
 
-		private void btnExit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void btnExit_Click(Object eventSender, EventArgs eventArgs) => this.Close();
+
 
 		private void btnShowHiddenElements_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -79,7 +77,7 @@ namespace StarCarsManagement
 			gridResults_SelectionChanged(gridResults, new EventArgs());
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			query = "Select * from Staff where Available = True Order By Staff_LastName Asc";
@@ -155,12 +153,12 @@ namespace StarCarsManagement
 
 		public void AutoFitRows()
 		{
-			int Twips = 0;
+			_ = 0;
 
 			int tempForEndVar = gridResults.ColumnsCount - 1;
 			for (int i = 0; i <= tempForEndVar; i++)
 			{
-				Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
+				int Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
 				gridResults.SetColumnWidth(i, (((double) (Twips * this.gridResults.Font.SizeInPoints)) / ((double) this.Font.SizeInPoints) + 530) / 15); //* Screen.TwipsPerPixelX
 			}
 		}
@@ -210,8 +208,8 @@ namespace StarCarsManagement
 				MessageBox.Show("Please select a valid item", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
-			string RoleName = "";
-			int RoleIndex = 0;
+			_ = "";
+			_ = 0;
 			frmCreateNewStaff f = null;
 			if (btnEdit.Text == "&Edit")
 			{
@@ -221,8 +219,8 @@ namespace StarCarsManagement
 				f.txtDNI.Text = Convert.ToString(modMain.rs2["DNI"]);
 				f.txtPhoneNumber.Text = Convert.ToString(modMain.rs2["Phone_Number"]);
 				f.dtDateBirth.SetValue(modMain.rs2["DateBirth"]);
-				RoleName = GetRoleName(Convert.ToInt32(modMain.rs2["Role_ID"]));
-				RoleIndex = GetRoleIndex(RoleName, f);
+				string RoleName = GetRoleName(Convert.ToInt32(modMain.rs2["Role_ID"]));
+				int RoleIndex = GetRoleIndex(RoleName, f);
 				f.cmbRole.Text = f.cmbRole.GetListItem(RoleIndex);
 				f.txtUsername.Text = Convert.ToString(modMain.rs2["UserName"]);
 				f.PreviousDNI = Convert.ToString(modMain.rs2["DNI"]);
@@ -248,10 +246,8 @@ namespace StarCarsManagement
 			SelectLastRow();
 		}
 
-		private void gridResults_Click(Object eventSender, EventArgs eventArgs)
-		{
-			gridResults_SelectionChanged(gridResults, new EventArgs());
-		}
+		private void gridResults_Click(Object eventSender, EventArgs eventArgs) => gridResults_SelectionChanged(gridResults, new EventArgs());
+
 
 		public void SelectLastRow()
 		{
@@ -277,25 +273,23 @@ namespace StarCarsManagement
 			SelectLastRow();
 		}
 
-		private void btnEdit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			gridResults_DoubleClick(gridResults, new EventArgs());
-		}
+		private void btnEdit_Click(Object eventSender, EventArgs eventArgs) => gridResults_DoubleClick(gridResults, new EventArgs());
+
 
 		private void gridResults_SelectionChanged(Object eventSender, EventArgs eventArgs)
 		{
 			string CurrentEmployee = Convert.ToString(gridResults[gridResults.CurrentRowIndex, 2].Value);
-			string SelectedUser = "";
+			_ = "";
 			if (gridResults.CurrentRowIndex > 0 && CurrentEmployee != "" && CurrentEmployee != "Identification Number")
 			{
-				bool currentBool = false;
-				SelectedUser = StringsHelper.Replace(CurrentEmployee, "-", "", 1, -1, CompareMethod.Binary);
+				_ = false;
+				string SelectedUser = StringsHelper.Replace(CurrentEmployee, "-", "", 1, -1, CompareMethod.Binary);
 				if (SelectedUser == "")
 				{
 					return;
 				}
 				modMain.ExecuteSQL3($"Select * from Staff where DNI = '{SelectedUser}'");
-				currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
+				bool currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
 				if (!currentBool)
 				{
 					btnEdit.Text = "&Restore user";

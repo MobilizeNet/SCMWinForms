@@ -86,10 +86,8 @@ namespace StarCarsManagement
 			txtCurrentStock.Enabled = false;
 		}
 
-		private void txtCurrentStock_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			txtCurrentStock.Text = StringsHelper.Format(txtCurrentStock.Text, "#,###");
-		}
+		private void txtCurrentStock_Leave(Object eventSender, EventArgs eventArgs) => txtCurrentStock.Text = StringsHelper.Format(txtCurrentStock.Text, "#,###");
+
 
 		private void txtNewStock_Enter(Object eventSender, EventArgs eventArgs)
 		{

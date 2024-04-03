@@ -50,10 +50,8 @@ namespace StarCarsManagement
 		int SelectedRow = 0;
 		string query = "";
 
-		private void btnExit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void btnExit_Click(Object eventSender, EventArgs eventArgs) => this.Close();
+
 
 		private void btnShowHiddenElements_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -81,7 +79,7 @@ namespace StarCarsManagement
 			gridResults_SelectionChanged(gridResults, new EventArgs());
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			query = "Select * from Brand where Available = True Order By Brand_Name Asc";
@@ -189,20 +187,18 @@ namespace StarCarsManagement
 
 		public void AutoFitRows()
 		{
-			int Twips = 0;
+			_ = 0;
 
 			int tempForEndVar = gridResults.ColumnsCount - 1;
 			for (int i = 0; i <= tempForEndVar; i++)
 			{
-				Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
+				int Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
 				gridResults.SetColumnWidth(i, (((double) (Twips * this.gridResults.Font.SizeInPoints)) / ((double) this.Font.SizeInPoints) + 530) / 15); //* Screen.TwipsPerPixelX
 			}
 		}
 
-		private void gridResults_Click(Object eventSender, EventArgs eventArgs)
-		{
-			gridResults_SelectionChanged(gridResults, new EventArgs());
-		}
+		private void gridResults_Click(Object eventSender, EventArgs eventArgs) => gridResults_SelectionChanged(gridResults, new EventArgs());
+
 
 		private void gridResults_DoubleClick(Object eventSender, EventArgs eventArgs)
 		{
@@ -217,7 +213,7 @@ namespace StarCarsManagement
 			frmCreateNewBrand f = null;
 			if (btnEdit.Text == "&Edit")
 			{
-				int ParentIndex = 0;
+				_ = 0;
 				f = frmCreateNewBrand.CreateInstance();
 				f.txtName.Text = Convert.ToString(modMain.rs2["Brand_Name"]);
 				f.txtOwner.Text = Convert.ToString(modMain.rs2["Owner"]);
@@ -225,11 +221,11 @@ namespace StarCarsManagement
 				f.txtAreaServed.Text = Convert.ToString(modMain.rs2["Area_Served"]);
 				f.txtWebsite.Text = Convert.ToString(modMain.rs2["Website"]);
 				f.dtFounded.SetValue(modMain.rs2["Founded"]);
-				//UPGRADE_WARNING: (1049) Use of Null/IsNull() detected. More Information: https://docs.mobilize.net/vbuc/ewis#1049
+				//UPGRADE_WARNING: (1049) Use of Null/IsNull() detected. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1049
 				if (!Convert.IsDBNull(modMain.rs2["Parent_Company"]) && Convert.ToDouble(modMain.rs2["Parent_Company"]) != 0)
 				{
 					ParentName = GetParentName(Convert.ToInt32(modMain.rs2["Parent_Company"]));
-					ParentIndex = GetBrandIndex(ParentName, f);
+					int ParentIndex = GetBrandIndex(ParentName, f);
 					f.cmbParent.Text = f.cmbParent.GetListItem(ParentIndex);
 				}
 				else
@@ -281,10 +277,8 @@ namespace StarCarsManagement
 			SelectLastRow();
 		}
 
-		private void btnEdit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			gridResults_DoubleClick(gridResults, new EventArgs());
-		}
+		private void btnEdit_Click(Object eventSender, EventArgs eventArgs) => gridResults_DoubleClick(gridResults, new EventArgs());
+
 
 		public int GetBrandIndex(string BrandName, frmCreateNewBrand CreateBrandForm = null, frmDeleteBrand DeleteBrandForm = null)
 		{
@@ -319,17 +313,17 @@ namespace StarCarsManagement
 		private void gridResults_SelectionChanged(Object eventSender, EventArgs eventArgs)
 		{
 			string CurrentBrand = Convert.ToString(gridResults[gridResults.CurrentRowIndex, 0].Value);
-			string SelectedBrand = "";
+			_ = "";
 			if (gridResults.CurrentRowIndex > 0 && CurrentBrand != "" && CurrentBrand != "Brand Name")
 			{
-				bool currentBool = false;
-				SelectedBrand = CurrentBrand;
+				_ = false;
+				string SelectedBrand = CurrentBrand;
 				if (SelectedBrand == "")
 				{
 					return;
 				}
 				modMain.ExecuteSQL3($"Select * from Brand where Brand_Name = '{SelectedBrand}'");
-				currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
+				bool currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
 				if (!currentBool)
 				{
 					btnEdit.Text = "&Restore brand";

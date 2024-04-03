@@ -103,11 +103,11 @@ namespace StarCarsManagement
 		public bool AreThereVehiclesInStock(string Model)
 		{
 			bool result = false;
-			int VehicleQuantity = 0;
+			_ = 0;
 			modMain.ExecuteSQL2($"Select * from Vehicle where Vehicle_Name = '{Model}'");
 			while (!modMain.rs2.EOF)
 			{
-				VehicleQuantity = Convert.ToInt32(modMain.rs2["Quantity"]);
+				int VehicleQuantity = Convert.ToInt32(modMain.rs2["Quantity"]);
 				if (VehicleQuantity > 0)
 				{
 					result = true;
@@ -138,7 +138,7 @@ namespace StarCarsManagement
 			}
 		}
 
-		private void chkUseAllFilters_Click(Object eventSender, EventArgs eventArgs)
+		private void chkUseAllFilters_CheckStateChanged(Object eventSender, EventArgs eventArgs)
 		{
 			LoadClasses();
 			LoadTransmissions();
@@ -403,7 +403,7 @@ namespace StarCarsManagement
 			lstResults.Items.Clear();
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			LoadModels();
@@ -443,7 +443,7 @@ namespace StarCarsManagement
 		public void LoadManufacturers(string class_Renamed, string bodyStyle, string Transmission, ref string Price, string pYear)
 		{
 			string query = "";
-			string ManufacturerName = "";
+			_ = "";
 
 			CreateQuery(ref query, "", class_Renamed, bodyStyle, Transmission, ref Price, pYear);
 
@@ -452,7 +452,7 @@ namespace StarCarsManagement
 			cmbManufacturer.Items.Clear();
 			while (!modMain.rs.EOF)
 			{
-				ManufacturerName = GetManufacturerName(Convert.ToInt32(modMain.rs["Manufacturer_ID"]));
+				string ManufacturerName = GetManufacturerName(Convert.ToInt32(modMain.rs["Manufacturer_ID"]));
 				if (!CommonFunctions.ExistsInCombo(ManufacturerName, cmbManufacturer))
 				{
 					cmbManufacturer.AddItem(ManufacturerName);
@@ -461,10 +461,8 @@ namespace StarCarsManagement
 			}
 		}
 
-		public void LoadManufacturers(string class_Renamed, string bodyStyle, string Transmission, ref string Price)
-		{
-			LoadManufacturers(class_Renamed, bodyStyle, Transmission, ref Price, "");
-		}
+		public void LoadManufacturers(string class_Renamed, string bodyStyle, string Transmission, ref string Price) => LoadManufacturers(class_Renamed, bodyStyle, Transmission, ref Price, "");
+
 
 		public void LoadManufacturers(string class_Renamed, string bodyStyle, string Transmission)
 		{
@@ -528,10 +526,8 @@ namespace StarCarsManagement
 			}
 		}
 
-		public void LoadClasses(string manufacturer, string bodyStyle, string Transmission, ref string Price)
-		{
-			LoadClasses(manufacturer, bodyStyle, Transmission, ref Price, "");
-		}
+		public void LoadClasses(string manufacturer, string bodyStyle, string Transmission, ref string Price) => LoadClasses(manufacturer, bodyStyle, Transmission, ref Price, "");
+
 
 		public void LoadClasses(string manufacturer, string bodyStyle, string Transmission)
 		{
@@ -605,10 +601,8 @@ namespace StarCarsManagement
 			}
 		}
 
-		public void LoadBodyStyles(string manufacturer, string class_Renamed, string Transmission, ref string Price)
-		{
-			LoadBodyStyles(manufacturer, class_Renamed, Transmission, ref Price, "");
-		}
+		public void LoadBodyStyles(string manufacturer, string class_Renamed, string Transmission, ref string Price) => LoadBodyStyles(manufacturer, class_Renamed, Transmission, ref Price, "");
+
 
 		public void LoadBodyStyles(string manufacturer, string class_Renamed, string Transmission)
 		{
@@ -665,10 +659,8 @@ namespace StarCarsManagement
 			}
 		}
 
-		public void LoadTransmissions(string manufacturer, string class_Renamed, string bodyStyle, ref string Price)
-		{
-			LoadTransmissions(manufacturer, class_Renamed, bodyStyle, ref Price, "");
-		}
+		public void LoadTransmissions(string manufacturer, string class_Renamed, string bodyStyle, ref string Price) => LoadTransmissions(manufacturer, class_Renamed, bodyStyle, ref Price, "");
+
 
 		public void LoadTransmissions(string manufacturer, string class_Renamed, string bodyStyle)
 		{
@@ -817,10 +809,8 @@ namespace StarCarsManagement
 			}
 		}
 
-		public void ShowResults(string manufacturer, string class_Renamed, string bodyStyle, string pTransmission, ref string pPrice)
-		{
-			ShowResults(manufacturer, class_Renamed, bodyStyle, pTransmission, ref pPrice, "");
-		}
+		public void ShowResults(string manufacturer, string class_Renamed, string bodyStyle, string pTransmission, ref string pPrice) => ShowResults(manufacturer, class_Renamed, bodyStyle, pTransmission, ref pPrice, "");
+
 
 		public void ShowResults(string manufacturer, string class_Renamed, string bodyStyle, string pTransmission)
 		{
@@ -890,10 +880,8 @@ namespace StarCarsManagement
 
 		}
 
-		public void CreateQuery(ref string queryOut, string manufacturer, string class_Renamed, string bodyStyle, string Transmission, ref string Price)
-		{
-			CreateQuery(ref queryOut, manufacturer, class_Renamed, bodyStyle, Transmission, ref Price, "");
-		}
+		public void CreateQuery(ref string queryOut, string manufacturer, string class_Renamed, string bodyStyle, string Transmission, ref string Price) => CreateQuery(ref queryOut, manufacturer, class_Renamed, bodyStyle, Transmission, ref Price, "");
+
 
 		public void CreateQuery(ref string queryOut, string manufacturer, string class_Renamed, string bodyStyle, string Transmission)
 		{

@@ -143,6 +143,7 @@ namespace StarCarsManagement
 			this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblDescription.ForeColor = System.Drawing.Color.Black;
 			this.lblDescription.Location = new System.Drawing.Point(88, 75);
+			this.lblDescription.MinimumSize = new System.Drawing.Size(259, 78);
 			this.lblDescription.Name = "lblDescription";
 			this.lblDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblDescription.Size = new System.Drawing.Size(259, 78);
@@ -157,6 +158,7 @@ namespace StarCarsManagement
 			this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTitle.ForeColor = System.Drawing.Color.Black;
 			this.lblTitle.Location = new System.Drawing.Point(88, 16);
+			this.lblTitle.MinimumSize = new System.Drawing.Size(259, 32);
 			this.lblTitle.Name = "lblTitle";
 			this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTitle.Size = new System.Drawing.Size(259, 32);
@@ -182,6 +184,7 @@ namespace StarCarsManagement
 			this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblVersion.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblVersion.Location = new System.Drawing.Point(88, 52);
+			this.lblVersion.MinimumSize = new System.Drawing.Size(259, 15);
 			this.lblVersion.Name = "lblVersion";
 			this.lblVersion.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblVersion.Size = new System.Drawing.Size(259, 15);
@@ -196,6 +199,7 @@ namespace StarCarsManagement
 			this.lblDisclaimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblDisclaimer.ForeColor = System.Drawing.Color.Black;
 			this.lblDisclaimer.Location = new System.Drawing.Point(17, 176);
+			this.lblDisclaimer.MinimumSize = new System.Drawing.Size(258, 55);
 			this.lblDisclaimer.Name = "lblDisclaimer";
 			this.lblDisclaimer.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblDisclaimer.Size = new System.Drawing.Size(258, 55);

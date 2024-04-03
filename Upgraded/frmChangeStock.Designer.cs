@@ -172,6 +172,7 @@ namespace StarCarsManagement
 			this.lblNewStock.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblNewStock.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblNewStock.Location = new System.Drawing.Point(24, 64);
+			this.lblNewStock.MinimumSize = new System.Drawing.Size(153, 25);
 			this.lblNewStock.Name = "lblNewStock";
 			this.lblNewStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblNewStock.Size = new System.Drawing.Size(153, 25);
@@ -186,6 +187,7 @@ namespace StarCarsManagement
 			this.lblCurrent.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblCurrent.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblCurrent.Location = new System.Drawing.Point(24, 16);
+			this.lblCurrent.MinimumSize = new System.Drawing.Size(145, 25);
 			this.lblCurrent.Name = "lblCurrent";
 			this.lblCurrent.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblCurrent.Size = new System.Drawing.Size(145, 25);
@@ -215,10 +217,8 @@ namespace StarCarsManagement
 			this.frameStock.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
-		void ReLoadForm(bool addEvents)
-		{
-			InitializeHelp();
-		}
+		void ReLoadForm(bool addEvents) => InitializeHelp();
+
 		#endregion
 	}
 }

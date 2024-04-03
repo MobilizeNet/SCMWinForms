@@ -47,7 +47,7 @@ namespace StarCarsManagement
 
 		internal static void AddRequiredMark(Label label, Color colorToUse, Control textbox = null, ComboBox combo = null, System.Windows.Forms.RadioButton[] optionArray = null)
 		{
-			//UPGRADE_WARNING: (2065) Boolean method Information.IsMissing has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2065
+			//UPGRADE_WARNING: (2065) Boolean method Information.IsMissing has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2065
 			if (!(textbox is null))
 			{
 				if (Convert.ToString(textbox.Text) == "")
@@ -78,7 +78,7 @@ namespace StarCarsManagement
 		{
 			Control ctrl = null;
 			Label ctrlTyped = null;
-			//UPGRADE_WARNING: (2065) Form property frm.Controls has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2065
+			//UPGRADE_WARNING: (2065) Form property frm.Controls has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2065
 			foreach (Control ctrlIterator in ContainerHelper.Controls(frm))
 			{
 				ctrl = ctrlIterator;

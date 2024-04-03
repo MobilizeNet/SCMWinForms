@@ -140,6 +140,7 @@ namespace StarCarsManagement
 			this._lblLabels_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this._lblLabels_0.ForeColor = System.Drawing.SystemColors.ControlText;
 			this._lblLabels_0.Location = new System.Drawing.Point(7, 10);
+			this._lblLabels_0.MinimumSize = new System.Drawing.Size(72, 18);
 			this._lblLabels_0.Name = "_lblLabels_0";
 			this._lblLabels_0.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this._lblLabels_0.Size = new System.Drawing.Size(72, 18);
@@ -154,6 +155,7 @@ namespace StarCarsManagement
 			this._lblLabels_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this._lblLabels_1.ForeColor = System.Drawing.SystemColors.ControlText;
 			this._lblLabels_1.Location = new System.Drawing.Point(7, 36);
+			this._lblLabels_1.MinimumSize = new System.Drawing.Size(72, 18);
 			this._lblLabels_1.Name = "_lblLabels_1";
 			this._lblLabels_1.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this._lblLabels_1.Size = new System.Drawing.Size(72, 18);

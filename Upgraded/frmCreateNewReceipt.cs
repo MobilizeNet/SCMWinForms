@@ -61,8 +61,8 @@ namespace StarCarsManagement
 		{
 			try
 			{
-				int Subtotal = 0;
-				int Total = 0;
+				_ = 0;
+				_ = 0;
 				if (IsInformationValid() && IsQuantityAvailable())
 				{
 					if (btnCreate.Text == "&Create")
@@ -94,9 +94,9 @@ namespace StarCarsManagement
 				modMain.rs["Seller_ID"] = GetSellerID();
 				modMain.rs["Vehicle_Insurance"] = chkVehicleInsurance.CheckState;
 				modMain.rs["Third_Person_Insurance"] = chk3PersonInsurance.CheckState;
-				Subtotal = Convert.ToInt32(Double.Parse(Double.Parse(StringsHelper.Replace(txtSubTotal.Text, "$", "", 1, -1, CompareMethod.Binary), NumberStyles.Any).ToString("N0")));
+				int Subtotal = Convert.ToInt32(Double.Parse(Double.Parse(StringsHelper.Replace(txtSubTotal.Text, "$", "", 1, -1, CompareMethod.Binary), NumberStyles.Any).ToString("N0")));
 				modMain.rs["Subtotal"] = Subtotal;
-				Total = Convert.ToInt32(Double.Parse(Double.Parse(StringsHelper.Replace(txtTotal.Text, "$", "", 1, -1, CompareMethod.Binary), NumberStyles.Any).ToString("N0")));
+				int Total = Convert.ToInt32(Double.Parse(Double.Parse(StringsHelper.Replace(txtTotal.Text, "$", "", 1, -1, CompareMethod.Binary), NumberStyles.Any).ToString("N0")));
 				modMain.rs["Total"] = Total;
 				modMain.rs["Status"] = PreviousStatus;
 
@@ -152,7 +152,7 @@ namespace StarCarsManagement
 			}
 		}
 
-		private void chk3PersonInsurance_Click(Object eventSender, EventArgs eventArgs)
+		private void chk3PersonInsurance_CheckStateChanged(Object eventSender, EventArgs eventArgs)
 		{
 			try
 			{
@@ -223,10 +223,8 @@ namespace StarCarsManagement
 			return Convert.ToInt32(modMain.rs3["ID"]);
 		}
 
-		private void btnReset_Click(Object eventSender, EventArgs eventArgs)
-		{
-			ClearForm();
-		}
+		private void btnReset_Click(Object eventSender, EventArgs eventArgs) => ClearForm();
+
 
 		public void ClearForm()
 		{
@@ -246,12 +244,10 @@ namespace StarCarsManagement
 			LoadReceiptID();
 		}
 
-		public bool IsInformationValid()
-		{
-			return txtName.Text != "" && txtLastName.Text != "" && cmbManufacturer.SelectedIndex != -1 && cmbModel.SelectedIndex != -1 && txtQuantity.Text != "" && cmbSeller.SelectedIndex != -1;
-		}
+		public bool IsInformationValid() => txtName.Text != "" && txtLastName.Text != "" && cmbManufacturer.SelectedIndex != -1 && cmbModel.SelectedIndex != -1 && txtQuantity.Text != "" && cmbSeller.SelectedIndex != -1;
 
-		private void chkVehicleInsurance_Click(Object eventSender, EventArgs eventArgs)
+
+		private void chkVehicleInsurance_CheckStateChanged(Object eventSender, EventArgs eventArgs)
 		{
 			try
 			{
@@ -335,7 +331,7 @@ namespace StarCarsManagement
 			txtTotal.Text = StringsHelper.Format(TotalValue, "$#,###");
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			LoadReceiptID();
@@ -396,12 +392,12 @@ namespace StarCarsManagement
 
 		public void LoadSellers()
 		{
-			string FullName = "";
+			_ = "";
 			modMain.ExecuteSQL("Select * from Staff where Role_ID = 1 or Role_ID = 3");
 			cmbSeller.Clear();
 			while (!modMain.rs.EOF)
 			{
-				FullName = $"{Convert.ToString(modMain.rs["Staff_Name"])} {Convert.ToString(modMain.rs["Staff_LastName"])} - {Convert.ToString(modMain.rs["DNI"])}";
+				string FullName = $"{Convert.ToString(modMain.rs["Staff_Name"])} {Convert.ToString(modMain.rs["Staff_LastName"])} - {Convert.ToString(modMain.rs["DNI"])}";
 				cmbSeller.AddItem(FullName);
 				modMain.rs.MoveNext();
 			}

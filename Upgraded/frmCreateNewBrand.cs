@@ -151,15 +151,11 @@ namespace StarCarsManagement
 			return Convert.ToInt32(modMain.rs2["ID"]);
 		}
 
-		public bool IsInformationValid()
-		{
-			return txtName.Text != "" && txtOwner.Text != "" && txtHeadquarters.Text != "" && txtAreaServed.Text != "" && txtWebsite.Text != "" && txtNumberEmployees.Text != "";
-		}
+		public bool IsInformationValid() => txtName.Text != "" && txtOwner.Text != "" && txtHeadquarters.Text != "" && txtAreaServed.Text != "" && txtWebsite.Text != "" && txtNumberEmployees.Text != "";
 
-		private void btnReset_Click(Object eventSender, EventArgs eventArgs)
-		{
-			ClearForm();
-		}
+
+		private void btnReset_Click(Object eventSender, EventArgs eventArgs) => ClearForm();
+
 
 		public void ClearForm()
 		{
@@ -175,7 +171,7 @@ namespace StarCarsManagement
 			txtNumberEmployees.Text = "";
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			dtFounded.SetValue(DateTime.Today);
@@ -232,10 +228,8 @@ namespace StarCarsManagement
 			}
 		}
 
-		public void txtNumberEmployees_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			txtNumberEmployees.Text = StringsHelper.Format(txtNumberEmployees.Text, "###,###");
-		}
+		public void txtNumberEmployees_Leave(Object eventSender, EventArgs eventArgs) => txtNumberEmployees.Text = StringsHelper.Format(txtNumberEmployees.Text, "###,###");
+
 		private void Form_Closed(Object eventSender, EventArgs eventArgs)
 		{
 		}

@@ -46,7 +46,7 @@ namespace StarCarsManagement
 		}
 		public int CurrentUserRoleID = 0;
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			frmLogin f = frmLogin.CreateInstance();
@@ -72,10 +72,8 @@ namespace StarCarsManagement
 			f.ShowDialog(this);
 		}
 
-		public void mnuChangeUser_Click(Object eventSender, EventArgs eventArgs)
-		{
-			Form_Load();
-		}
+		public void mnuChangeUser_Click(Object eventSender, EventArgs eventArgs) => Form_Load();
+
 
 		public void mnuCreateBrand_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -119,10 +117,8 @@ namespace StarCarsManagement
 			f.ShowDialog(this);
 		}
 
-		public void mnuExit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		public void mnuExit_Click(Object eventSender, EventArgs eventArgs) => this.Close();
+
 
 		public void mnuShowBrands_Click(Object eventSender, EventArgs eventArgs)
 		{

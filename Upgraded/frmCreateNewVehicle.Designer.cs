@@ -238,6 +238,7 @@ namespace StarCarsManagement
 			this.lblQuantity.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblQuantity.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblQuantity.Location = new System.Drawing.Point(280, 192);
+			this.lblQuantity.MinimumSize = new System.Drawing.Size(209, 17);
 			this.lblQuantity.Name = "lblQuantity";
 			this.lblQuantity.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblQuantity.Size = new System.Drawing.Size(209, 17);
@@ -252,6 +253,7 @@ namespace StarCarsManagement
 			this.lblYearProduction.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblYearProduction.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblYearProduction.Location = new System.Drawing.Point(24, 192);
+			this.lblYearProduction.MinimumSize = new System.Drawing.Size(209, 17);
 			this.lblYearProduction.Name = "lblYearProduction";
 			this.lblYearProduction.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblYearProduction.Size = new System.Drawing.Size(209, 17);
@@ -292,6 +294,7 @@ namespace StarCarsManagement
 			this.lblWidth.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblWidth.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblWidth.Location = new System.Drawing.Point(280, 376);
+			this.lblWidth.MinimumSize = new System.Drawing.Size(209, 17);
 			this.lblWidth.Name = "lblWidth";
 			this.lblWidth.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblWidth.Size = new System.Drawing.Size(209, 17);
@@ -306,6 +309,7 @@ namespace StarCarsManagement
 			this.lblLength.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblLength.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblLength.Location = new System.Drawing.Point(24, 376);
+			this.lblLength.MinimumSize = new System.Drawing.Size(209, 17);
 			this.lblLength.Name = "lblLength";
 			this.lblLength.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblLength.Size = new System.Drawing.Size(209, 17);
@@ -348,6 +352,7 @@ namespace StarCarsManagement
 			this.lblPrice.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblPrice.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblPrice.Location = new System.Drawing.Point(24, 256);
+			this.lblPrice.MinimumSize = new System.Drawing.Size(209, 17);
 			this.lblPrice.Name = "lblPrice";
 			this.lblPrice.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblPrice.Size = new System.Drawing.Size(209, 17);
@@ -402,6 +407,7 @@ namespace StarCarsManagement
 			this.Label3.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label3.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.Label3.Location = new System.Drawing.Point(280, 128);
+			this.Label3.MinimumSize = new System.Drawing.Size(209, 17);
 			this.Label3.Name = "Label3";
 			this.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label3.Size = new System.Drawing.Size(209, 17);
@@ -428,6 +434,7 @@ namespace StarCarsManagement
 			this.lblTitle.Font = new System.Drawing.Font("Javanese Text", 24f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblTitle.Location = new System.Drawing.Point(16, 0);
+			this.lblTitle.MinimumSize = new System.Drawing.Size(481, 49);
 			this.lblTitle.Name = "lblTitle";
 			this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTitle.Size = new System.Drawing.Size(481, 49);
@@ -443,6 +450,7 @@ namespace StarCarsManagement
 			this.lblName.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblName.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblName.Location = new System.Drawing.Point(24, 64);
+			this.lblName.MinimumSize = new System.Drawing.Size(209, 17);
 			this.lblName.Name = "lblName";
 			this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblName.Size = new System.Drawing.Size(209, 17);
@@ -457,6 +465,7 @@ namespace StarCarsManagement
 			this.Label2.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.Label2.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.Label2.Location = new System.Drawing.Point(24, 128);
+			this.Label2.MinimumSize = new System.Drawing.Size(209, 17);
 			this.Label2.Name = "Label2";
 			this.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Label2.Size = new System.Drawing.Size(209, 17);
@@ -471,6 +480,7 @@ namespace StarCarsManagement
 			this.lblClass.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblClass.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblClass.Location = new System.Drawing.Point(24, 320);
+			this.lblClass.MinimumSize = new System.Drawing.Size(209, 17);
 			this.lblClass.Name = "lblClass";
 			this.lblClass.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblClass.Size = new System.Drawing.Size(209, 17);
@@ -485,6 +495,7 @@ namespace StarCarsManagement
 			this.lblBodyStyle.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblBodyStyle.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblBodyStyle.Location = new System.Drawing.Point(280, 320);
+			this.lblBodyStyle.MinimumSize = new System.Drawing.Size(209, 17);
 			this.lblBodyStyle.Name = "lblBodyStyle";
 			this.lblBodyStyle.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblBodyStyle.Size = new System.Drawing.Size(209, 17);
@@ -499,6 +510,7 @@ namespace StarCarsManagement
 			this.lblManufacturer.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblManufacturer.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblManufacturer.Location = new System.Drawing.Point(280, 64);
+			this.lblManufacturer.MinimumSize = new System.Drawing.Size(209, 17);
 			this.lblManufacturer.Name = "lblManufacturer";
 			this.lblManufacturer.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblManufacturer.Size = new System.Drawing.Size(209, 17);
@@ -513,6 +525,7 @@ namespace StarCarsManagement
 			this.lblTransmission.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblTransmission.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblTransmission.Location = new System.Drawing.Point(280, 256);
+			this.lblTransmission.MinimumSize = new System.Drawing.Size(209, 17);
 			this.lblTransmission.Name = "lblTransmission";
 			this.lblTransmission.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblTransmission.Size = new System.Drawing.Size(209, 17);

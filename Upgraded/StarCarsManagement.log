@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeLog Upgraded="True">
+  <Settings>
+    <Setting Name="LogFile" Value="StarCarsManagement.log" />
+    <Setting Name="GenerateInterfacesForClasses" Value="FALSE" />
+    <Setting Name="ProjectName" Value="StarCarsManagement" />
+    <Setting Name="OutputName" Value="StarCarsManagement.csproj" />
+    <Setting Name="OutputDir" Value="C:\A1\_work\out\Upgraded\" />
+    <Setting Name="ProjectPath" Value="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\StarCarsManagement.vbp" />
+    <Setting Name="MigrateProjectTo" Value="WinExe" />
+  </Settings>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmMain.frm" NewPath="C:\A1\_work\out\Upgraded\frmMain.cs" FileType="Form" Upgraded="True">
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmCreateNewBrand.frm" NewPath="C:\A1\_work\out\Upgraded\frmCreateNewBrand.cs" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2064" ObjectName="dtFounded" ObjectType="MSComCtl2.DTPicker" PME="CurrentDate" Qty="1">MSComCtl2.DTPicker method dtFounded.CurrentDate was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbParent" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbParent.ListCount was not upgraded.</Issue>
+    </Section>
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmCreateNewVehicle.frm" NewPath="C:\A1\_work\out\Upgraded\frmCreateNewVehicle.cs" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2064" ObjectName="dtProductionStarted" ObjectType="MSComCtl2.DTPicker" PME="CurrentDate" Qty="1">MSComCtl2.DTPicker method dtProductionStarted.CurrentDate was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="dtProductionEnded" ObjectType="MSComCtl2.DTPicker" PME="CurrentDate" Qty="1">MSComCtl2.DTPicker method dtProductionEnded.CurrentDate was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbManufacturer" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbManufacturer.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2081" ObjectName="_HiddenModule" ObjectType="Variant" PME="array" Qty="1">Array has a new behavior.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbBodyStyle" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbBodyStyle.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbClass" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbClass.ListCount was not upgraded.</Issue>
+    </Section>
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmCreateNewStaff.frm" NewPath="C:\A1\_work\out\Upgraded\frmCreateNewStaff.cs" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2064" ObjectName="dtDateBirth" ObjectType="MSComCtl2.DTPicker" PME="CurrentDate" Qty="1">MSComCtl2.DTPicker method dtDateBirth.CurrentDate was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="txtDNI" ObjectType="MSMask.MaskEdBox" PME="MaxLength" Qty="1">MSMask.MaskEdBox property txtDNI.MaxLength was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="txtDNI" ObjectType="MSMask.MaskEdBox" PME="Format" Qty="1">MSMask.MaskEdBox property txtDNI.Format was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="txtPhoneNumber" ObjectType="MSMask.MaskEdBox" PME="MaxLength" Qty="1">MSMask.MaskEdBox property txtPhoneNumber.MaxLength was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="txtPhoneNumber" ObjectType="MSMask.MaskEdBox" PME="Format" Qty="1">MSMask.MaskEdBox property txtPhoneNumber.Format was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbRole" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbRole.ListCount was not upgraded.</Issue>
+    </Section>
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmAbout.frm" NewPath="C:\A1\_work\out\Upgraded\frmAbout.cs" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2064" ObjectName="frmAbout" ObjectType="Form" PME="ClipControls" Qty="1">Form property frmAbout.ClipControls was not upgraded.</Issue>
+      <Issue Type="Design" Number="2065" ObjectName="frmAbout" ObjectType="Form" PME="Picture" Qty="1">Form property frmAbout.Picture has a new behavior.</Issue>
+      <Issue Type="Design" Number="2038" ObjectName="frmAbout" ObjectType="Form" PME="ScaleMode" Qty="1">Form property Me.ScaleMode is not supported.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="picIcon" ObjectType="PictureBox" PME="ClipControls" Qty="1">PictureBox property picIcon.ClipControls was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="picIcon" ObjectType="PictureBox" PME="ScaleMode" Qty="1">PictureBox property picIcon.ScaleMode was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="_Line1_0" ObjectType="Line" PME="BorderWidth" Qty="1">Line property _Line1_0.BorderWidth was not upgraded.</Issue>
+    </Section>
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+    <Section Name="StartSysInfo">
+      <Issue Type="Runtime" Number="2099" ObjectName="FileSystem" ObjectType="String" PME="Dir" Qty="1">Return value for Dir has a new behavior.</Issue>
+      <Issue Type="ToDo" Number="7005" Qty="1">parameters (if any) must be set using the Arguments property of ProcessStartInfo</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmCreateNewReceipt.frm" NewPath="C:\A1\_work\out\Upgraded\frmCreateNewReceipt.cs" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2064" ObjectName="cmbSeller" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbSeller.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2081" ObjectName="_HiddenModule" ObjectType="Variant" PME="array" Qty="1">Array has a new behavior.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbModel" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbModel.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbManufacturer" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbManufacturer.ListCount was not upgraded.</Issue>
+    </Section>
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\modMain.bas" NewPath="C:\A1\_work\out\Upgraded\modMain.cs" FileType="Module" Upgraded="True">
+    <Section Name="OpenConnection">
+      <Issue Type="ToDo" Number="7010" ObjectName="conn" ObjectType="ADODB.Connection" PME="Open" Qty="1">The connection string must be verified to fullfill the .NET data provider connection string requirements.</Issue>
+    </Section>
+    <Section Name="main">
+      <Issue Type="Runtime" Number="1047" Qty="1">Application will terminate when Sub Main() finishes.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmLogin.frm" NewPath="C:\A1\_work\out\Upgraded\frmLogin.cs" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2038" ObjectName="frmLogin" ObjectType="Form" PME="ScaleMode" Qty="1">Form property Me.ScaleMode is not supported.</Issue>
+    </Section>
+    <Section Name="VerifyUser">
+      <Issue Type="Compile" Number="1046" ObjectName="Interaction" ObjectType="VbMsgBoxResult" PME="MsgBox" Qty="1">MsgBox Parameter 'helpfile' is not supported, and was removed.</Issue>
+      <Issue Type="Compile" Number="1046" ObjectName="Interaction" ObjectType="VbMsgBoxResult" PME="MsgBox" Qty="1">MsgBox Parameter 'context' is not supported, and was removed.</Issue>
+      <Issue Type="Runtime" Number="6021" ObjectName="Interaction" ObjectType="VbMsgBoxResult" PME="MsgBox" Qty="1">Casting 'VBA.VbVarType' to Enum may cause different behaviour.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmDeleteVehicle.frm" NewPath="C:\A1\_work\out\Upgraded\frmDeleteVehicle.cs" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2064" ObjectName="lstResults" ObjectType="MSComctlLib.ListView" PME="LabelWrap" Qty="1">MSComctlLib.ListView property lstResults.LabelWrap was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_2_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_2_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_3_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_3_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_4_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_4_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_5_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_5_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_6_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_6_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_7_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_7_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_8_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_8_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbPrice" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbPrice.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2081" ObjectName="_HiddenModule" ObjectType="Variant" PME="array" Qty="1">Array has a new behavior.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbTransmission" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbTransmission.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbBodyStyle" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbBodyStyle.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbClass" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbClass.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbModel" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbModel.ListCount was not upgraded.</Issue>
+    </Section>
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmDeleteStaff.frm" NewPath="C:\A1\_work\out\Upgraded\frmDeleteStaff.cs" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2064" ObjectName="lstResults" ObjectType="MSComctlLib.ListView" PME="LabelWrap" Qty="1">MSComctlLib.ListView property lstResults.LabelWrap was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_2_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_2_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_3_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_3_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_4_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_4_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbRole" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbRole.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbFullName" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbFullName.ListCount was not upgraded.</Issue>
+    </Section>
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\CommonFunctions.bas" NewPath="C:\A1\_work\out\Upgraded\CommonFunctions.cs" FileType="Module" Upgraded="True">
+    <Section Name="AddRequiredMark">
+      <Issue Type="Runtime" Number="2065" ObjectName="Information" ObjectType="Boolean" PME="IsMissing" Qty="1">Boolean method Information.IsMissing has a new behavior.</Issue>
+    </Section>
+    <Section Name="RemoveMark">
+      <Issue Type="Runtime" Number="2065" ObjectName="frm" ObjectType="Form" PME="Controls" Qty="1">Form property frm.Controls has a new behavior.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmDeleteBrand.frm" NewPath="C:\A1\_work\out\Upgraded\frmDeleteBrand.cs" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2064" ObjectName="cmbParent" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbParent.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbAreaServed" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbAreaServed.ListCount was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults" ObjectType="MSComctlLib.ListView" PME="LabelWrap" Qty="1">MSComctlLib.ListView property lstResults.LabelWrap was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_2_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_2_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_3_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_3_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="lstResults_ColumnHeader_4_" ObjectType="MSComctlLib.ColumnHeader" PME="SubItemIndex" Qty="1">MSComctlLib.ColumnHeader property lstResults_ColumnHeader_4_.SubItemIndex was not upgraded.</Issue>
+      <Issue Type="Design" Number="2064" ObjectName="cmbManufacturer" ObjectType="MSWLess.WLCombo" PME="ListCount" Qty="1">MSWLess.WLCombo property cmbManufacturer.ListCount was not upgraded.</Issue>
+    </Section>
+    <Section Name="ShowResults">
+      <Issue Type="Runtime" Number="1049" ObjectName="Information" ObjectType="Boolean" PME="IsNull" Qty="1">Use of Null/IsNull() detected.</Issue>
+    </Section>
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+    <Section Name="LoadParents">
+      <Issue Type="Runtime" Number="1049" ObjectName="Information" ObjectType="Boolean" PME="IsNull" Qty="1">Use of Null/IsNull() detected.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmViewBrands.frm" NewPath="C:\A1\_work\out\Upgraded\frmViewBrands.cs" FileType="Form" Upgraded="True">
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+    <Section Name="gridResults_DblClick">
+      <Issue Type="Runtime" Number="1049" ObjectName="Information" ObjectType="Boolean" PME="IsNull" Qty="1">Use of Null/IsNull() detected.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmViewStaff.frm" NewPath="C:\A1\_work\out\Upgraded\frmViewStaff.cs" FileType="Form" Upgraded="True">
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmViewReceipts.frm" NewPath="C:\A1\_work\out\Upgraded\frmViewReceipts.cs" FileType="Form" Upgraded="True">
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+    <Section Name="gridResults_DblClick">
+      <Issue Type="Runtime" Number="6021" ObjectName="chk3PersonInsurance" ObjectType="MSWLess.WLCheck" PME="Value" Qty="1">Casting 'Variant' to Enum may cause different behaviour.</Issue>
+      <Issue Type="Runtime" Number="6021" ObjectName="chkVehicleInsurance" ObjectType="MSWLess.WLCheck" PME="Value" Qty="1">Casting 'Variant' to Enum may cause different behaviour.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmViewVehicles.frm" NewPath="C:\A1\_work\out\Upgraded\frmViewVehicles.cs" FileType="Form" Upgraded="True">
+    <Section Name="Form_Load">
+      <Issue Type="Runtime" Number="2080" ObjectType="Form" PME="Load" Qty="1">Form_Load event was upgraded to Form_Load method and has a new behavior.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmDetailedInformation.frm" NewPath="C:\A1\_work\out\Upgraded\frmDetailedInformation.cs" FileType="Form" Upgraded="True">
+    <Section Name="(Layout)">
+      <Issue Type="Design" Number="2064" ObjectName="lstResults" ObjectType="MSComctlLib.ListView" PME="LabelWrap" Qty="1">MSComctlLib.ListView property lstResults.LabelWrap was not upgraded.</Issue>
+    </Section>
+  </File>
+  <File OldPath="C:\A1\_work\r1\a\SrcCode\src\WFNet\Source\SCM\VB6\frmChangeStock.frm" NewPath="C:\A1\_work\out\Upgraded\frmChangeStock.cs" FileType="Form" Upgraded="True" />
+  <Issue Type="Global Warning" Number="1070" Qty="1">Member access from a dynamic/late binding object will be resolved using the ReflectionHelper</Issue>
+</UpgradeLog>
+

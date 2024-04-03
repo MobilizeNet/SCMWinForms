@@ -104,9 +104,9 @@ namespace StarCarsManagement
 				if (Convert.ToDouble(modMain.rs["Role_ID"]) == 4)
 				{
 					result = false;
-					//UPGRADE_WARNING: (6021) Casting 'VBA.VbVarType' to Enum may cause different behaviour. More Information: https://docs.mobilize.net/vbuc/ewis#6021
-					//UPGRADE_ISSUE: (1046) MsgBox Parameter 'context' is not supported, and was removed. More Information: https://docs.mobilize.net/vbuc/ewis#1046
-					//UPGRADE_ISSUE: (1046) MsgBox Parameter 'helpfile' is not supported, and was removed. More Information: https://docs.mobilize.net/vbuc/ewis#1046
+					//UPGRADE_WARNING: (6021) Casting 'VBA.VbVarType' to Enum may cause different behaviour. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-6021
+					//UPGRADE_ISSUE: (1046) MsgBox Parameter 'context' is not supported, and was removed. More Information: https://docs.mobilize.net/vbuc/ewis/issues#id-1046
+					//UPGRADE_ISSUE: (1046) MsgBox Parameter 'helpfile' is not supported, and was removed. More Information: https://docs.mobilize.net/vbuc/ewis/issues#id-1046
 					Interaction.MsgBox("The user can not access the application anymore.", (MsgBoxStyle) VariantType.Error, "Error");
 					return result;
 				}

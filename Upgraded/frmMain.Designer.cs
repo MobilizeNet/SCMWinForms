@@ -323,6 +323,7 @@ namespace StarCarsManagement
 			this.lblRole.Font = new System.Drawing.Font("Consolas", 27.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblRole.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblRole.Location = new System.Drawing.Point(72, 224);
+			this.lblRole.MinimumSize = new System.Drawing.Size(521, 105);
 			this.lblRole.Name = "lblRole";
 			this.lblRole.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblRole.Size = new System.Drawing.Size(521, 105);
@@ -337,6 +338,7 @@ namespace StarCarsManagement
 			this.lblUser.Font = new System.Drawing.Font("Consolas", 27.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
 			this.lblUser.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.lblUser.Location = new System.Drawing.Point(72, 112);
+			this.lblUser.MinimumSize = new System.Drawing.Size(521, 105);
 			this.lblUser.Name = "lblUser";
 			this.lblUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.lblUser.Size = new System.Drawing.Size(521, 105);
@@ -367,10 +369,8 @@ namespace StarCarsManagement
 			this.Closed += new System.EventHandler(this.Form_Closed);
 			this.ResumeLayout(false);
 		}
-		void ReLoadForm(bool addEvents)
-		{
-			InitializeHelp();
-		}
+		void ReLoadForm(bool addEvents) => InitializeHelp();
+
 		#endregion
 	}
 }

@@ -59,7 +59,8 @@ namespace StarCarsManagement
 					UserDNI = GetUserDNI(ref IsFullNameDuplicated);
 					if (IsFullNameDuplicated)
 					{
-						MessageBox.Show($"There are more than 1 user with this name.{Environment.NewLine}Please use the filters to select the right user", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+						MessageBox.Show($"There are more than 1 user with this name.{Environment.NewLine}" +
+						                $"Please use the filters to select the right user", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
 						return;
 					}
 					else
@@ -158,7 +159,7 @@ namespace StarCarsManagement
 			}
 		}
 
-		private void chkUseAllFilters_Click(Object eventSender, EventArgs eventArgs)
+		private void chkUseAllFilters_CheckStateChanged(Object eventSender, EventArgs eventArgs)
 		{
 			LoadLastNames();
 			LoadRoles();
@@ -203,7 +204,7 @@ namespace StarCarsManagement
 			lstResults.Items.Clear();
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			LoadFullNames();
@@ -227,12 +228,12 @@ namespace StarCarsManagement
 
 		public void LoadFullNames()
 		{
-			string FullName = "";
+			_ = "";
 			modMain.ExecuteSQL("Select * from Staff where Available = True order by Staff_LastName asc");
 			cmbFullName.Clear();
 			while (!modMain.rs.EOF)
 			{
-				FullName = $"{Convert.ToString(modMain.rs["Staff_Name"])} {Convert.ToString(modMain.rs["Staff_LastName"])}";
+				string FullName = $"{Convert.ToString(modMain.rs["Staff_Name"])} {Convert.ToString(modMain.rs["Staff_LastName"])}";
 				cmbFullName.AddItem(FullName);
 				modMain.rs.MoveNext();
 			}

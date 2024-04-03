@@ -158,10 +158,8 @@ namespace StarCarsManagement
 			return Convert.ToInt32(modMain.rs2["ID"]);
 		}
 
-		private void btnReset_Click(Object eventSender, EventArgs eventArgs)
-		{
-			ClearForm();
-		}
+		private void btnReset_Click(Object eventSender, EventArgs eventArgs) => ClearForm();
+
 
 		public void ClearForm()
 		{
@@ -177,12 +175,10 @@ namespace StarCarsManagement
 			txtPassword.Text = "";
 		}
 
-		public bool IsInformationValid()
-		{
-			return txtName.Text != "" && txtLastName.Text != "" && txtDNI.Text != "" && txtPhoneNumber.Text != "" && txtUsername.Text != "" && txtPassword.Text != "" && cmbRole.SelectedIndex != -1;
-		}
+		public bool IsInformationValid() => txtName.Text != "" && txtLastName.Text != "" && txtDNI.Text != "" && txtPhoneNumber.Text != "" && txtUsername.Text != "" && txtPassword.Text != "" && cmbRole.SelectedIndex != -1;
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			dtDateBirth.SetValue(DateTime.Today);
@@ -248,10 +244,8 @@ namespace StarCarsManagement
 			}
 		}
 
-		public void txtDNI_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			txtDNI.Text = StringsHelper.Format(txtDNI.Text, "#-####-####");
-		}
+		public void txtDNI_Leave(Object eventSender, EventArgs eventArgs) => txtDNI.Text = StringsHelper.Format(txtDNI.Text, "#-####-####");
+
 
 		private void txtPhoneNumber_Enter(Object eventSender, EventArgs eventArgs)
 		{
@@ -281,10 +275,8 @@ namespace StarCarsManagement
 			}
 		}
 
-		public void txtPhoneNumber_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			txtPhoneNumber.Text = StringsHelper.Format(txtPhoneNumber.Text, "####-####");
-		}
+		public void txtPhoneNumber_Leave(Object eventSender, EventArgs eventArgs) => txtPhoneNumber.Text = StringsHelper.Format(txtPhoneNumber.Text, "####-####");
+
 		private void Form_Closed(Object eventSender, EventArgs eventArgs)
 		{
 		}

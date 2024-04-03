@@ -17,12 +17,12 @@ namespace StarCarsManagement
 		internal static void OpenConnection()
 		{
 			conn = UpgradeHelpers.DB.AdoFactoryManager.GetFactory().CreateConnection();
-			//UPGRADE_TODO: (7010) The connection string must be verified to fullfill the .NET data provider connection string requirements. More Information: https://docs.mobilize.net/vbuc/ewis#7010
+			//UPGRADE_TODO: (7010) The connection string must be verified to fullfill the .NET data provider connection string requirements. More Information: https://docs.mobilize.net/vbuc/ewis/todos#id-7010
 			conn.ConnectionString = connString;
 			conn.Open();
 		}
 
-		//UPGRADE_WARNING: (1047) Application will terminate when Sub Main() finishes. More Information: https://docs.mobilize.net/vbuc/ewis#1047
+		//UPGRADE_WARNING: (1047) Application will terminate when Sub Main() finishes. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-1047
 		[STAThread]
 		public static void Main()
 		{

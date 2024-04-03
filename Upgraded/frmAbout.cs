@@ -70,33 +70,30 @@ namespace StarCarsManagement
 		const string gREGKEYSYSINFO = "SOFTWARE\\Microsoft\\Shared Tools\\MSINFO";
 		const string gREGVALSYSINFO = "PATH";
 
-		//UPGRADE_NOTE: (2041) The following line was commented. More Information: https://docs.mobilize.net/vbuc/ewis#2041
+		//UPGRADE_NOTE: (2041) The following line was commented. More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-2041
 		//[DllImport("advapi32.dll", EntryPoint = "RegOpenKeyExA", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
 		//extern public static int RegOpenKeyEx(int hKey, [MarshalAs(UnmanagedType.VBByRefStr)] ref string lpSubKey, int ulOptions, int samDesired, ref int phkResult);
-		//UPGRADE_NOTE: (2041) The following line was commented. More Information: https://docs.mobilize.net/vbuc/ewis#2041
+		//UPGRADE_NOTE: (2041) The following line was commented. More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-2041
 		//[DllImport("advapi32.dll", EntryPoint = "RegQueryValueExA", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
 		//extern public static int RegQueryValueEx(int hKey, [MarshalAs(UnmanagedType.VBByRefStr)] ref string lpValueName, int lpReserved, ref int lpType, [MarshalAs(UnmanagedType.VBByRefStr)] ref string lpData, ref int lpcbData);
-		//UPGRADE_NOTE: (2041) The following line was commented. More Information: https://docs.mobilize.net/vbuc/ewis#2041
+		//UPGRADE_NOTE: (2041) The following line was commented. More Information: https://docs.mobilize.net/vbuc/ewis/notes#id-2041
 		//[DllImport("advapi32.dll", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
 		//extern public static int RegCloseKey(int hKey);
 
-		private void cmdSysInfo_Click(Object eventSender, EventArgs eventArgs)
-		{
-			StartSysInfo();
-		}
+		private void cmdSysInfo_Click(Object eventSender, EventArgs eventArgs) => StartSysInfo();
 
-		private void cmdOK_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		private void cmdOK_Click(Object eventSender, EventArgs eventArgs) => this.Close();
+
+
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			this.Text = $"About {AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly())}";
 			lblVersion.Text = $"Version {FileVersionInfo.GetVersionInfo(System.Reflection.Assembly.GetExecutingAssembly().Location).FileMajorPart.ToString()}.{FileVersionInfo.GetVersionInfo(System.Reflection.Assembly.GetExecutingAssembly().Location).FileMinorPart.ToString()}.{FileVersionInfo.GetVersionInfo(System.Reflection.Assembly.GetExecutingAssembly().Location).FilePrivatePart.ToString()}";
 			lblTitle.Text = AssemblyHelper.GetTitle(System.Reflection.Assembly.GetExecutingAssembly());
-			lblDescription.Text = $"Application used by the VBUC Team to test some controls in their .NET equivalent.{Environment.NewLine}Additionally, a double jump will be performed by the WebMap Team to test the same controls in their Web equivalent.";
+			lblDescription.Text = $"Application used by the VBUC Team to test some controls in their .NET equivalent.{Environment.NewLine}Additionally, a double jump will be performed " +
+			                      $"by the WebMap Team to test the same controls in their Web equivalent.";
 			lblDisclaimer.Text = "Copyright (C) 2022 Mobilize.Net. All rights reserved.";
 		}
 
@@ -120,7 +117,7 @@ namespace StarCarsManagement
 				else if (GetKeyValue(HKEY_LOCAL_MACHINE, ref tempRefParam3, ref tempRefParam4, ref SysInfoPath))
 				{ 
 					// Validate Existance Of Known 32 Bit File Version
-					//UPGRADE_WARNING: (2099) Return value for Dir has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2099
+					//UPGRADE_WARNING: (2099) Return value for Dir has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2099
 					if (FileSystem.Dir($"{SysInfoPath}\\MSINFO32.EXE") != "")
 					{
 						SysInfoPath = $"{SysInfoPath}\\MSINFO32.EXE";
@@ -138,7 +135,7 @@ namespace StarCarsManagement
 					throw new Exception();
 				}
 
-				//UPGRADE_TODO: (7005) parameters (if any) must be set using the Arguments property of ProcessStartInfo More Information: https://docs.mobilize.net/vbuc/ewis#7005
+				//UPGRADE_TODO: (7005) parameters (if any) must be set using the Arguments property of ProcessStartInfo More Information: https://docs.mobilize.net/vbuc/ewis/todos#id-7005
 				ProcessStartInfo startInfo = new ProcessStartInfo(SysInfoPath);
 				startInfo.WindowStyle = ProcessWindowStyle.Normal;
 				Process.Start(startInfo);
@@ -155,8 +152,8 @@ namespace StarCarsManagement
 			bool result = false;
 			int hKey = 0; // Handle To An Open Registry Key
 			int KeyValType = 0; // Data Type Of A Registry Key
-			string tmpVal = ""; // Tempory Storage For A Registry Key Value
-			int KeyValSize = 0; // Size Of Registry Key Variable
+			_ = ""; // Tempory Storage For A Registry Key Value
+			_ = 0; // Size Of Registry Key Variable
 			//------------------------------------------------------------
 			// Open RegKey Under KeyRoot {HKEY_LOCAL_MACHINE...}
 			//------------------------------------------------------------
@@ -165,8 +162,8 @@ namespace StarCarsManagement
 			if (!(rc != ERROR_SUCCESS))
 			{ // Handle Error...
 
-				tmpVal = new string((char) 0, 1024); // Allocate Variable Space
-				KeyValSize = 1024; // Mark Variable Size
+				string tmpVal = new string((char) 0, 1024); // Allocate Variable Space
+				int KeyValSize = 1024; // Mark Variable Size
 
 				//------------------------------------------------------------
 				// Retrieve Registry Key Value...
@@ -203,7 +200,7 @@ namespace StarCarsManagement
 					}
 
 					result = true; // Return Success
-					rc = SCMSupport.PInvoke.SafeNative.advapi32.RegCloseKey(hKey); // Close Registry Key
+					_ = SCMSupport.PInvoke.SafeNative.advapi32.RegCloseKey(hKey); // Close Registry Key
 					return result; // Exit
 
 				}

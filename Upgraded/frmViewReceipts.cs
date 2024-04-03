@@ -86,10 +86,8 @@ namespace StarCarsManagement
 			modMain.rs.Update();
 		}
 
-		private void btnExit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void btnExit_Click(Object eventSender, EventArgs eventArgs) => this.Close();
+
 
 		private void btnShowAll_Click(Object eventSender, EventArgs eventArgs)
 		{
@@ -113,7 +111,7 @@ namespace StarCarsManagement
 			}
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			query = "Select * from Receipt Order by Receipt_ID Asc";
@@ -204,12 +202,12 @@ namespace StarCarsManagement
 
 		public void AutoFitRows()
 		{
-			int Twips = 0;
+			_ = 0;
 
 			int tempForEndVar = gridResults.ColumnsCount - 1;
 			for (int i = 0; i <= tempForEndVar; i++)
 			{
-				Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
+				int Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
 				gridResults.SetColumnWidth(i, (((double) (Twips * this.gridResults.Font.SizeInPoints)) / ((double) this.Font.SizeInPoints) + 530) / 15); //* Screen.TwipsPerPixelX
 			}
 		}
@@ -256,9 +254,9 @@ namespace StarCarsManagement
 			string SellerDNI = GetSellerDNI(Convert.ToInt32(modMain.rs2["Seller_ID"]));
 			int SellerIndex = GetSellerIndex(SellerDNI, f);
 			f.cmbSeller.Text = f.cmbSeller.GetListItem(SellerIndex);
-			//UPGRADE_WARNING: (6021) Casting 'Variant' to Enum may cause different behaviour. More Information: https://docs.mobilize.net/vbuc/ewis#6021
+			//UPGRADE_WARNING: (6021) Casting 'Variant' to Enum may cause different behaviour. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-6021
 			f.chk3PersonInsurance.CheckState = (CheckState) Convert.ToInt32(modMain.rs2["Third_Person_Insurance"]);
-			//UPGRADE_WARNING: (6021) Casting 'Variant' to Enum may cause different behaviour. More Information: https://docs.mobilize.net/vbuc/ewis#6021
+			//UPGRADE_WARNING: (6021) Casting 'Variant' to Enum may cause different behaviour. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-6021
 			f.chkVehicleInsurance.CheckState = (CheckState) Convert.ToInt32(modMain.rs2["Vehicle_Insurance"]);
 			f.txtSubTotal.Text = Convert.ToString(modMain.rs2["Subtotal"]);
 			f.txtTotal.Text = Convert.ToString(modMain.rs2["Total"]);
@@ -325,10 +323,8 @@ namespace StarCarsManagement
 			return value;
 		}
 
-		private void btnEdit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			gridResults_DoubleClick(gridResults, new EventArgs());
-		}
+		private void btnEdit_Click(Object eventSender, EventArgs eventArgs) => gridResults_DoubleClick(gridResults, new EventArgs());
+
 		private void Form_Closed(Object eventSender, EventArgs eventArgs)
 		{
 		}

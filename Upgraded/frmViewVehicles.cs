@@ -84,12 +84,10 @@ namespace StarCarsManagement
 			gridResults_SelectionChanged(gridResults, new EventArgs());
 		}
 
-		private void btnExit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			this.Close();
-		}
+		private void btnExit_Click(Object eventSender, EventArgs eventArgs) => this.Close();
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			query = "Select * from Vehicle where Available = True Order By Vehicle_Name Asc";
@@ -197,20 +195,18 @@ namespace StarCarsManagement
 
 		public void AutoFitRows()
 		{
-			int Twips = 0;
+			_ = 0;
 
 			int tempForEndVar = gridResults.ColumnsCount - 1;
 			for (int i = 0; i <= tempForEndVar; i++)
 			{
-				Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
+				int Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
 				gridResults.SetColumnWidth(i, (((double) (Twips * this.gridResults.Font.SizeInPoints)) / ((double) this.Font.SizeInPoints) + 530) / 15); //* Screen.TwipsPerPixelX
 			}
 		}
 
-		private void btnEdit_Click(Object eventSender, EventArgs eventArgs)
-		{
-			gridResults_DoubleClick(gridResults, new EventArgs());
-		}
+		private void btnEdit_Click(Object eventSender, EventArgs eventArgs) => gridResults_DoubleClick(gridResults, new EventArgs());
+
 
 		public string GetManufacturerName(int ManufacturerID)
 		{
@@ -331,7 +327,7 @@ namespace StarCarsManagement
 			}
 			string ManufacturerName = "", ClassName = "";
 			int ClassIndex = 0, ManufacturerIndex = 0, BodyStyleIndex = 0;
-			string Transmission = "";
+			_ = "";
 			frmCreateNewVehicle f = null;
 			if (btnEdit.Text == "&Edit")
 			{
@@ -346,7 +342,7 @@ namespace StarCarsManagement
 				f.txtQuantity.Text = Convert.ToString(modMain.rs2["Quantity"]);
 				f.txtQuantity.Enabled = false;
 				f.txtPrice.Text = Convert.ToString(modMain.rs2["Price"]);
-				Transmission = Convert.ToString(modMain.rs2["Transmission"]);
+				string Transmission = Convert.ToString(modMain.rs2["Transmission"]);
 				if (Transmission == "Manual")
 				{
 					f.optTransmission[1].Checked = true;
@@ -385,21 +381,19 @@ namespace StarCarsManagement
 			SelectLastRow();
 		}
 
-		private void gridResults_Click(Object eventSender, EventArgs eventArgs)
-		{
-			gridResults_SelectionChanged(gridResults, new EventArgs());
-		}
+		private void gridResults_Click(Object eventSender, EventArgs eventArgs) => gridResults_SelectionChanged(gridResults, new EventArgs());
+
 
 		private void gridResults_SelectionChanged(Object eventSender, EventArgs eventArgs)
 		{
 			string CurrentVehicle = Convert.ToString(gridResults[gridResults.CurrentRowIndex, 0].Value);
-			string SelectedModel = "";
+			_ = "";
 			if (gridResults.CurrentRowIndex > 0 && CurrentVehicle != "" && CurrentVehicle != "Model Name")
 			{
-				bool currentBool = false;
-				SelectedModel = CurrentVehicle;
+				_ = false;
+				string SelectedModel = CurrentVehicle;
 				modMain.ExecuteSQL3($"Select * from Vehicle where Vehicle_Name = '{SelectedModel}'");
-				currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
+				bool currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
 				if (!currentBool)
 				{
 					btnEdit.Text = "&Restore model";

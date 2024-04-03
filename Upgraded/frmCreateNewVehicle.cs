@@ -167,15 +167,11 @@ namespace StarCarsManagement
 			return Convert.ToInt32(modMain.rs2["ID"]);
 		}
 
-		public bool IsInformationValid()
-		{
-			return txtName.Text != "" && cmbManufacturer.SelectedIndex != -1 && txtQuantity.Text != "" && txtPrice.Text != "" && txtYear.Text != "" && (optTransmission[0].Checked || optTransmission[1].Checked) && cmbClass.SelectedIndex != -1 && cmbBodyStyle.SelectedIndex != -1 && txtLength.Text != "" && txtWidth.Text != "";
-		}
+		public bool IsInformationValid() => txtName.Text != "" && cmbManufacturer.SelectedIndex != -1 && txtQuantity.Text != "" && txtPrice.Text != "" && txtYear.Text != "" && (optTransmission[0].Checked || optTransmission[1].Checked) && cmbClass.SelectedIndex != -1 && cmbBodyStyle.SelectedIndex != -1 && txtLength.Text != "" && txtWidth.Text != "";
 
-		private void btnReset_Click(Object eventSender, EventArgs eventArgs)
-		{
-			ClearForm();
-		}
+
+		private void btnReset_Click(Object eventSender, EventArgs eventArgs) => ClearForm();
+
 
 		public void ClearForm()
 		{
@@ -196,7 +192,7 @@ namespace StarCarsManagement
 			txtWidth.Text = "";
 		}
 
-		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis#2080
+		//UPGRADE_WARNING: (2080) Form_Load event was upgraded to Form_Load method and has a new behavior. More Information: https://docs.mobilize.net/vbuc/ewis/warnings#id-2080
 		private void Form_Load()
 		{
 			LoadManufacturers();
@@ -293,15 +289,11 @@ namespace StarCarsManagement
 			}
 		}
 
-		public void txtPrice_Leave(Object eventSender, EventArgs eventArgs)
-		{
-			txtPrice.Text = StringsHelper.Format(txtPrice.Text, "$#,###");
-		}
+		public void txtPrice_Leave(Object eventSender, EventArgs eventArgs) => txtPrice.Text = StringsHelper.Format(txtPrice.Text, "$#,###");
 
-		private void txtQuantity_Click(Object eventSender, EventArgs eventArgs)
-		{
-			txtQuantity.MaxLength = 6;
-		}
+
+		private void txtQuantity_Click(Object eventSender, EventArgs eventArgs) => txtQuantity.MaxLength = 6;
+
 
 		private void txtQuantity_Enter(Object eventSender, EventArgs eventArgs)
 		{
