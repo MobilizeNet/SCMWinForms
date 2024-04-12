@@ -136,7 +136,7 @@ namespace StarCarsManagement
 					else if (j == 5)
 					{ 
 						value = Convert.ToString(modMain.rs[j]);
-						value = value.Substring(4);
+						value = value.Substring(Math.Min(4, value.Length));
 						gridResults.SetColumnWidth(j - 1, 120);
 					}
 					else if (j == 6)

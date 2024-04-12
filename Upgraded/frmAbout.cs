@@ -173,7 +173,7 @@ namespace StarCarsManagement
 				if (!(rc != ERROR_SUCCESS))
 				{ // Handle Errors
 
-					if (Strings.Asc(tmpVal.Substring(KeyValSize - 1, Math.Min(1, tmpVal.Length - (KeyValSize - 1)))[0]) == 0)
+					if (Strings.Asc(tmpVal.Substring(Math.Min(KeyValSize - 1, tmpVal.Length), Math.Min(1, Math.Max(0, tmpVal.Length - (KeyValSize - 1))))[0]) == 0)
 					{ // Win95 Adds Null Terminated String...
 						tmpVal = tmpVal.Substring(0, Math.Min(KeyValSize - 1, tmpVal.Length)); // Null Found, Extract From String
 					}
@@ -193,7 +193,7 @@ namespace StarCarsManagement
 						case REG_DWORD :  // Double Word Registry Key Data Type 
 							for (int i = Strings.Len(tmpVal); i >= 1; i--)
 							{ // Convert Each Bit
-								KeyVal = $"{KeyVal}{Strings.Asc(tmpVal.Substring(i - 1, Math.Min(1, tmpVal.Length - (i - 1)))[0]).ToString("X")}"; // Build Value Char. By Char.
+								KeyVal = $"{KeyVal}{Strings.Asc(tmpVal.Substring(Math.Min(i - 1, tmpVal.Length), Math.Min(1, Math.Max(0, tmpVal.Length - (i - 1))))[0]).ToString("X")}"; // Build Value Char. By Char.
 							} 
 							KeyVal = ($"&h{KeyVal}").ToString();  // Convert Double Word To String 
 							break;
