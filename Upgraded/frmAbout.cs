@@ -102,7 +102,7 @@ namespace StarCarsManagement
 			try
 			{
 
-				_ = 0;
+				int rc = 0;
 				string SysInfoPath = "";
 
 				// Try To Get System Info Program Path\Name From Registry...
@@ -152,8 +152,8 @@ namespace StarCarsManagement
 			bool result = false;
 			int hKey = 0; // Handle To An Open Registry Key
 			int KeyValType = 0; // Data Type Of A Registry Key
-			_ = ""; // Tempory Storage For A Registry Key Value
-			_ = 0; // Size Of Registry Key Variable
+			string tmpVal = ""; // Tempory Storage For A Registry Key Value
+			int KeyValSize = 0; // Size Of Registry Key Variable
 			//------------------------------------------------------------
 			// Open RegKey Under KeyRoot {HKEY_LOCAL_MACHINE...}
 			//------------------------------------------------------------
@@ -162,8 +162,8 @@ namespace StarCarsManagement
 			if (!(rc != ERROR_SUCCESS))
 			{ // Handle Error...
 
-				string tmpVal = new string((char) 0, 1024); // Allocate Variable Space
-				int KeyValSize = 1024; // Mark Variable Size
+				tmpVal = new string((char) 0, 1024); // Allocate Variable Space
+				KeyValSize = 1024; // Mark Variable Size
 
 				//------------------------------------------------------------
 				// Retrieve Registry Key Value...
@@ -200,14 +200,14 @@ namespace StarCarsManagement
 					}
 
 					result = true; // Return Success
-					_ = SCMSupport.PInvoke.SafeNative.advapi32.RegCloseKey(hKey); // Close Registry Key
+					rc = SCMSupport.PInvoke.SafeNative.advapi32.RegCloseKey(hKey); // Close Registry Key
 					return result; // Exit
 
 				}
 			}
 			// Cleanup After An Error Has Occured...
 			KeyVal = ""; // Set Return Val To Empty String // Return Failure
-			_ = SCMSupport.PInvoke.SafeNative.advapi32.RegCloseKey(hKey); // Close Registry Key
+			rc = SCMSupport.PInvoke.SafeNative.advapi32.RegCloseKey(hKey); // Close Registry Key
 			return result;
 		}
 		private void Form_Closed(Object eventSender, EventArgs eventArgs)

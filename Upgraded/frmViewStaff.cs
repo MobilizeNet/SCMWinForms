@@ -153,12 +153,12 @@ namespace StarCarsManagement
 
 		public void AutoFitRows()
 		{
-			_ = 0;
+			int Twips = 0;
 
 			int tempForEndVar = gridResults.ColumnsCount - 1;
 			for (int i = 0; i <= tempForEndVar; i++)
 			{
-				int Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
+				Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
 				gridResults.SetColumnWidth(i, (((double) (Twips * this.gridResults.Font.SizeInPoints)) / ((double) this.Font.SizeInPoints) + 530) / 15); //* Screen.TwipsPerPixelX
 			}
 		}
@@ -208,8 +208,8 @@ namespace StarCarsManagement
 				MessageBox.Show("Please select a valid item", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
-			_ = "";
-			_ = 0;
+			string RoleName = "";
+			int RoleIndex = 0;
 			frmCreateNewStaff f = null;
 			if (btnEdit.Text == "&Edit")
 			{
@@ -219,8 +219,8 @@ namespace StarCarsManagement
 				f.txtDNI.Text = Convert.ToString(modMain.rs2["DNI"]);
 				f.txtPhoneNumber.Text = Convert.ToString(modMain.rs2["Phone_Number"]);
 				f.dtDateBirth.SetValue(modMain.rs2["DateBirth"]);
-				string RoleName = GetRoleName(Convert.ToInt32(modMain.rs2["Role_ID"]));
-				int RoleIndex = GetRoleIndex(RoleName, f);
+				RoleName = GetRoleName(Convert.ToInt32(modMain.rs2["Role_ID"]));
+				RoleIndex = GetRoleIndex(RoleName, f);
 				f.cmbRole.Text = f.cmbRole.GetListItem(RoleIndex);
 				f.txtUsername.Text = Convert.ToString(modMain.rs2["UserName"]);
 				f.PreviousDNI = Convert.ToString(modMain.rs2["DNI"]);
@@ -279,17 +279,17 @@ namespace StarCarsManagement
 		private void gridResults_SelectionChanged(Object eventSender, EventArgs eventArgs)
 		{
 			string CurrentEmployee = Convert.ToString(gridResults[gridResults.CurrentRowIndex, 2].Value);
-			_ = "";
+			string SelectedUser = "";
 			if (gridResults.CurrentRowIndex > 0 && CurrentEmployee != "" && CurrentEmployee != "Identification Number")
 			{
-				_ = false;
-				string SelectedUser = StringsHelper.Replace(CurrentEmployee, "-", "", 1, -1, CompareMethod.Binary);
+				bool currentBool = false;
+				SelectedUser = StringsHelper.Replace(CurrentEmployee, "-", "", 1, -1, CompareMethod.Binary);
 				if (SelectedUser == "")
 				{
 					return;
 				}
 				modMain.ExecuteSQL3($"Select * from Staff where DNI = '{SelectedUser}'");
-				bool currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
+				currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
 				if (!currentBool)
 				{
 					btnEdit.Text = "&Restore user";

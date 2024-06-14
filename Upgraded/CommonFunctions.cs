@@ -94,7 +94,7 @@ namespace StarCarsManagement
 
 		internal static string ReadFile(string strFilename)
 		{
-			_ = "";
+			string result = "";
 			string TextLine = "";
 			int FileHandle = 1;
 			FileSystem.FileOpen(FileHandle, strFilename, OpenMode.Input, OpenAccess.Default, OpenShare.Default, -1);
@@ -104,7 +104,7 @@ namespace StarCarsManagement
 			{ // Loop until end of file
 				TextLine = FileSystem.LineInput(FileHandle); // Read line into variable
 			};
-			string result = TextLine;
+			result = TextLine;
 			FileSystem.FileClose(FileHandle);
 			return result;
 		}

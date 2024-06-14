@@ -195,12 +195,12 @@ namespace StarCarsManagement
 
 		public void AutoFitRows()
 		{
-			_ = 0;
+			int Twips = 0;
 
 			int tempForEndVar = gridResults.ColumnsCount - 1;
 			for (int i = 0; i <= tempForEndVar; i++)
 			{
-				int Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
+				Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
 				gridResults.SetColumnWidth(i, (((double) (Twips * this.gridResults.Font.SizeInPoints)) / ((double) this.Font.SizeInPoints) + 530) / 15); //* Screen.TwipsPerPixelX
 			}
 		}
@@ -327,7 +327,7 @@ namespace StarCarsManagement
 			}
 			string ManufacturerName = "", ClassName = "";
 			int ClassIndex = 0, ManufacturerIndex = 0, BodyStyleIndex = 0;
-			_ = "";
+			string Transmission = "";
 			frmCreateNewVehicle f = null;
 			if (btnEdit.Text == "&Edit")
 			{
@@ -342,7 +342,7 @@ namespace StarCarsManagement
 				f.txtQuantity.Text = Convert.ToString(modMain.rs2["Quantity"]);
 				f.txtQuantity.Enabled = false;
 				f.txtPrice.Text = Convert.ToString(modMain.rs2["Price"]);
-				string Transmission = Convert.ToString(modMain.rs2["Transmission"]);
+				Transmission = Convert.ToString(modMain.rs2["Transmission"]);
 				if (Transmission == "Manual")
 				{
 					f.optTransmission[1].Checked = true;
@@ -387,13 +387,13 @@ namespace StarCarsManagement
 		private void gridResults_SelectionChanged(Object eventSender, EventArgs eventArgs)
 		{
 			string CurrentVehicle = Convert.ToString(gridResults[gridResults.CurrentRowIndex, 0].Value);
-			_ = "";
+			string SelectedModel = "";
 			if (gridResults.CurrentRowIndex > 0 && CurrentVehicle != "" && CurrentVehicle != "Model Name")
 			{
-				_ = false;
-				string SelectedModel = CurrentVehicle;
+				bool currentBool = false;
+				SelectedModel = CurrentVehicle;
 				modMain.ExecuteSQL3($"Select * from Vehicle where Vehicle_Name = '{SelectedModel}'");
-				bool currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
+				currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
 				if (!currentBool)
 				{
 					btnEdit.Text = "&Restore model";

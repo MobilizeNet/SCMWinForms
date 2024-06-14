@@ -202,12 +202,12 @@ namespace StarCarsManagement
 
 		public void AutoFitRows()
 		{
-			_ = 0;
+			int Twips = 0;
 
 			int tempForEndVar = gridResults.ColumnsCount - 1;
 			for (int i = 0; i <= tempForEndVar; i++)
 			{
-				int Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
+				Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
 				gridResults.SetColumnWidth(i, (((double) (Twips * this.gridResults.Font.SizeInPoints)) / ((double) this.Font.SizeInPoints) + 530) / 15); //* Screen.TwipsPerPixelX
 			}
 		}
@@ -239,7 +239,7 @@ namespace StarCarsManagement
 				MessageBox.Show("Please select a valid item", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
-			_ = "";
+			string SellerName = "";
 			frmCreateNewReceipt f = frmCreateNewReceipt.CreateInstance();
 			f.txtID.Text = Convert.ToString(modMain.rs2["Receipt_ID"]);
 			f.txtName.Text = Convert.ToString(modMain.rs2["Client_Name"]);

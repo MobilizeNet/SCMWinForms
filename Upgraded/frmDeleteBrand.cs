@@ -111,22 +111,22 @@ namespace StarCarsManagement
 
 		public bool DoesBrandHasChildren(string value)
 		{
-			_ = false;
+			bool result = false;
 			int ParentID = GetManufacturerID(value);
 			modMain.ExecuteSQL2($"Select * from Brand where Parent_Company = {ParentID.ToString()}");
-			bool result = !modMain.rs2.EOF;
+			result = !modMain.rs2.EOF;
 			return result;
 		}
 
 		public bool AreThereVehiclesInStock(string value)
 		{
-			_ = 0;
+			int VehicleQuantity = 0;
 			bool result = false;
 			int BrandID = GetManufacturerID(value);
 			modMain.ExecuteSQL2($"Select * from Vehicle where Manufacturer_ID = {BrandID.ToString()}");
 			while (!modMain.rs2.EOF)
 			{
-				int VehicleQuantity = Convert.ToInt32(modMain.rs2["Quantity"]);
+				VehicleQuantity = Convert.ToInt32(modMain.rs2["Quantity"]);
 				if (VehicleQuantity > 0)
 				{
 					result = true;
@@ -343,7 +343,7 @@ namespace StarCarsManagement
 		public void LoadHeadquarters(string ParentCompany = "", string AreaServed = "")
 		{
 			string query = "";
-			_ = "";
+			string value = "";
 			CreateQuery(ref query, "", ParentCompany, AreaServed);
 
 			modMain.ExecuteSQL(query);
@@ -351,7 +351,7 @@ namespace StarCarsManagement
 			cmbHeadquarter.Items.Clear();
 			while (!modMain.rs.EOF)
 			{
-				string value = Convert.ToString(modMain.rs["Headquarter"]);
+				value = Convert.ToString(modMain.rs["Headquarter"]);
 				if (!CommonFunctions.ExistsInCombo(value, cmbHeadquarter))
 				{
 					cmbHeadquarter.AddItem(value);
@@ -362,7 +362,7 @@ namespace StarCarsManagement
 
 		public void LoadAreasServed(string HeadquarterLocation = "", string ParentCompany = "")
 		{
-			_ = "";
+			string value = "";
 			string query = "";
 			CreateQuery(ref query, HeadquarterLocation, ParentCompany);
 
@@ -371,7 +371,7 @@ namespace StarCarsManagement
 			cmbAreaServed.Clear();
 			while (!modMain.rs.EOF)
 			{
-				string value = Convert.ToString(modMain.rs["Area_Served"]);
+				value = Convert.ToString(modMain.rs["Area_Served"]);
 				if (!CommonFunctions.ExistsInCombo(value, null, cmbAreaServed))
 				{
 					cmbAreaServed.AddItem(value);

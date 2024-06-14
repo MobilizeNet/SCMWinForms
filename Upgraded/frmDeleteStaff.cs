@@ -228,12 +228,12 @@ namespace StarCarsManagement
 
 		public void LoadFullNames()
 		{
-			_ = "";
+			string FullName = "";
 			modMain.ExecuteSQL("Select * from Staff where Available = True order by Staff_LastName asc");
 			cmbFullName.Clear();
 			while (!modMain.rs.EOF)
 			{
-				string FullName = $"{Convert.ToString(modMain.rs["Staff_Name"])} {Convert.ToString(modMain.rs["Staff_LastName"])}";
+				FullName = $"{Convert.ToString(modMain.rs["Staff_Name"])} {Convert.ToString(modMain.rs["Staff_LastName"])}";
 				cmbFullName.AddItem(FullName);
 				modMain.rs.MoveNext();
 			}

@@ -103,11 +103,11 @@ namespace StarCarsManagement
 		public bool AreThereVehiclesInStock(string Model)
 		{
 			bool result = false;
-			_ = 0;
+			int VehicleQuantity = 0;
 			modMain.ExecuteSQL2($"Select * from Vehicle where Vehicle_Name = '{Model}'");
 			while (!modMain.rs2.EOF)
 			{
-				int VehicleQuantity = Convert.ToInt32(modMain.rs2["Quantity"]);
+				VehicleQuantity = Convert.ToInt32(modMain.rs2["Quantity"]);
 				if (VehicleQuantity > 0)
 				{
 					result = true;
@@ -443,7 +443,7 @@ namespace StarCarsManagement
 		public void LoadManufacturers(string class_Renamed, string bodyStyle, string Transmission, ref string Price, string pYear)
 		{
 			string query = "";
-			_ = "";
+			string ManufacturerName = "";
 
 			CreateQuery(ref query, "", class_Renamed, bodyStyle, Transmission, ref Price, pYear);
 
@@ -452,7 +452,7 @@ namespace StarCarsManagement
 			cmbManufacturer.Items.Clear();
 			while (!modMain.rs.EOF)
 			{
-				string ManufacturerName = GetManufacturerName(Convert.ToInt32(modMain.rs["Manufacturer_ID"]));
+				ManufacturerName = GetManufacturerName(Convert.ToInt32(modMain.rs["Manufacturer_ID"]));
 				if (!CommonFunctions.ExistsInCombo(ManufacturerName, cmbManufacturer))
 				{
 					cmbManufacturer.AddItem(ManufacturerName);

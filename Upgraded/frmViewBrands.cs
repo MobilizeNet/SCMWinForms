@@ -187,12 +187,12 @@ namespace StarCarsManagement
 
 		public void AutoFitRows()
 		{
-			_ = 0;
+			int Twips = 0;
 
 			int tempForEndVar = gridResults.ColumnsCount - 1;
 			for (int i = 0; i <= tempForEndVar; i++)
 			{
-				int Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
+				Twips = Convert.ToInt32(ControlHelper.TextWidth(this, Convert.ToString(gridResults[0, i].Value)));
 				gridResults.SetColumnWidth(i, (((double) (Twips * this.gridResults.Font.SizeInPoints)) / ((double) this.Font.SizeInPoints) + 530) / 15); //* Screen.TwipsPerPixelX
 			}
 		}
@@ -213,7 +213,7 @@ namespace StarCarsManagement
 			frmCreateNewBrand f = null;
 			if (btnEdit.Text == "&Edit")
 			{
-				_ = 0;
+				int ParentIndex = 0;
 				f = frmCreateNewBrand.CreateInstance();
 				f.txtName.Text = Convert.ToString(modMain.rs2["Brand_Name"]);
 				f.txtOwner.Text = Convert.ToString(modMain.rs2["Owner"]);
@@ -225,7 +225,7 @@ namespace StarCarsManagement
 				if (!Convert.IsDBNull(modMain.rs2["Parent_Company"]) && Convert.ToDouble(modMain.rs2["Parent_Company"]) != 0)
 				{
 					ParentName = GetParentName(Convert.ToInt32(modMain.rs2["Parent_Company"]));
-					int ParentIndex = GetBrandIndex(ParentName, f);
+					ParentIndex = GetBrandIndex(ParentName, f);
 					f.cmbParent.Text = f.cmbParent.GetListItem(ParentIndex);
 				}
 				else
@@ -313,17 +313,17 @@ namespace StarCarsManagement
 		private void gridResults_SelectionChanged(Object eventSender, EventArgs eventArgs)
 		{
 			string CurrentBrand = Convert.ToString(gridResults[gridResults.CurrentRowIndex, 0].Value);
-			_ = "";
+			string SelectedBrand = "";
 			if (gridResults.CurrentRowIndex > 0 && CurrentBrand != "" && CurrentBrand != "Brand Name")
 			{
-				_ = false;
-				string SelectedBrand = CurrentBrand;
+				bool currentBool = false;
+				SelectedBrand = CurrentBrand;
 				if (SelectedBrand == "")
 				{
 					return;
 				}
 				modMain.ExecuteSQL3($"Select * from Brand where Brand_Name = '{SelectedBrand}'");
-				bool currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
+				currentBool = Convert.ToBoolean(modMain.rs3["Available"]);
 				if (!currentBool)
 				{
 					btnEdit.Text = "&Restore brand";

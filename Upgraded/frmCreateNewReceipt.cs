@@ -61,8 +61,8 @@ namespace StarCarsManagement
 		{
 			try
 			{
-				_ = 0;
-				_ = 0;
+				int Subtotal = 0;
+				int Total = 0;
 				if (IsInformationValid() && IsQuantityAvailable())
 				{
 					if (btnCreate.Text == "&Create")
@@ -94,9 +94,9 @@ namespace StarCarsManagement
 				modMain.rs["Seller_ID"] = GetSellerID();
 				modMain.rs["Vehicle_Insurance"] = chkVehicleInsurance.CheckState;
 				modMain.rs["Third_Person_Insurance"] = chk3PersonInsurance.CheckState;
-				int Subtotal = Convert.ToInt32(Double.Parse(Double.Parse(StringsHelper.Replace(txtSubTotal.Text, "$", "", 1, -1, CompareMethod.Binary), NumberStyles.Any).ToString("N0")));
+				Subtotal = Convert.ToInt32(Double.Parse(Double.Parse(StringsHelper.Replace(txtSubTotal.Text, "$", "", 1, -1, CompareMethod.Binary), NumberStyles.Any).ToString("N0")));
 				modMain.rs["Subtotal"] = Subtotal;
-				int Total = Convert.ToInt32(Double.Parse(Double.Parse(StringsHelper.Replace(txtTotal.Text, "$", "", 1, -1, CompareMethod.Binary), NumberStyles.Any).ToString("N0")));
+				Total = Convert.ToInt32(Double.Parse(Double.Parse(StringsHelper.Replace(txtTotal.Text, "$", "", 1, -1, CompareMethod.Binary), NumberStyles.Any).ToString("N0")));
 				modMain.rs["Total"] = Total;
 				modMain.rs["Status"] = PreviousStatus;
 
@@ -392,12 +392,12 @@ namespace StarCarsManagement
 
 		public void LoadSellers()
 		{
-			_ = "";
+			string FullName = "";
 			modMain.ExecuteSQL("Select * from Staff where Role_ID = 1 or Role_ID = 3");
 			cmbSeller.Clear();
 			while (!modMain.rs.EOF)
 			{
-				string FullName = $"{Convert.ToString(modMain.rs["Staff_Name"])} {Convert.ToString(modMain.rs["Staff_LastName"])} - {Convert.ToString(modMain.rs["DNI"])}";
+				FullName = $"{Convert.ToString(modMain.rs["Staff_Name"])} {Convert.ToString(modMain.rs["Staff_LastName"])} - {Convert.ToString(modMain.rs["DNI"])}";
 				cmbSeller.AddItem(FullName);
 				modMain.rs.MoveNext();
 			}
