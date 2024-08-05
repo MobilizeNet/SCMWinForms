@@ -58,190 +58,190 @@ namespace StarCarsManagement
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAbout));
-			ToolTipMain = new System.Windows.Forms.ToolTip(components);
-			picIcon = new System.Windows.Forms.PictureBox();
-			cmdOK = new System.Windows.Forms.Button();
-			cmdSysInfo = new System.Windows.Forms.Button();
-			_Line1_1 = new System.Windows.Forms.Label();
-			lblDescription = new System.Windows.Forms.Label();
-			lblTitle = new System.Windows.Forms.Label();
-			_Line1_0 = new System.Windows.Forms.Label();
-			lblVersion = new System.Windows.Forms.Label();
-			lblDisclaimer = new System.Windows.Forms.Label();
-			SuspendLayout();
-			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
+			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
+			this.picIcon = new System.Windows.Forms.PictureBox();
+			this.cmdOK = new System.Windows.Forms.Button();
+			this.cmdSysInfo = new System.Windows.Forms.Button();
+			this._Line1_1 = new System.Windows.Forms.Label();
+			this.lblDescription = new System.Windows.Forms.Label();
+			this.lblTitle = new System.Windows.Forms.Label();
+			this._Line1_0 = new System.Windows.Forms.Label();
+			this.lblVersion = new System.Windows.Forms.Label();
+			this.lblDisclaimer = new System.Windows.Forms.Label();
+			this.SuspendLayout();
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
 			// 
 			// picIcon
 			// 
-			picIcon.AllowDrop = true;
-			picIcon.BackColor = System.Drawing.SystemColors.Control;
-			picIcon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			picIcon.CausesValidation = true;
-			picIcon.Dock = System.Windows.Forms.DockStyle.None;
-			picIcon.Enabled = true;
-			picIcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			picIcon.Image = (System.Drawing.Image) resources.GetObject("picIcon.Image");
-			picIcon.Location = new System.Drawing.Point(0, 0);
-			picIcon.Name = "picIcon";
-			picIcon.Size = new System.Drawing.Size(80, 60);
-			picIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			picIcon.TabIndex = 1;
-			picIcon.TabStop = true;
-			picIcon.Visible = true;
+			this.picIcon.AllowDrop = true;
+			this.picIcon.BackColor = System.Drawing.SystemColors.Control;
+			this.picIcon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.picIcon.CausesValidation = true;
+			this.picIcon.Dock = System.Windows.Forms.DockStyle.None;
+			this.picIcon.Enabled = true;
+			this.picIcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.picIcon.Image = (System.Drawing.Image) resources.GetObject("picIcon.Image");
+			this.picIcon.Location = new System.Drawing.Point(0, 0);
+			this.picIcon.Name = "picIcon";
+			this.picIcon.Size = new System.Drawing.Size(80, 60);
+			this.picIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.picIcon.TabIndex = 1;
+			this.picIcon.TabStop = true;
+			this.picIcon.Visible = true;
 			// 
 			// cmdOK
 			// 
-			cmdOK.AllowDrop = true;
-			cmdOK.BackColor = System.Drawing.SystemColors.Control;
-			cmdOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmdOK.ForeColor = System.Drawing.SystemColors.ControlText;
-			cmdOK.Location = new System.Drawing.Point(283, 175);
-			cmdOK.Name = "cmdOK";
-			cmdOK.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			cmdOK.Size = new System.Drawing.Size(84, 23);
-			cmdOK.TabIndex = 0;
-			cmdOK.Text = "OK";
-			cmdOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			cmdOK.UseVisualStyleBackColor = false;
-			cmdOK.Click += new System.EventHandler(cmdOK_Click);
+			this.cmdOK.AllowDrop = true;
+			this.cmdOK.BackColor = System.Drawing.SystemColors.Control;
+			this.cmdOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmdOK.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.cmdOK.Location = new System.Drawing.Point(283, 175);
+			this.cmdOK.Name = "cmdOK";
+			this.cmdOK.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.cmdOK.Size = new System.Drawing.Size(84, 23);
+			this.cmdOK.TabIndex = 0;
+			this.cmdOK.Text = "OK";
+			this.cmdOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.cmdOK.UseVisualStyleBackColor = false;
+			this.cmdOK.Click += new System.EventHandler(this.cmdOK_Click);
 			// 
 			// cmdSysInfo
 			// 
-			cmdSysInfo.AllowDrop = true;
-			cmdSysInfo.BackColor = System.Drawing.SystemColors.Control;
-			cmdSysInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmdSysInfo.ForeColor = System.Drawing.SystemColors.ControlText;
-			cmdSysInfo.Location = new System.Drawing.Point(284, 205);
-			cmdSysInfo.Name = "cmdSysInfo";
-			cmdSysInfo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			cmdSysInfo.Size = new System.Drawing.Size(83, 23);
-			cmdSysInfo.TabIndex = 2;
-			cmdSysInfo.Text = "&System Info...";
-			cmdSysInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			cmdSysInfo.UseVisualStyleBackColor = false;
-			cmdSysInfo.Click += new System.EventHandler(cmdSysInfo_Click);
+			this.cmdSysInfo.AllowDrop = true;
+			this.cmdSysInfo.BackColor = System.Drawing.SystemColors.Control;
+			this.cmdSysInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmdSysInfo.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.cmdSysInfo.Location = new System.Drawing.Point(284, 205);
+			this.cmdSysInfo.Name = "cmdSysInfo";
+			this.cmdSysInfo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.cmdSysInfo.Size = new System.Drawing.Size(83, 23);
+			this.cmdSysInfo.TabIndex = 2;
+			this.cmdSysInfo.Text = "&System Info...";
+			this.cmdSysInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.cmdSysInfo.UseVisualStyleBackColor = false;
+			this.cmdSysInfo.Click += new System.EventHandler(this.cmdSysInfo_Click);
 			// 
 			// _Line1_1
 			// 
-			_Line1_1.AllowDrop = true;
-			_Line1_1.BackColor = System.Drawing.Color.Gray;
-			_Line1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			_Line1_1.Enabled = false;
-			_Line1_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			_Line1_1.Location = new System.Drawing.Point(5, 147);
-			_Line1_1.Name = "_Line1_1";
-			_Line1_1.Size = new System.Drawing.Size(303, 1);
-			_Line1_1.Visible = true;
+			this._Line1_1.AllowDrop = true;
+			this._Line1_1.BackColor = System.Drawing.Color.Gray;
+			this._Line1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this._Line1_1.Enabled = false;
+			this._Line1_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this._Line1_1.Location = new System.Drawing.Point(5, 147);
+			this._Line1_1.Name = "_Line1_1";
+			this._Line1_1.Size = new System.Drawing.Size(303, 1);
+			this._Line1_1.Visible = true;
 			// 
 			// lblDescription
 			// 
-			lblDescription.AllowDrop = true;
-			lblDescription.BackColor = System.Drawing.SystemColors.Control;
-			lblDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblDescription.ForeColor = System.Drawing.Color.Black;
-			lblDescription.Location = new System.Drawing.Point(88, 75);
-			lblDescription.MinimumSize = new System.Drawing.Size(259, 78);
-			lblDescription.Name = "lblDescription";
-			lblDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblDescription.Size = new System.Drawing.Size(259, 78);
-			lblDescription.TabIndex = 3;
-			lblDescription.Text = "App Description";
+			this.lblDescription.AllowDrop = true;
+			this.lblDescription.BackColor = System.Drawing.SystemColors.Control;
+			this.lblDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblDescription.ForeColor = System.Drawing.Color.Black;
+			this.lblDescription.Location = new System.Drawing.Point(88, 75);
+			this.lblDescription.MinimumSize = new System.Drawing.Size(259, 78);
+			this.lblDescription.Name = "lblDescription";
+			this.lblDescription.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblDescription.Size = new System.Drawing.Size(259, 78);
+			this.lblDescription.TabIndex = 3;
+			this.lblDescription.Text = "App Description";
 			// 
 			// lblTitle
 			// 
-			lblTitle.AllowDrop = true;
-			lblTitle.BackColor = System.Drawing.SystemColors.Control;
-			lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblTitle.ForeColor = System.Drawing.Color.Black;
-			lblTitle.Location = new System.Drawing.Point(88, 16);
-			lblTitle.MinimumSize = new System.Drawing.Size(259, 32);
-			lblTitle.Name = "lblTitle";
-			lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblTitle.Size = new System.Drawing.Size(259, 32);
-			lblTitle.TabIndex = 5;
-			lblTitle.Text = "Application Title";
+			this.lblTitle.AllowDrop = true;
+			this.lblTitle.BackColor = System.Drawing.SystemColors.Control;
+			this.lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblTitle.ForeColor = System.Drawing.Color.Black;
+			this.lblTitle.Location = new System.Drawing.Point(88, 16);
+			this.lblTitle.MinimumSize = new System.Drawing.Size(259, 32);
+			this.lblTitle.Name = "lblTitle";
+			this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblTitle.Size = new System.Drawing.Size(259, 32);
+			this.lblTitle.TabIndex = 5;
+			this.lblTitle.Text = "Application Title";
 			// 
 			// _Line1_0
 			// 
-			_Line1_0.AllowDrop = true;
-			_Line1_0.BackColor = System.Drawing.Color.White;
-			_Line1_0.Enabled = false;
-			_Line1_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			_Line1_0.Location = new System.Drawing.Point(6, 148);
-			_Line1_0.Name = "_Line1_0";
-			_Line1_0.Size = new System.Drawing.Size(303, 1);
-			_Line1_0.Visible = true;
+			this._Line1_0.AllowDrop = true;
+			this._Line1_0.BackColor = System.Drawing.Color.White;
+			this._Line1_0.Enabled = false;
+			this._Line1_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this._Line1_0.Location = new System.Drawing.Point(6, 148);
+			this._Line1_0.Name = "_Line1_0";
+			this._Line1_0.Size = new System.Drawing.Size(303, 1);
+			this._Line1_0.Visible = true;
 			// 
 			// lblVersion
 			// 
-			lblVersion.AllowDrop = true;
-			lblVersion.BackColor = System.Drawing.SystemColors.Control;
-			lblVersion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblVersion.ForeColor = System.Drawing.SystemColors.ControlText;
-			lblVersion.Location = new System.Drawing.Point(88, 52);
-			lblVersion.MinimumSize = new System.Drawing.Size(259, 15);
-			lblVersion.Name = "lblVersion";
-			lblVersion.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblVersion.Size = new System.Drawing.Size(259, 15);
-			lblVersion.TabIndex = 6;
-			lblVersion.Text = "Version";
+			this.lblVersion.AllowDrop = true;
+			this.lblVersion.BackColor = System.Drawing.SystemColors.Control;
+			this.lblVersion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblVersion.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.lblVersion.Location = new System.Drawing.Point(88, 52);
+			this.lblVersion.MinimumSize = new System.Drawing.Size(259, 15);
+			this.lblVersion.Name = "lblVersion";
+			this.lblVersion.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblVersion.Size = new System.Drawing.Size(259, 15);
+			this.lblVersion.TabIndex = 6;
+			this.lblVersion.Text = "Version";
 			// 
 			// lblDisclaimer
 			// 
-			lblDisclaimer.AllowDrop = true;
-			lblDisclaimer.BackColor = System.Drawing.SystemColors.Control;
-			lblDisclaimer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblDisclaimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblDisclaimer.ForeColor = System.Drawing.Color.Black;
-			lblDisclaimer.Location = new System.Drawing.Point(17, 176);
-			lblDisclaimer.MinimumSize = new System.Drawing.Size(258, 55);
-			lblDisclaimer.Name = "lblDisclaimer";
-			lblDisclaimer.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblDisclaimer.Size = new System.Drawing.Size(258, 55);
-			lblDisclaimer.TabIndex = 4;
-			lblDisclaimer.Text = "Warning: ...";
+			this.lblDisclaimer.AllowDrop = true;
+			this.lblDisclaimer.BackColor = System.Drawing.SystemColors.Control;
+			this.lblDisclaimer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblDisclaimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblDisclaimer.ForeColor = System.Drawing.Color.Black;
+			this.lblDisclaimer.Location = new System.Drawing.Point(17, 176);
+			this.lblDisclaimer.MinimumSize = new System.Drawing.Size(258, 55);
+			this.lblDisclaimer.Name = "lblDisclaimer";
+			this.lblDisclaimer.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblDisclaimer.Size = new System.Drawing.Size(258, 55);
+			this.lblDisclaimer.TabIndex = 4;
+			this.lblDisclaimer.Text = "Warning: ...";
 			// 
 			// frmAbout
 			// 
-			AcceptButton = cmdOK;
-			AllowDrop = true;
-			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			BackColor = System.Drawing.SystemColors.Control;
-			BackgroundImage = (System.Drawing.Image) resources.GetObject("frmAbout.BackgroundImage");
-			BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			CancelButton = cmdOK;
-			ClientSize = new System.Drawing.Size(382, 237);
-			Controls.Add(picIcon);
-			Controls.Add(cmdOK);
-			Controls.Add(cmdSysInfo);
-			Controls.Add(_Line1_1);
-			Controls.Add(lblDescription);
-			Controls.Add(lblTitle);
-			Controls.Add(_Line1_0);
-			Controls.Add(lblVersion);
-			Controls.Add(lblDisclaimer);
-			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			Icon = (System.Drawing.Icon) resources.GetObject("frmAbout.Icon");
-			Location = new System.Drawing.Point(156, 129);
-			MaximizeBox = false;
-			MinimizeBox = false;
-			Name = "frmAbout";
-			RightToLeft = System.Windows.Forms.RightToLeft.No;
-			ShowInTaskbar = false;
-			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			Text = "About MyApp";
-			commandButtonHelper1.SetStyle(cmdOK, 0);
-			commandButtonHelper1.SetStyle(cmdSysInfo, 0);
-			Activated += new System.EventHandler(frmAbout_Activated);
-			Closed += new System.EventHandler(Form_Closed);
-			ResumeLayout(false);
+			this.AcceptButton = this.cmdOK;
+			this.AllowDrop = true;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.Control;
+			this.BackgroundImage = (System.Drawing.Image) resources.GetObject("frmAbout.BackgroundImage");
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.CancelButton = this.cmdOK;
+			this.ClientSize = new System.Drawing.Size(382, 237);
+			this.Controls.Add(this.picIcon);
+			this.Controls.Add(this.cmdOK);
+			this.Controls.Add(this.cmdSysInfo);
+			this.Controls.Add(this._Line1_1);
+			this.Controls.Add(this.lblDescription);
+			this.Controls.Add(this.lblTitle);
+			this.Controls.Add(this._Line1_0);
+			this.Controls.Add(this.lblVersion);
+			this.Controls.Add(this.lblDisclaimer);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Icon = (System.Drawing.Icon) resources.GetObject("frmAbout.Icon");
+			this.Location = new System.Drawing.Point(156, 129);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
+			this.Name = "frmAbout";
+			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.ShowInTaskbar = false;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "About MyApp";
+			this.commandButtonHelper1.SetStyle(this.cmdOK, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdSysInfo, 0);
+			this.Activated += new System.EventHandler(this.frmAbout_Activated);
+			this.Closed += new System.EventHandler(this.Form_Closed);
+			this.ResumeLayout(false);
 		}
 		void ReLoadForm(bool addEvents)
 		{
@@ -250,9 +250,9 @@ namespace StarCarsManagement
 		}
 		void InitializeLine1()
 		{
-			Line1 = new System.Windows.Forms.Label[2];
-			Line1[1] = _Line1_1;
-			Line1[0] = _Line1_0;
+			this.Line1 = new System.Windows.Forms.Label[2];
+			this.Line1[1] = _Line1_1;
+			this.Line1[0] = _Line1_0;
 		}
 		#endregion
 	}

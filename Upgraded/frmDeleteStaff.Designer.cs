@@ -69,344 +69,344 @@ namespace StarCarsManagement
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDeleteStaff));
-			ToolTipMain = new System.Windows.Forms.ToolTip(components);
-			chkFilters = new System.Windows.Forms.CheckBox();
-			frameFilters = new System.Windows.Forms.Panel();
-			pnlResults = new System.Windows.Forms.GroupBox();
-			lstResults = new System.Windows.Forms.ListView();
-			lstResults_ColumnHeader_1_ = new System.Windows.Forms.ColumnHeader();
-			lstResults_ColumnHeader_2_ = new System.Windows.Forms.ColumnHeader();
-			lstResults_ColumnHeader_3_ = new System.Windows.Forms.ColumnHeader();
-			lstResults_ColumnHeader_4_ = new System.Windows.Forms.ColumnHeader();
-			pnlFilters = new System.Windows.Forms.GroupBox();
-			cmbLastName = new System.Windows.Forms.ComboBox();
-			cmdResetFilters = new System.Windows.Forms.Button();
-			cmbRole = new System.Windows.Forms.ComboBox();
-			Label1 = new System.Windows.Forms.Label();
-			Label2 = new System.Windows.Forms.Label();
-			chkUseAllFilters = new System.Windows.Forms.CheckBox();
-			btnDelete = new System.Windows.Forms.Button();
-			cmbFullName = new System.Windows.Forms.ComboBox();
-			Label6 = new System.Windows.Forms.Label();
-			lblTitle = new System.Windows.Forms.Label();
-			frameFilters.SuspendLayout();
-			pnlResults.SuspendLayout();
-			lstResults.SuspendLayout();
-			pnlFilters.SuspendLayout();
-			SuspendLayout();
-			listViewHelper1 = new UpgradeHelpers.Gui.Controls.ListViewHelper(components);
-			((System.ComponentModel.ISupportInitialize) listViewHelper1).BeginInit();
-			checkBoxHelper1 = new UpgradeHelpers.Gui.Controls.CheckBoxHelper(components);
-			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
+			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
+			this.chkFilters = new System.Windows.Forms.CheckBox();
+			this.frameFilters = new System.Windows.Forms.Panel();
+			this.pnlResults = new System.Windows.Forms.GroupBox();
+			this.lstResults = new System.Windows.Forms.ListView();
+			this.lstResults_ColumnHeader_1_ = new System.Windows.Forms.ColumnHeader();
+			this.lstResults_ColumnHeader_2_ = new System.Windows.Forms.ColumnHeader();
+			this.lstResults_ColumnHeader_3_ = new System.Windows.Forms.ColumnHeader();
+			this.lstResults_ColumnHeader_4_ = new System.Windows.Forms.ColumnHeader();
+			this.pnlFilters = new System.Windows.Forms.GroupBox();
+			this.cmbLastName = new System.Windows.Forms.ComboBox();
+			this.cmdResetFilters = new System.Windows.Forms.Button();
+			this.cmbRole = new System.Windows.Forms.ComboBox();
+			this.Label1 = new System.Windows.Forms.Label();
+			this.Label2 = new System.Windows.Forms.Label();
+			this.chkUseAllFilters = new System.Windows.Forms.CheckBox();
+			this.btnDelete = new System.Windows.Forms.Button();
+			this.cmbFullName = new System.Windows.Forms.ComboBox();
+			this.Label6 = new System.Windows.Forms.Label();
+			this.lblTitle = new System.Windows.Forms.Label();
+			this.frameFilters.SuspendLayout();
+			this.pnlResults.SuspendLayout();
+			this.lstResults.SuspendLayout();
+			this.pnlFilters.SuspendLayout();
+			this.SuspendLayout();
+			this.listViewHelper1 = new UpgradeHelpers.Gui.Controls.ListViewHelper(this.components);
+			((System.ComponentModel.ISupportInitialize) this.listViewHelper1).BeginInit();
+			this.checkBoxHelper1 = new UpgradeHelpers.Gui.Controls.CheckBoxHelper(this.components);
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
 			// 
 			// chkFilters
 			// 
-			chkFilters.AllowDrop = true;
-			chkFilters.Appearance = System.Windows.Forms.Appearance.Normal;
-			chkFilters.BackColor = System.Drawing.SystemColors.Control;
-			chkFilters.CausesValidation = true;
-			chkFilters.CheckAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			chkFilters.CheckState = System.Windows.Forms.CheckState.Unchecked;
-			chkFilters.Enabled = true;
-			chkFilters.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			chkFilters.ForeColor = System.Drawing.SystemColors.ControlText;
-			chkFilters.Location = new System.Drawing.Point(288, 80);
-			chkFilters.Name = "chkFilters";
-			chkFilters.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			chkFilters.Size = new System.Drawing.Size(193, 25);
-			chkFilters.TabIndex = 11;
-			chkFilters.TabStop = true;
-			chkFilters.Text = "Show filters";
-			chkFilters.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			chkFilters.Visible = true;
-			chkFilters.CheckStateChanged += new System.EventHandler(chkFilters_CheckStateChanged);
+			this.chkFilters.AllowDrop = true;
+			this.chkFilters.Appearance = System.Windows.Forms.Appearance.Normal;
+			this.chkFilters.BackColor = System.Drawing.SystemColors.Control;
+			this.chkFilters.CausesValidation = true;
+			this.chkFilters.CheckAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.chkFilters.CheckState = System.Windows.Forms.CheckState.Unchecked;
+			this.chkFilters.Enabled = true;
+			this.chkFilters.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.chkFilters.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.chkFilters.Location = new System.Drawing.Point(288, 80);
+			this.chkFilters.Name = "chkFilters";
+			this.chkFilters.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.chkFilters.Size = new System.Drawing.Size(193, 25);
+			this.chkFilters.TabIndex = 11;
+			this.chkFilters.TabStop = true;
+			this.chkFilters.Text = "Show filters";
+			this.chkFilters.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.chkFilters.Visible = true;
+			this.chkFilters.CheckStateChanged += new System.EventHandler(this.chkFilters_CheckStateChanged);
 			// 
 			// frameFilters
 			// 
-			frameFilters.AllowDrop = true;
-			frameFilters.BackColor = System.Drawing.SystemColors.Control;
-			frameFilters.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			frameFilters.Controls.Add(pnlResults);
-			frameFilters.Controls.Add(pnlFilters);
-			frameFilters.Enabled = true;
-			frameFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			frameFilters.ForeColor = System.Drawing.SystemColors.ControlText;
-			frameFilters.Location = new System.Drawing.Point(24, 120);
-			frameFilters.Name = "frameFilters";
-			frameFilters.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			frameFilters.Size = new System.Drawing.Size(465, 329);
-			frameFilters.TabIndex = 1;
-			frameFilters.Visible = true;
+			this.frameFilters.AllowDrop = true;
+			this.frameFilters.BackColor = System.Drawing.SystemColors.Control;
+			this.frameFilters.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.frameFilters.Controls.Add(this.pnlResults);
+			this.frameFilters.Controls.Add(this.pnlFilters);
+			this.frameFilters.Enabled = true;
+			this.frameFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.frameFilters.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.frameFilters.Location = new System.Drawing.Point(24, 120);
+			this.frameFilters.Name = "frameFilters";
+			this.frameFilters.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.frameFilters.Size = new System.Drawing.Size(465, 329);
+			this.frameFilters.TabIndex = 1;
+			this.frameFilters.Visible = true;
 			// 
 			// pnlResults
 			// 
-			pnlResults.AllowDrop = true;
-			pnlResults.BackColor = System.Drawing.SystemColors.Control;
-			pnlResults.Controls.Add(lstResults);
-			pnlResults.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
-			pnlResults.Enabled = true;
-			pnlResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			pnlResults.ForeColor = System.Drawing.SystemColors.ControlText;
-			pnlResults.Location = new System.Drawing.Point(8, 120);
-			pnlResults.Name = "pnlResults";
-			pnlResults.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			pnlResults.Size = new System.Drawing.Size(449, 201);
-			pnlResults.TabIndex = 9;
-			pnlResults.Text = "Results";
-			pnlResults.Visible = true;
+			this.pnlResults.AllowDrop = true;
+			this.pnlResults.BackColor = System.Drawing.SystemColors.Control;
+			this.pnlResults.Controls.Add(this.lstResults);
+			this.pnlResults.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
+			this.pnlResults.Enabled = true;
+			this.pnlResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.pnlResults.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.pnlResults.Location = new System.Drawing.Point(8, 120);
+			this.pnlResults.Name = "pnlResults";
+			this.pnlResults.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.pnlResults.Size = new System.Drawing.Size(449, 201);
+			this.pnlResults.TabIndex = 9;
+			this.pnlResults.Text = "Results";
+			this.pnlResults.Visible = true;
 			// 
 			// lstResults
 			// 
-			lstResults.AllowDrop = true;
-			lstResults.BackColor = System.Drawing.SystemColors.Window;
-			lstResults.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			lstResults.Font = new System.Drawing.Font("Consolas", 9.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lstResults.ForeColor = System.Drawing.SystemColors.WindowText;
-			lstResults.HideSelection = true;
-			lstResults.LabelEdit = true;
-			lstResults.Location = new System.Drawing.Point(16, 16);
-			lstResults.MultiSelect = false;
-			lstResults.Name = "lstResults";
-			lstResults.Size = new System.Drawing.Size(417, 177);
-			lstResults.TabIndex = 10;
-			lstResults.View = System.Windows.Forms.View.Details;
-			lstResults.Columns.Add(lstResults_ColumnHeader_1_);
-			lstResults.Columns.Add(lstResults_ColumnHeader_2_);
-			lstResults.Columns.Add(lstResults_ColumnHeader_3_);
-			lstResults.Columns.Add(lstResults_ColumnHeader_4_);
+			this.lstResults.AllowDrop = true;
+			this.lstResults.BackColor = System.Drawing.SystemColors.Window;
+			this.lstResults.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lstResults.Font = new System.Drawing.Font("Consolas", 9.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lstResults.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.lstResults.HideSelection = true;
+			this.lstResults.LabelEdit = true;
+			this.lstResults.Location = new System.Drawing.Point(16, 16);
+			this.lstResults.MultiSelect = false;
+			this.lstResults.Name = "lstResults";
+			this.lstResults.Size = new System.Drawing.Size(417, 177);
+			this.lstResults.TabIndex = 10;
+			this.lstResults.View = System.Windows.Forms.View.Details;
+			this.lstResults.Columns.Add(this.lstResults_ColumnHeader_1_);
+			this.lstResults.Columns.Add(this.lstResults_ColumnHeader_2_);
+			this.lstResults.Columns.Add(this.lstResults_ColumnHeader_3_);
+			this.lstResults.Columns.Add(this.lstResults_ColumnHeader_4_);
 			// 
 			// lstResults_ColumnHeader_1_
 			// 
-			lstResults_ColumnHeader_1_.Text = "DNI";
-			lstResults_ColumnHeader_1_.Width = 101;
+			this.lstResults_ColumnHeader_1_.Text = "DNI";
+			this.lstResults_ColumnHeader_1_.Width = 101;
 			// 
 			// lstResults_ColumnHeader_2_
 			// 
-			lstResults_ColumnHeader_2_.Text = "Name";
-			lstResults_ColumnHeader_2_.Width = 101;
+			this.lstResults_ColumnHeader_2_.Text = "Name";
+			this.lstResults_ColumnHeader_2_.Width = 101;
 			// 
 			// lstResults_ColumnHeader_3_
 			// 
-			lstResults_ColumnHeader_3_.Text = "Last Name";
-			lstResults_ColumnHeader_3_.Width = 114;
+			this.lstResults_ColumnHeader_3_.Text = "Last Name";
+			this.lstResults_ColumnHeader_3_.Width = 114;
 			// 
 			// lstResults_ColumnHeader_4_
 			// 
-			lstResults_ColumnHeader_4_.Text = "Role";
-			lstResults_ColumnHeader_4_.Width = 101;
+			this.lstResults_ColumnHeader_4_.Text = "Role";
+			this.lstResults_ColumnHeader_4_.Width = 101;
 			// 
 			// pnlFilters
 			// 
-			pnlFilters.AllowDrop = true;
-			pnlFilters.BackColor = System.Drawing.SystemColors.Control;
-			pnlFilters.Controls.Add(cmbLastName);
-			pnlFilters.Controls.Add(cmdResetFilters);
-			pnlFilters.Controls.Add(cmbRole);
-			pnlFilters.Controls.Add(Label1);
-			pnlFilters.Controls.Add(Label2);
-			pnlFilters.Controls.Add(chkUseAllFilters);
-			pnlFilters.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
-			pnlFilters.Enabled = true;
-			pnlFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			pnlFilters.ForeColor = System.Drawing.SystemColors.ControlText;
-			pnlFilters.Location = new System.Drawing.Point(8, 0);
-			pnlFilters.Name = "pnlFilters";
-			pnlFilters.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			pnlFilters.Size = new System.Drawing.Size(449, 105);
-			pnlFilters.TabIndex = 2;
-			pnlFilters.Text = "Filters";
-			pnlFilters.Visible = true;
+			this.pnlFilters.AllowDrop = true;
+			this.pnlFilters.BackColor = System.Drawing.SystemColors.Control;
+			this.pnlFilters.Controls.Add(this.cmbLastName);
+			this.pnlFilters.Controls.Add(this.cmdResetFilters);
+			this.pnlFilters.Controls.Add(this.cmbRole);
+			this.pnlFilters.Controls.Add(this.Label1);
+			this.pnlFilters.Controls.Add(this.Label2);
+			this.pnlFilters.Controls.Add(this.chkUseAllFilters);
+			this.pnlFilters.Cursor = UpgradeHelpers.Helpers.CursorHelper.CursorDefault;
+			this.pnlFilters.Enabled = true;
+			this.pnlFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.pnlFilters.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.pnlFilters.Location = new System.Drawing.Point(8, 0);
+			this.pnlFilters.Name = "pnlFilters";
+			this.pnlFilters.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.pnlFilters.Size = new System.Drawing.Size(449, 105);
+			this.pnlFilters.TabIndex = 2;
+			this.pnlFilters.Text = "Filters";
+			this.pnlFilters.Visible = true;
 			// 
 			// cmbLastName
 			// 
-			cmbLastName.AllowDrop = true;
-			cmbLastName.BackColor = System.Drawing.SystemColors.Window;
-			cmbLastName.CausesValidation = true;
-			cmbLastName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			cmbLastName.Enabled = true;
-			cmbLastName.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmbLastName.ForeColor = System.Drawing.SystemColors.WindowText;
-			cmbLastName.IntegralHeight = true;
-			cmbLastName.Location = new System.Drawing.Point(16, 64);
-			cmbLastName.Name = "cmbLastName";
-			cmbLastName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			cmbLastName.Size = new System.Drawing.Size(177, 26);
-			cmbLastName.Sorted = false;
-			cmbLastName.TabIndex = 4;
-			cmbLastName.TabStop = true;
-			cmbLastName.Visible = true;
-			cmbLastName.SelectedIndexChanged += new System.EventHandler(cmbLastName_SelectedIndexChanged);
+			this.cmbLastName.AllowDrop = true;
+			this.cmbLastName.BackColor = System.Drawing.SystemColors.Window;
+			this.cmbLastName.CausesValidation = true;
+			this.cmbLastName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbLastName.Enabled = true;
+			this.cmbLastName.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmbLastName.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.cmbLastName.IntegralHeight = true;
+			this.cmbLastName.Location = new System.Drawing.Point(16, 64);
+			this.cmbLastName.Name = "cmbLastName";
+			this.cmbLastName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.cmbLastName.Size = new System.Drawing.Size(177, 26);
+			this.cmbLastName.Sorted = false;
+			this.cmbLastName.TabIndex = 4;
+			this.cmbLastName.TabStop = true;
+			this.cmbLastName.Visible = true;
+			this.cmbLastName.SelectedIndexChanged += new System.EventHandler(this.cmbLastName_SelectedIndexChanged);
 			// 
 			// cmdResetFilters
 			// 
-			cmdResetFilters.AllowDrop = true;
-			cmdResetFilters.BackColor = System.Drawing.SystemColors.Control;
-			cmdResetFilters.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmdResetFilters.ForeColor = System.Drawing.SystemColors.ControlText;
-			cmdResetFilters.Location = new System.Drawing.Point(280, 16);
-			cmdResetFilters.Name = "cmdResetFilters";
-			cmdResetFilters.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			cmdResetFilters.Size = new System.Drawing.Size(137, 25);
-			cmdResetFilters.TabIndex = 3;
-			cmdResetFilters.Text = "Reset Filters";
-			cmdResetFilters.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			cmdResetFilters.UseVisualStyleBackColor = false;
-			cmdResetFilters.Click += new System.EventHandler(cmdResetFilters_Click);
+			this.cmdResetFilters.AllowDrop = true;
+			this.cmdResetFilters.BackColor = System.Drawing.SystemColors.Control;
+			this.cmdResetFilters.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmdResetFilters.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.cmdResetFilters.Location = new System.Drawing.Point(280, 16);
+			this.cmdResetFilters.Name = "cmdResetFilters";
+			this.cmdResetFilters.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.cmdResetFilters.Size = new System.Drawing.Size(137, 25);
+			this.cmdResetFilters.TabIndex = 3;
+			this.cmdResetFilters.Text = "Reset Filters";
+			this.cmdResetFilters.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			this.cmdResetFilters.UseVisualStyleBackColor = false;
+			this.cmdResetFilters.Click += new System.EventHandler(this.cmdResetFilters_Click);
 			// 
 			// cmbRole
 			// 
-			cmbRole.AllowDrop = true;
-			cmbRole.BackColor = System.Drawing.SystemColors.Window;
-			cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			cmbRole.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmbRole.ForeColor = System.Drawing.SystemColors.WindowText;
-			cmbRole.Location = new System.Drawing.Point(264, 64);
-			cmbRole.Name = "cmbRole";
-			cmbRole.Size = new System.Drawing.Size(169, 26);
-			cmbRole.TabIndex = 6;
-			cmbRole.Text = "cmbRole";
-			cmbRole.SelectedIndexChanged += new System.EventHandler(cmbRole_SelectedIndexChanged);
+			this.cmbRole.AllowDrop = true;
+			this.cmbRole.BackColor = System.Drawing.SystemColors.Window;
+			this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbRole.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmbRole.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.cmbRole.Location = new System.Drawing.Point(264, 64);
+			this.cmbRole.Name = "cmbRole";
+			this.cmbRole.Size = new System.Drawing.Size(169, 26);
+			this.cmbRole.TabIndex = 6;
+			this.cmbRole.Text = "cmbRole";
+			this.cmbRole.SelectedIndexChanged += new System.EventHandler(this.cmbRole_SelectedIndexChanged);
 			// 
 			// Label1
 			// 
-			Label1.AllowDrop = true;
-			Label1.BackColor = System.Drawing.SystemColors.Control;
-			Label1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			Label1.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			Label1.ForeColor = System.Drawing.SystemColors.ControlText;
-			Label1.Location = new System.Drawing.Point(16, 48);
-			Label1.MinimumSize = new System.Drawing.Size(169, 17);
-			Label1.Name = "Label1";
-			Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			Label1.Size = new System.Drawing.Size(169, 17);
-			Label1.TabIndex = 8;
-			Label1.Text = "Last Name";
+			this.Label1.AllowDrop = true;
+			this.Label1.BackColor = System.Drawing.SystemColors.Control;
+			this.Label1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.Label1.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.Label1.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.Label1.Location = new System.Drawing.Point(16, 48);
+			this.Label1.MinimumSize = new System.Drawing.Size(169, 17);
+			this.Label1.Name = "Label1";
+			this.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.Label1.Size = new System.Drawing.Size(169, 17);
+			this.Label1.TabIndex = 8;
+			this.Label1.Text = "Last Name";
 			// 
 			// Label2
 			// 
-			Label2.AllowDrop = true;
-			Label2.BackColor = System.Drawing.SystemColors.Control;
-			Label2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			Label2.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			Label2.ForeColor = System.Drawing.SystemColors.ControlText;
-			Label2.Location = new System.Drawing.Point(264, 48);
-			Label2.MinimumSize = new System.Drawing.Size(169, 17);
-			Label2.Name = "Label2";
-			Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			Label2.Size = new System.Drawing.Size(169, 17);
-			Label2.TabIndex = 7;
-			Label2.Text = "Role";
+			this.Label2.AllowDrop = true;
+			this.Label2.BackColor = System.Drawing.SystemColors.Control;
+			this.Label2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.Label2.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.Label2.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.Label2.Location = new System.Drawing.Point(264, 48);
+			this.Label2.MinimumSize = new System.Drawing.Size(169, 17);
+			this.Label2.Name = "Label2";
+			this.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.Label2.Size = new System.Drawing.Size(169, 17);
+			this.Label2.TabIndex = 7;
+			this.Label2.Text = "Role";
 			// 
 			// chkUseAllFilters
 			// 
-			chkUseAllFilters.AllowDrop = true;
-			chkUseAllFilters.BackColor = System.Drawing.SystemColors.Control;
-			chkUseAllFilters.CheckAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			chkUseAllFilters.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			chkUseAllFilters.ForeColor = System.Drawing.SystemColors.ControlText;
-			chkUseAllFilters.Location = new System.Drawing.Point(16, 16);
-			chkUseAllFilters.Name = "chkUseAllFilters";
-			chkUseAllFilters.Size = new System.Drawing.Size(177, 25);
-			chkUseAllFilters.TabIndex = 5;
-			chkUseAllFilters.Text = "Use all filters?";
-			chkUseAllFilters.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			chkUseAllFilters.CheckStateChanged += new System.EventHandler(chkUseAllFilters_CheckStateChanged);
+			this.chkUseAllFilters.AllowDrop = true;
+			this.chkUseAllFilters.BackColor = System.Drawing.SystemColors.Control;
+			this.chkUseAllFilters.CheckAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.chkUseAllFilters.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.chkUseAllFilters.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.chkUseAllFilters.Location = new System.Drawing.Point(16, 16);
+			this.chkUseAllFilters.Name = "chkUseAllFilters";
+			this.chkUseAllFilters.Size = new System.Drawing.Size(177, 25);
+			this.chkUseAllFilters.TabIndex = 5;
+			this.chkUseAllFilters.Text = "Use all filters?";
+			this.chkUseAllFilters.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.chkUseAllFilters.CheckStateChanged += new System.EventHandler(this.chkUseAllFilters_CheckStateChanged);
 			// 
 			// btnDelete
 			// 
-			btnDelete.AllowDrop = true;
-			btnDelete.BackColor = System.Drawing.SystemColors.Control;
-			btnDelete.Font = new System.Drawing.Font("Consolas", 14.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			btnDelete.ForeColor = System.Drawing.Color.Empty;
-			btnDelete.Location = new System.Drawing.Point(168, 464);
-			btnDelete.Name = "btnDelete";
-			btnDelete.Size = new System.Drawing.Size(169, 65);
-			btnDelete.TabIndex = 14;
-			btnDelete.Text = "&Delete";
-			btnDelete.Click += new System.EventHandler(btnDelete_Click);
+			this.btnDelete.AllowDrop = true;
+			this.btnDelete.BackColor = System.Drawing.SystemColors.Control;
+			this.btnDelete.Font = new System.Drawing.Font("Consolas", 14.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.btnDelete.ForeColor = System.Drawing.Color.Empty;
+			this.btnDelete.Location = new System.Drawing.Point(168, 464);
+			this.btnDelete.Name = "btnDelete";
+			this.btnDelete.Size = new System.Drawing.Size(169, 65);
+			this.btnDelete.TabIndex = 14;
+			this.btnDelete.Text = "&Delete";
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
 			// cmbFullName
 			// 
-			cmbFullName.AllowDrop = true;
-			cmbFullName.BackColor = System.Drawing.SystemColors.Window;
-			cmbFullName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			cmbFullName.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmbFullName.ForeColor = System.Drawing.SystemColors.WindowText;
-			cmbFullName.Location = new System.Drawing.Point(24, 80);
-			cmbFullName.Name = "cmbFullName";
-			cmbFullName.Size = new System.Drawing.Size(209, 26);
-			cmbFullName.TabIndex = 12;
-			cmbFullName.Text = "cmbFullName";
+			this.cmbFullName.AllowDrop = true;
+			this.cmbFullName.BackColor = System.Drawing.SystemColors.Window;
+			this.cmbFullName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbFullName.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmbFullName.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.cmbFullName.Location = new System.Drawing.Point(24, 80);
+			this.cmbFullName.Name = "cmbFullName";
+			this.cmbFullName.Size = new System.Drawing.Size(209, 26);
+			this.cmbFullName.TabIndex = 12;
+			this.cmbFullName.Text = "cmbFullName";
 			// 
 			// Label6
 			// 
-			Label6.AllowDrop = true;
-			Label6.BackColor = System.Drawing.SystemColors.Control;
-			Label6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			Label6.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			Label6.ForeColor = System.Drawing.SystemColors.ControlText;
-			Label6.Location = new System.Drawing.Point(24, 64);
-			Label6.MinimumSize = new System.Drawing.Size(209, 17);
-			Label6.Name = "Label6";
-			Label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			Label6.Size = new System.Drawing.Size(209, 17);
-			Label6.TabIndex = 13;
-			Label6.Text = "Employee Full Name";
+			this.Label6.AllowDrop = true;
+			this.Label6.BackColor = System.Drawing.SystemColors.Control;
+			this.Label6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.Label6.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.Label6.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.Label6.Location = new System.Drawing.Point(24, 64);
+			this.Label6.MinimumSize = new System.Drawing.Size(209, 17);
+			this.Label6.Name = "Label6";
+			this.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.Label6.Size = new System.Drawing.Size(209, 17);
+			this.Label6.TabIndex = 13;
+			this.Label6.Text = "Employee Full Name";
 			// 
 			// lblTitle
 			// 
-			lblTitle.AllowDrop = true;
-			lblTitle.BackColor = System.Drawing.SystemColors.Control;
-			lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblTitle.Font = new System.Drawing.Font("Javanese Text", 24f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
-			lblTitle.Location = new System.Drawing.Point(16, 0);
-			lblTitle.MinimumSize = new System.Drawing.Size(481, 49);
-			lblTitle.Name = "lblTitle";
-			lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblTitle.Size = new System.Drawing.Size(481, 49);
-			lblTitle.TabIndex = 0;
-			lblTitle.Text = "Staff";
-			lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.lblTitle.AllowDrop = true;
+			this.lblTitle.BackColor = System.Drawing.SystemColors.Control;
+			this.lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblTitle.Font = new System.Drawing.Font("Javanese Text", 24f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.lblTitle.Location = new System.Drawing.Point(16, 0);
+			this.lblTitle.MinimumSize = new System.Drawing.Size(481, 49);
+			this.lblTitle.Name = "lblTitle";
+			this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblTitle.Size = new System.Drawing.Size(481, 49);
+			this.lblTitle.TabIndex = 0;
+			this.lblTitle.Text = "Staff";
+			this.lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// frmDeleteStaff
 			// 
-			AllowDrop = true;
-			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			BackColor = System.Drawing.SystemColors.Control;
-			ClientSize = new System.Drawing.Size(513, 542);
-			Controls.Add(chkFilters);
-			Controls.Add(frameFilters);
-			Controls.Add(btnDelete);
-			Controls.Add(cmbFullName);
-			Controls.Add(Label6);
-			Controls.Add(lblTitle);
-			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			Icon = (System.Drawing.Icon) resources.GetObject("frmDeleteStaff.Icon");
-			Location = new System.Drawing.Point(3, 26);
-			MaximizeBox = false;
-			MinimizeBox = false;
-			Name = "frmDeleteStaff";
-			RightToLeft = System.Windows.Forms.RightToLeft.No;
-			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			Text = "Delete Employee";
-			checkBoxHelper1.SetStyle(chkUseAllFilters, 0);
-			commandButtonHelper1.SetStyle(cmdResetFilters, 0);
-			commandButtonHelper1.SetStyle(btnDelete, 0);
-			ToolTipMain.SetToolTip(cmbRole, "Manufacturer");
-			ToolTipMain.SetToolTip(cmbFullName, "Manufacturer");
-			Activated += new System.EventHandler(frmDeleteStaff_Activated);
-			Closed += new System.EventHandler(Form_Closed);
-			((System.ComponentModel.ISupportInitialize) listViewHelper1).EndInit();
-			frameFilters.ResumeLayout(false);
-			pnlResults.ResumeLayout(false);
-			lstResults.ResumeLayout(false);
-			pnlFilters.ResumeLayout(false);
-			ResumeLayout(false);
+			this.AllowDrop = true;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.Control;
+			this.ClientSize = new System.Drawing.Size(513, 542);
+			this.Controls.Add(this.chkFilters);
+			this.Controls.Add(this.frameFilters);
+			this.Controls.Add(this.btnDelete);
+			this.Controls.Add(this.cmbFullName);
+			this.Controls.Add(this.Label6);
+			this.Controls.Add(this.lblTitle);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = (System.Drawing.Icon) resources.GetObject("frmDeleteStaff.Icon");
+			this.Location = new System.Drawing.Point(3, 26);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
+			this.Name = "frmDeleteStaff";
+			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Delete Employee";
+			this.checkBoxHelper1.SetStyle(this.chkUseAllFilters, 0);
+			this.commandButtonHelper1.SetStyle(this.cmdResetFilters, 0);
+			this.commandButtonHelper1.SetStyle(this.btnDelete, 0);
+			this.ToolTipMain.SetToolTip(this.cmbRole, "Manufacturer");
+			this.ToolTipMain.SetToolTip(this.cmbFullName, "Manufacturer");
+			this.Activated += new System.EventHandler(this.frmDeleteStaff_Activated);
+			this.Closed += new System.EventHandler(this.Form_Closed);
+			((System.ComponentModel.ISupportInitialize) this.listViewHelper1).EndInit();
+			this.frameFilters.ResumeLayout(false);
+			this.pnlResults.ResumeLayout(false);
+			this.lstResults.ResumeLayout(false);
+			this.pnlFilters.ResumeLayout(false);
+			this.ResumeLayout(false);
 		}
 		void ReLoadForm(bool addEvents) => InitializeHelp();
 
