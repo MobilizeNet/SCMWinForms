@@ -54,168 +54,168 @@ namespace StarCarsManagement
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChangeStock));
-			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
-			this.frameStock = new System.Windows.Forms.Panel();
-			this.chkOutOfStock = new System.Windows.Forms.CheckBox();
-			this.cmdAccept = new System.Windows.Forms.Button();
-			this.txtNewStock = new System.Windows.Forms.TextBox();
-			this.txtCurrentStock = new System.Windows.Forms.TextBox();
-			this.lblNewStock = new System.Windows.Forms.Label();
-			this.lblCurrent = new System.Windows.Forms.Label();
-			this.frameStock.SuspendLayout();
-			this.SuspendLayout();
-			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
+			ToolTipMain = new System.Windows.Forms.ToolTip(components);
+			frameStock = new System.Windows.Forms.Panel();
+			chkOutOfStock = new System.Windows.Forms.CheckBox();
+			cmdAccept = new System.Windows.Forms.Button();
+			txtNewStock = new System.Windows.Forms.TextBox();
+			txtCurrentStock = new System.Windows.Forms.TextBox();
+			lblNewStock = new System.Windows.Forms.Label();
+			lblCurrent = new System.Windows.Forms.Label();
+			frameStock.SuspendLayout();
+			SuspendLayout();
+			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
 			// 
 			// frameStock
 			// 
-			this.frameStock.AllowDrop = true;
-			this.frameStock.BackColor = System.Drawing.SystemColors.Control;
-			this.frameStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.frameStock.Controls.Add(this.chkOutOfStock);
-			this.frameStock.Controls.Add(this.cmdAccept);
-			this.frameStock.Controls.Add(this.txtNewStock);
-			this.frameStock.Controls.Add(this.txtCurrentStock);
-			this.frameStock.Controls.Add(this.lblNewStock);
-			this.frameStock.Controls.Add(this.lblCurrent);
-			this.frameStock.Enabled = true;
-			this.frameStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.frameStock.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.frameStock.Location = new System.Drawing.Point(0, 0);
-			this.frameStock.Name = "frameStock";
-			this.frameStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.frameStock.Size = new System.Drawing.Size(305, 193);
-			this.frameStock.TabIndex = 0;
-			this.frameStock.Text = "Frame1";
-			this.frameStock.Visible = true;
+			frameStock.AllowDrop = true;
+			frameStock.BackColor = System.Drawing.SystemColors.Control;
+			frameStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			frameStock.Controls.Add(chkOutOfStock);
+			frameStock.Controls.Add(cmdAccept);
+			frameStock.Controls.Add(txtNewStock);
+			frameStock.Controls.Add(txtCurrentStock);
+			frameStock.Controls.Add(lblNewStock);
+			frameStock.Controls.Add(lblCurrent);
+			frameStock.Enabled = true;
+			frameStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			frameStock.ForeColor = System.Drawing.SystemColors.ControlText;
+			frameStock.Location = new System.Drawing.Point(0, 0);
+			frameStock.Name = "frameStock";
+			frameStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			frameStock.Size = new System.Drawing.Size(305, 193);
+			frameStock.TabIndex = 0;
+			frameStock.Text = "Frame1";
+			frameStock.Visible = true;
 			// 
 			// chkOutOfStock
 			// 
-			this.chkOutOfStock.AllowDrop = true;
-			this.chkOutOfStock.Appearance = System.Windows.Forms.Appearance.Normal;
-			this.chkOutOfStock.BackColor = System.Drawing.SystemColors.Control;
-			this.chkOutOfStock.CausesValidation = true;
-			this.chkOutOfStock.CheckAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.chkOutOfStock.CheckState = System.Windows.Forms.CheckState.Unchecked;
-			this.chkOutOfStock.Enabled = true;
-			this.chkOutOfStock.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.chkOutOfStock.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.chkOutOfStock.Location = new System.Drawing.Point(24, 96);
-			this.chkOutOfStock.Name = "chkOutOfStock";
-			this.chkOutOfStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.chkOutOfStock.Size = new System.Drawing.Size(169, 33);
-			this.chkOutOfStock.TabIndex = 6;
-			this.chkOutOfStock.TabStop = true;
-			this.chkOutOfStock.Text = "Out of Stock?";
-			this.chkOutOfStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.chkOutOfStock.Visible = true;
-			this.chkOutOfStock.CheckStateChanged += new System.EventHandler(this.chkOutOfStock_CheckStateChanged);
+			chkOutOfStock.AllowDrop = true;
+			chkOutOfStock.Appearance = System.Windows.Forms.Appearance.Normal;
+			chkOutOfStock.BackColor = System.Drawing.SystemColors.Control;
+			chkOutOfStock.CausesValidation = true;
+			chkOutOfStock.CheckAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			chkOutOfStock.CheckState = System.Windows.Forms.CheckState.Unchecked;
+			chkOutOfStock.Enabled = true;
+			chkOutOfStock.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			chkOutOfStock.ForeColor = System.Drawing.SystemColors.ControlText;
+			chkOutOfStock.Location = new System.Drawing.Point(24, 96);
+			chkOutOfStock.Name = "chkOutOfStock";
+			chkOutOfStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			chkOutOfStock.Size = new System.Drawing.Size(169, 33);
+			chkOutOfStock.TabIndex = 6;
+			chkOutOfStock.TabStop = true;
+			chkOutOfStock.Text = "Out of Stock?";
+			chkOutOfStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			chkOutOfStock.Visible = true;
+			chkOutOfStock.CheckStateChanged += new System.EventHandler(chkOutOfStock_CheckStateChanged);
 			// 
 			// cmdAccept
 			// 
-			this.cmdAccept.AllowDrop = true;
-			this.cmdAccept.BackColor = System.Drawing.SystemColors.Control;
-			this.cmdAccept.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.cmdAccept.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.cmdAccept.Location = new System.Drawing.Point(64, 136);
-			this.cmdAccept.Name = "cmdAccept";
-			this.cmdAccept.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.cmdAccept.Size = new System.Drawing.Size(169, 41);
-			this.cmdAccept.TabIndex = 5;
-			this.cmdAccept.Text = "Change &Stock";
-			this.cmdAccept.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-			this.cmdAccept.UseVisualStyleBackColor = false;
-			this.cmdAccept.Click += new System.EventHandler(this.cmdAccept_Click);
+			cmdAccept.AllowDrop = true;
+			cmdAccept.BackColor = System.Drawing.SystemColors.Control;
+			cmdAccept.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			cmdAccept.ForeColor = System.Drawing.SystemColors.ControlText;
+			cmdAccept.Location = new System.Drawing.Point(64, 136);
+			cmdAccept.Name = "cmdAccept";
+			cmdAccept.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			cmdAccept.Size = new System.Drawing.Size(169, 41);
+			cmdAccept.TabIndex = 5;
+			cmdAccept.Text = "Change &Stock";
+			cmdAccept.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+			cmdAccept.UseVisualStyleBackColor = false;
+			cmdAccept.Click += new System.EventHandler(cmdAccept_Click);
 			// 
 			// txtNewStock
 			// 
-			this.txtNewStock.AcceptsReturn = true;
-			this.txtNewStock.AllowDrop = true;
-			this.txtNewStock.BackColor = System.Drawing.SystemColors.Window;
-			this.txtNewStock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtNewStock.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtNewStock.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtNewStock.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtNewStock.Location = new System.Drawing.Point(176, 56);
-			this.txtNewStock.MaxLength = 0;
-			this.txtNewStock.Name = "txtNewStock";
-			this.txtNewStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtNewStock.Size = new System.Drawing.Size(113, 33);
-			this.txtNewStock.TabIndex = 4;
-			this.txtNewStock.Enter += new System.EventHandler(this.txtNewStock_Enter);
-			this.txtNewStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNewStock_KeyPress);
-			this.txtNewStock.Leave += new System.EventHandler(this.txtNewStock_Leave);
+			txtNewStock.AcceptsReturn = true;
+			txtNewStock.AllowDrop = true;
+			txtNewStock.BackColor = System.Drawing.SystemColors.Window;
+			txtNewStock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtNewStock.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtNewStock.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtNewStock.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtNewStock.Location = new System.Drawing.Point(176, 56);
+			txtNewStock.MaxLength = 0;
+			txtNewStock.Name = "txtNewStock";
+			txtNewStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtNewStock.Size = new System.Drawing.Size(113, 33);
+			txtNewStock.TabIndex = 4;
+			txtNewStock.Enter += new System.EventHandler(txtNewStock_Enter);
+			txtNewStock.KeyPress += new System.Windows.Forms.KeyPressEventHandler(txtNewStock_KeyPress);
+			txtNewStock.Leave += new System.EventHandler(txtNewStock_Leave);
 			// 
 			// txtCurrentStock
 			// 
-			this.txtCurrentStock.AcceptsReturn = true;
-			this.txtCurrentStock.AllowDrop = true;
-			this.txtCurrentStock.BackColor = System.Drawing.SystemColors.Window;
-			this.txtCurrentStock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtCurrentStock.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtCurrentStock.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtCurrentStock.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtCurrentStock.Location = new System.Drawing.Point(176, 8);
-			this.txtCurrentStock.MaxLength = 0;
-			this.txtCurrentStock.Name = "txtCurrentStock";
-			this.txtCurrentStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.txtCurrentStock.Size = new System.Drawing.Size(113, 33);
-			this.txtCurrentStock.TabIndex = 2;
-			this.txtCurrentStock.Leave += new System.EventHandler(this.txtCurrentStock_Leave);
+			txtCurrentStock.AcceptsReturn = true;
+			txtCurrentStock.AllowDrop = true;
+			txtCurrentStock.BackColor = System.Drawing.SystemColors.Window;
+			txtCurrentStock.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtCurrentStock.Cursor = System.Windows.Forms.Cursors.IBeam;
+			txtCurrentStock.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtCurrentStock.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtCurrentStock.Location = new System.Drawing.Point(176, 8);
+			txtCurrentStock.MaxLength = 0;
+			txtCurrentStock.Name = "txtCurrentStock";
+			txtCurrentStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			txtCurrentStock.Size = new System.Drawing.Size(113, 33);
+			txtCurrentStock.TabIndex = 2;
+			txtCurrentStock.Leave += new System.EventHandler(txtCurrentStock_Leave);
 			// 
 			// lblNewStock
 			// 
-			this.lblNewStock.AllowDrop = true;
-			this.lblNewStock.BackColor = System.Drawing.SystemColors.Control;
-			this.lblNewStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblNewStock.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblNewStock.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblNewStock.Location = new System.Drawing.Point(24, 64);
-			this.lblNewStock.MinimumSize = new System.Drawing.Size(153, 25);
-			this.lblNewStock.Name = "lblNewStock";
-			this.lblNewStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblNewStock.Size = new System.Drawing.Size(153, 25);
-			this.lblNewStock.TabIndex = 3;
-			this.lblNewStock.Text = "New Stock:";
+			lblNewStock.AllowDrop = true;
+			lblNewStock.BackColor = System.Drawing.SystemColors.Control;
+			lblNewStock.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblNewStock.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblNewStock.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblNewStock.Location = new System.Drawing.Point(24, 64);
+			lblNewStock.MinimumSize = new System.Drawing.Size(153, 25);
+			lblNewStock.Name = "lblNewStock";
+			lblNewStock.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblNewStock.Size = new System.Drawing.Size(153, 25);
+			lblNewStock.TabIndex = 3;
+			lblNewStock.Text = "New Stock:";
 			// 
 			// lblCurrent
 			// 
-			this.lblCurrent.AllowDrop = true;
-			this.lblCurrent.BackColor = System.Drawing.SystemColors.Control;
-			this.lblCurrent.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblCurrent.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblCurrent.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblCurrent.Location = new System.Drawing.Point(24, 16);
-			this.lblCurrent.MinimumSize = new System.Drawing.Size(145, 25);
-			this.lblCurrent.Name = "lblCurrent";
-			this.lblCurrent.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblCurrent.Size = new System.Drawing.Size(145, 25);
-			this.lblCurrent.TabIndex = 1;
-			this.lblCurrent.Text = "Current Stock:";
+			lblCurrent.AllowDrop = true;
+			lblCurrent.BackColor = System.Drawing.SystemColors.Control;
+			lblCurrent.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblCurrent.Font = new System.Drawing.Font("Consolas", 12f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblCurrent.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblCurrent.Location = new System.Drawing.Point(24, 16);
+			lblCurrent.MinimumSize = new System.Drawing.Size(145, 25);
+			lblCurrent.Name = "lblCurrent";
+			lblCurrent.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblCurrent.Size = new System.Drawing.Size(145, 25);
+			lblCurrent.TabIndex = 1;
+			lblCurrent.Text = "Current Stock:";
 			// 
 			// frmChangeStock
 			// 
-			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.Control;
-			this.ClientSize = new System.Drawing.Size(308, 194);
-			this.Controls.Add(this.frameStock);
-			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Icon = (System.Drawing.Icon) resources.GetObject("frmChangeStock.Icon");
-			this.Location = new System.Drawing.Point(3, 26);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "frmChangeStock";
-			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Text = "Change Stock";
-			this.commandButtonHelper1.SetStyle(this.cmdAccept, 0);
-			this.Activated += new System.EventHandler(this.frmChangeStock_Activated);
-			this.Closed += new System.EventHandler(this.Form_Closed);
-			this.frameStock.ResumeLayout(false);
-			this.ResumeLayout(false);
+			AllowDrop = true;
+			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			BackColor = System.Drawing.SystemColors.Control;
+			ClientSize = new System.Drawing.Size(308, 194);
+			Controls.Add(frameStock);
+			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			Icon = (System.Drawing.Icon) resources.GetObject("frmChangeStock.Icon");
+			Location = new System.Drawing.Point(3, 26);
+			MaximizeBox = false;
+			MinimizeBox = false;
+			Name = "frmChangeStock";
+			RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Text = "Change Stock";
+			commandButtonHelper1.SetStyle(cmdAccept, 0);
+			Activated += new System.EventHandler(frmChangeStock_Activated);
+			Closed += new System.EventHandler(Form_Closed);
+			frameStock.ResumeLayout(false);
+			ResumeLayout(false);
 		}
 		void ReLoadForm(bool addEvents) => InitializeHelp();
 

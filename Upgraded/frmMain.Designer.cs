@@ -73,301 +73,301 @@ namespace StarCarsManagement
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
-			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
-			this.MainMenu1 = new System.Windows.Forms.MenuStrip();
-			this.mnuFile = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuChangeUser = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuExit = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuManage = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuBrands = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuCreateBrand = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuDeleteBrand = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuVehicles = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuCreateVehicle = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuDeleteVehicle = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuStaff = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuCreateStaff = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuDeleteStaff = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuReceipts = new System.Windows.Forms.ToolStripMenuItem();
-			this.menuCreateReceipts = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuConsults = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuShowBrands = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuShowVehicles = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuShowStaff = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuShowReceipts = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuDetailedInformation = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuAbout = new System.Windows.Forms.ToolStripMenuItem();
-			this.lblRole = new System.Windows.Forms.Label();
-			this.lblUser = new System.Windows.Forms.Label();
-			this.SuspendLayout();
+			ToolTipMain = new System.Windows.Forms.ToolTip(components);
+			MainMenu1 = new System.Windows.Forms.MenuStrip();
+			mnuFile = new System.Windows.Forms.ToolStripMenuItem();
+			mnuChangeUser = new System.Windows.Forms.ToolStripMenuItem();
+			mnuExit = new System.Windows.Forms.ToolStripMenuItem();
+			mnuManage = new System.Windows.Forms.ToolStripMenuItem();
+			mnuBrands = new System.Windows.Forms.ToolStripMenuItem();
+			mnuCreateBrand = new System.Windows.Forms.ToolStripMenuItem();
+			mnuDeleteBrand = new System.Windows.Forms.ToolStripMenuItem();
+			mnuVehicles = new System.Windows.Forms.ToolStripMenuItem();
+			mnuCreateVehicle = new System.Windows.Forms.ToolStripMenuItem();
+			mnuDeleteVehicle = new System.Windows.Forms.ToolStripMenuItem();
+			mnuStaff = new System.Windows.Forms.ToolStripMenuItem();
+			mnuCreateStaff = new System.Windows.Forms.ToolStripMenuItem();
+			mnuDeleteStaff = new System.Windows.Forms.ToolStripMenuItem();
+			mnuReceipts = new System.Windows.Forms.ToolStripMenuItem();
+			menuCreateReceipts = new System.Windows.Forms.ToolStripMenuItem();
+			mnuConsults = new System.Windows.Forms.ToolStripMenuItem();
+			mnuShowBrands = new System.Windows.Forms.ToolStripMenuItem();
+			mnuShowVehicles = new System.Windows.Forms.ToolStripMenuItem();
+			mnuShowStaff = new System.Windows.Forms.ToolStripMenuItem();
+			mnuShowReceipts = new System.Windows.Forms.ToolStripMenuItem();
+			mnuDetailedInformation = new System.Windows.Forms.ToolStripMenuItem();
+			mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+			mnuAbout = new System.Windows.Forms.ToolStripMenuItem();
+			lblRole = new System.Windows.Forms.Label();
+			lblUser = new System.Windows.Forms.Label();
+			SuspendLayout();
 			// 
 			// MainMenu1
 			// 
-			this.MainMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[]{this.mnuFile, this.mnuManage, this.mnuConsults, this.mnuHelp});
+			MainMenu1.Items.AddRange(new System.Windows.Forms.ToolStripItem[]{mnuFile, mnuManage, mnuConsults, mnuHelp});
 			// 
 			// mnuFile
 			// 
-			this.mnuFile.Available = true;
-			this.mnuFile.Checked = false;
-			this.mnuFile.Enabled = true;
-			this.mnuFile.Name = "mnuFile";
-			this.mnuFile.Text = "File";
-			this.mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{this.mnuChangeUser, this.mnuExit});
+			mnuFile.Available = true;
+			mnuFile.Checked = false;
+			mnuFile.Enabled = true;
+			mnuFile.Name = "mnuFile";
+			mnuFile.Text = "File";
+			mnuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{mnuChangeUser, mnuExit});
 			// 
 			// mnuChangeUser
 			// 
-			this.mnuChangeUser.Available = true;
-			this.mnuChangeUser.Checked = false;
-			this.mnuChangeUser.Enabled = true;
-			this.mnuChangeUser.Name = "mnuChangeUser";
-			this.mnuChangeUser.Text = "Change User";
-			this.mnuChangeUser.Click += new System.EventHandler(this.mnuChangeUser_Click);
+			mnuChangeUser.Available = true;
+			mnuChangeUser.Checked = false;
+			mnuChangeUser.Enabled = true;
+			mnuChangeUser.Name = "mnuChangeUser";
+			mnuChangeUser.Text = "Change User";
+			mnuChangeUser.Click += new System.EventHandler(mnuChangeUser_Click);
 			// 
 			// mnuExit
 			// 
-			this.mnuExit.Available = true;
-			this.mnuExit.Checked = false;
-			this.mnuExit.Enabled = true;
-			this.mnuExit.Name = "mnuExit";
-			this.mnuExit.Text = "Exit";
-			this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
+			mnuExit.Available = true;
+			mnuExit.Checked = false;
+			mnuExit.Enabled = true;
+			mnuExit.Name = "mnuExit";
+			mnuExit.Text = "Exit";
+			mnuExit.Click += new System.EventHandler(mnuExit_Click);
 			// 
 			// mnuManage
 			// 
-			this.mnuManage.Available = true;
-			this.mnuManage.Checked = false;
-			this.mnuManage.Enabled = true;
-			this.mnuManage.Name = "mnuManage";
-			this.mnuManage.Text = "Manage";
-			this.mnuManage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{this.mnuBrands, this.mnuVehicles, this.mnuStaff, this.mnuReceipts});
+			mnuManage.Available = true;
+			mnuManage.Checked = false;
+			mnuManage.Enabled = true;
+			mnuManage.Name = "mnuManage";
+			mnuManage.Text = "Manage";
+			mnuManage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{mnuBrands, mnuVehicles, mnuStaff, mnuReceipts});
 			// 
 			// mnuBrands
 			// 
-			this.mnuBrands.Available = true;
-			this.mnuBrands.Checked = false;
-			this.mnuBrands.Enabled = true;
-			this.mnuBrands.Name = "mnuBrands";
-			this.mnuBrands.Text = "Brands";
-			this.mnuBrands.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{this.mnuCreateBrand, this.mnuDeleteBrand});
+			mnuBrands.Available = true;
+			mnuBrands.Checked = false;
+			mnuBrands.Enabled = true;
+			mnuBrands.Name = "mnuBrands";
+			mnuBrands.Text = "Brands";
+			mnuBrands.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{mnuCreateBrand, mnuDeleteBrand});
 			// 
 			// mnuCreateBrand
 			// 
-			this.mnuCreateBrand.Available = true;
-			this.mnuCreateBrand.Checked = false;
-			this.mnuCreateBrand.Enabled = true;
-			this.mnuCreateBrand.Name = "mnuCreateBrand";
-			this.mnuCreateBrand.Text = "Create new";
-			this.mnuCreateBrand.Click += new System.EventHandler(this.mnuCreateBrand_Click);
+			mnuCreateBrand.Available = true;
+			mnuCreateBrand.Checked = false;
+			mnuCreateBrand.Enabled = true;
+			mnuCreateBrand.Name = "mnuCreateBrand";
+			mnuCreateBrand.Text = "Create new";
+			mnuCreateBrand.Click += new System.EventHandler(mnuCreateBrand_Click);
 			// 
 			// mnuDeleteBrand
 			// 
-			this.mnuDeleteBrand.Available = true;
-			this.mnuDeleteBrand.Checked = false;
-			this.mnuDeleteBrand.Enabled = true;
-			this.mnuDeleteBrand.Name = "mnuDeleteBrand";
-			this.mnuDeleteBrand.Text = "Delete";
-			this.mnuDeleteBrand.Click += new System.EventHandler(this.mnuDeleteBrand_Click);
+			mnuDeleteBrand.Available = true;
+			mnuDeleteBrand.Checked = false;
+			mnuDeleteBrand.Enabled = true;
+			mnuDeleteBrand.Name = "mnuDeleteBrand";
+			mnuDeleteBrand.Text = "Delete";
+			mnuDeleteBrand.Click += new System.EventHandler(mnuDeleteBrand_Click);
 			// 
 			// mnuVehicles
 			// 
-			this.mnuVehicles.Available = true;
-			this.mnuVehicles.Checked = false;
-			this.mnuVehicles.Enabled = true;
-			this.mnuVehicles.Name = "mnuVehicles";
-			this.mnuVehicles.Text = "Vehicles";
-			this.mnuVehicles.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{this.mnuCreateVehicle, this.mnuDeleteVehicle});
+			mnuVehicles.Available = true;
+			mnuVehicles.Checked = false;
+			mnuVehicles.Enabled = true;
+			mnuVehicles.Name = "mnuVehicles";
+			mnuVehicles.Text = "Vehicles";
+			mnuVehicles.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{mnuCreateVehicle, mnuDeleteVehicle});
 			// 
 			// mnuCreateVehicle
 			// 
-			this.mnuCreateVehicle.Available = true;
-			this.mnuCreateVehicle.Checked = false;
-			this.mnuCreateVehicle.Enabled = true;
-			this.mnuCreateVehicle.Name = "mnuCreateVehicle";
-			this.mnuCreateVehicle.Text = "Create new";
-			this.mnuCreateVehicle.Click += new System.EventHandler(this.mnuCreateVehicle_Click);
+			mnuCreateVehicle.Available = true;
+			mnuCreateVehicle.Checked = false;
+			mnuCreateVehicle.Enabled = true;
+			mnuCreateVehicle.Name = "mnuCreateVehicle";
+			mnuCreateVehicle.Text = "Create new";
+			mnuCreateVehicle.Click += new System.EventHandler(mnuCreateVehicle_Click);
 			// 
 			// mnuDeleteVehicle
 			// 
-			this.mnuDeleteVehicle.Available = true;
-			this.mnuDeleteVehicle.Checked = false;
-			this.mnuDeleteVehicle.Enabled = true;
-			this.mnuDeleteVehicle.Name = "mnuDeleteVehicle";
-			this.mnuDeleteVehicle.Text = "Delete";
-			this.mnuDeleteVehicle.Click += new System.EventHandler(this.mnuDeleteVehicle_Click);
+			mnuDeleteVehicle.Available = true;
+			mnuDeleteVehicle.Checked = false;
+			mnuDeleteVehicle.Enabled = true;
+			mnuDeleteVehicle.Name = "mnuDeleteVehicle";
+			mnuDeleteVehicle.Text = "Delete";
+			mnuDeleteVehicle.Click += new System.EventHandler(mnuDeleteVehicle_Click);
 			// 
 			// mnuStaff
 			// 
-			this.mnuStaff.Available = true;
-			this.mnuStaff.Checked = false;
-			this.mnuStaff.Enabled = true;
-			this.mnuStaff.Name = "mnuStaff";
-			this.mnuStaff.Text = "Staff";
-			this.mnuStaff.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{this.mnuCreateStaff, this.mnuDeleteStaff});
+			mnuStaff.Available = true;
+			mnuStaff.Checked = false;
+			mnuStaff.Enabled = true;
+			mnuStaff.Name = "mnuStaff";
+			mnuStaff.Text = "Staff";
+			mnuStaff.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{mnuCreateStaff, mnuDeleteStaff});
 			// 
 			// mnuCreateStaff
 			// 
-			this.mnuCreateStaff.Available = true;
-			this.mnuCreateStaff.Checked = false;
-			this.mnuCreateStaff.Enabled = true;
-			this.mnuCreateStaff.Name = "mnuCreateStaff";
-			this.mnuCreateStaff.Text = "Create new";
-			this.mnuCreateStaff.Click += new System.EventHandler(this.mnuCreateStaff_Click);
+			mnuCreateStaff.Available = true;
+			mnuCreateStaff.Checked = false;
+			mnuCreateStaff.Enabled = true;
+			mnuCreateStaff.Name = "mnuCreateStaff";
+			mnuCreateStaff.Text = "Create new";
+			mnuCreateStaff.Click += new System.EventHandler(mnuCreateStaff_Click);
 			// 
 			// mnuDeleteStaff
 			// 
-			this.mnuDeleteStaff.Available = true;
-			this.mnuDeleteStaff.Checked = false;
-			this.mnuDeleteStaff.Enabled = true;
-			this.mnuDeleteStaff.Name = "mnuDeleteStaff";
-			this.mnuDeleteStaff.Text = "Delete";
-			this.mnuDeleteStaff.Click += new System.EventHandler(this.mnuDeleteStaff_Click);
+			mnuDeleteStaff.Available = true;
+			mnuDeleteStaff.Checked = false;
+			mnuDeleteStaff.Enabled = true;
+			mnuDeleteStaff.Name = "mnuDeleteStaff";
+			mnuDeleteStaff.Text = "Delete";
+			mnuDeleteStaff.Click += new System.EventHandler(mnuDeleteStaff_Click);
 			// 
 			// mnuReceipts
 			// 
-			this.mnuReceipts.Available = true;
-			this.mnuReceipts.Checked = false;
-			this.mnuReceipts.Enabled = true;
-			this.mnuReceipts.Name = "mnuReceipts";
-			this.mnuReceipts.Text = "Receipts";
-			this.mnuReceipts.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{this.menuCreateReceipts});
+			mnuReceipts.Available = true;
+			mnuReceipts.Checked = false;
+			mnuReceipts.Enabled = true;
+			mnuReceipts.Name = "mnuReceipts";
+			mnuReceipts.Text = "Receipts";
+			mnuReceipts.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{menuCreateReceipts});
 			// 
 			// menuCreateReceipts
 			// 
-			this.menuCreateReceipts.Available = true;
-			this.menuCreateReceipts.Checked = false;
-			this.menuCreateReceipts.Enabled = true;
-			this.menuCreateReceipts.Name = "menuCreateReceipts";
-			this.menuCreateReceipts.Text = "Create new";
-			this.menuCreateReceipts.Click += new System.EventHandler(this.menuCreateReceipts_Click);
+			menuCreateReceipts.Available = true;
+			menuCreateReceipts.Checked = false;
+			menuCreateReceipts.Enabled = true;
+			menuCreateReceipts.Name = "menuCreateReceipts";
+			menuCreateReceipts.Text = "Create new";
+			menuCreateReceipts.Click += new System.EventHandler(menuCreateReceipts_Click);
 			// 
 			// mnuConsults
 			// 
-			this.mnuConsults.Available = true;
-			this.mnuConsults.Checked = false;
-			this.mnuConsults.Enabled = true;
-			this.mnuConsults.Name = "mnuConsults";
-			this.mnuConsults.Text = "Consults";
-			this.mnuConsults.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{this.mnuShowBrands, this.mnuShowVehicles, this.mnuShowStaff, this.mnuShowReceipts, this.mnuDetailedInformation});
+			mnuConsults.Available = true;
+			mnuConsults.Checked = false;
+			mnuConsults.Enabled = true;
+			mnuConsults.Name = "mnuConsults";
+			mnuConsults.Text = "Consults";
+			mnuConsults.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{mnuShowBrands, mnuShowVehicles, mnuShowStaff, mnuShowReceipts, mnuDetailedInformation});
 			// 
 			// mnuShowBrands
 			// 
-			this.mnuShowBrands.Available = true;
-			this.mnuShowBrands.Checked = false;
-			this.mnuShowBrands.Enabled = true;
-			this.mnuShowBrands.Name = "mnuShowBrands";
-			this.mnuShowBrands.Text = "Brands";
-			this.mnuShowBrands.Click += new System.EventHandler(this.mnuShowBrands_Click);
+			mnuShowBrands.Available = true;
+			mnuShowBrands.Checked = false;
+			mnuShowBrands.Enabled = true;
+			mnuShowBrands.Name = "mnuShowBrands";
+			mnuShowBrands.Text = "Brands";
+			mnuShowBrands.Click += new System.EventHandler(mnuShowBrands_Click);
 			// 
 			// mnuShowVehicles
 			// 
-			this.mnuShowVehicles.Available = true;
-			this.mnuShowVehicles.Checked = false;
-			this.mnuShowVehicles.Enabled = true;
-			this.mnuShowVehicles.Name = "mnuShowVehicles";
-			this.mnuShowVehicles.Text = "Vehicles";
-			this.mnuShowVehicles.Click += new System.EventHandler(this.mnuShowVehicles_Click);
+			mnuShowVehicles.Available = true;
+			mnuShowVehicles.Checked = false;
+			mnuShowVehicles.Enabled = true;
+			mnuShowVehicles.Name = "mnuShowVehicles";
+			mnuShowVehicles.Text = "Vehicles";
+			mnuShowVehicles.Click += new System.EventHandler(mnuShowVehicles_Click);
 			// 
 			// mnuShowStaff
 			// 
-			this.mnuShowStaff.Available = true;
-			this.mnuShowStaff.Checked = false;
-			this.mnuShowStaff.Enabled = true;
-			this.mnuShowStaff.Name = "mnuShowStaff";
-			this.mnuShowStaff.Text = "Staff";
-			this.mnuShowStaff.Click += new System.EventHandler(this.mnuShowStaff_Click);
+			mnuShowStaff.Available = true;
+			mnuShowStaff.Checked = false;
+			mnuShowStaff.Enabled = true;
+			mnuShowStaff.Name = "mnuShowStaff";
+			mnuShowStaff.Text = "Staff";
+			mnuShowStaff.Click += new System.EventHandler(mnuShowStaff_Click);
 			// 
 			// mnuShowReceipts
 			// 
-			this.mnuShowReceipts.Available = true;
-			this.mnuShowReceipts.Checked = false;
-			this.mnuShowReceipts.Enabled = true;
-			this.mnuShowReceipts.Name = "mnuShowReceipts";
-			this.mnuShowReceipts.Text = "Receipts";
-			this.mnuShowReceipts.Click += new System.EventHandler(this.mnuShowReceipts_Click);
+			mnuShowReceipts.Available = true;
+			mnuShowReceipts.Checked = false;
+			mnuShowReceipts.Enabled = true;
+			mnuShowReceipts.Name = "mnuShowReceipts";
+			mnuShowReceipts.Text = "Receipts";
+			mnuShowReceipts.Click += new System.EventHandler(mnuShowReceipts_Click);
 			// 
 			// mnuDetailedInformation
 			// 
-			this.mnuDetailedInformation.Available = true;
-			this.mnuDetailedInformation.Checked = false;
-			this.mnuDetailedInformation.Enabled = true;
-			this.mnuDetailedInformation.Name = "mnuDetailedInformation";
-			this.mnuDetailedInformation.Text = "Detailed Information";
-			this.mnuDetailedInformation.Click += new System.EventHandler(this.mnuDetailedInformation_Click);
+			mnuDetailedInformation.Available = true;
+			mnuDetailedInformation.Checked = false;
+			mnuDetailedInformation.Enabled = true;
+			mnuDetailedInformation.Name = "mnuDetailedInformation";
+			mnuDetailedInformation.Text = "Detailed Information";
+			mnuDetailedInformation.Click += new System.EventHandler(mnuDetailedInformation_Click);
 			// 
 			// mnuHelp
 			// 
-			this.mnuHelp.Available = true;
-			this.mnuHelp.Checked = false;
-			this.mnuHelp.Enabled = true;
-			this.mnuHelp.Name = "mnuHelp";
-			this.mnuHelp.Text = "Help";
-			this.mnuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{this.mnuAbout});
+			mnuHelp.Available = true;
+			mnuHelp.Checked = false;
+			mnuHelp.Enabled = true;
+			mnuHelp.Name = "mnuHelp";
+			mnuHelp.Text = "Help";
+			mnuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[]{mnuAbout});
 			// 
 			// mnuAbout
 			// 
-			this.mnuAbout.Available = true;
-			this.mnuAbout.Checked = false;
-			this.mnuAbout.Enabled = true;
-			this.mnuAbout.Name = "mnuAbout";
-			this.mnuAbout.Text = "About";
-			this.mnuAbout.Click += new System.EventHandler(this.mnuAbout_Click);
+			mnuAbout.Available = true;
+			mnuAbout.Checked = false;
+			mnuAbout.Enabled = true;
+			mnuAbout.Name = "mnuAbout";
+			mnuAbout.Text = "About";
+			mnuAbout.Click += new System.EventHandler(mnuAbout_Click);
 			// 
 			// lblRole
 			// 
-			this.lblRole.AllowDrop = true;
-			this.lblRole.BackColor = System.Drawing.SystemColors.Control;
-			this.lblRole.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblRole.Font = new System.Drawing.Font("Consolas", 27.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblRole.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblRole.Location = new System.Drawing.Point(72, 224);
-			this.lblRole.MinimumSize = new System.Drawing.Size(521, 105);
-			this.lblRole.Name = "lblRole";
-			this.lblRole.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblRole.Size = new System.Drawing.Size(521, 105);
-			this.lblRole.TabIndex = 1;
-			this.lblRole.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			lblRole.AllowDrop = true;
+			lblRole.BackColor = System.Drawing.SystemColors.Control;
+			lblRole.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblRole.Font = new System.Drawing.Font("Consolas", 27.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblRole.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblRole.Location = new System.Drawing.Point(72, 224);
+			lblRole.MinimumSize = new System.Drawing.Size(521, 105);
+			lblRole.Name = "lblRole";
+			lblRole.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblRole.Size = new System.Drawing.Size(521, 105);
+			lblRole.TabIndex = 1;
+			lblRole.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// lblUser
 			// 
-			this.lblUser.AllowDrop = true;
-			this.lblUser.BackColor = System.Drawing.SystemColors.Control;
-			this.lblUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblUser.Font = new System.Drawing.Font("Consolas", 27.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblUser.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblUser.Location = new System.Drawing.Point(72, 112);
-			this.lblUser.MinimumSize = new System.Drawing.Size(521, 105);
-			this.lblUser.Name = "lblUser";
-			this.lblUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblUser.Size = new System.Drawing.Size(521, 105);
-			this.lblUser.TabIndex = 0;
-			this.lblUser.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			lblUser.AllowDrop = true;
+			lblUser.BackColor = System.Drawing.SystemColors.Control;
+			lblUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblUser.Font = new System.Drawing.Font("Consolas", 27.75f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblUser.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblUser.Location = new System.Drawing.Point(72, 112);
+			lblUser.MinimumSize = new System.Drawing.Size(521, 105);
+			lblUser.Name = "lblUser";
+			lblUser.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblUser.Size = new System.Drawing.Size(521, 105);
+			lblUser.TabIndex = 0;
+			lblUser.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// frmMain
 			// 
-			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.Control;
-			this.ClientSize = new System.Drawing.Size(676, 423);
-			this.Controls.Add(this.lblRole);
-			this.Controls.Add(this.lblUser);
-			this.Controls.Add(MainMenu1);
-			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Icon = (System.Drawing.Icon) resources.GetObject("frmMain.Icon");
-			this.Location = new System.Drawing.Point(10, 33);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "frmMain";
-			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Main Menu";
-			this.Activated += new System.EventHandler(this.frmMain_Activated);
-			this.Closed += new System.EventHandler(this.Form_Closed);
-			this.ResumeLayout(false);
+			AllowDrop = true;
+			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			BackColor = System.Drawing.SystemColors.Control;
+			ClientSize = new System.Drawing.Size(676, 423);
+			Controls.Add(lblRole);
+			Controls.Add(lblUser);
+			Controls.Add(MainMenu1);
+			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			Icon = (System.Drawing.Icon) resources.GetObject("frmMain.Icon");
+			Location = new System.Drawing.Point(10, 33);
+			MaximizeBox = false;
+			MinimizeBox = false;
+			Name = "frmMain";
+			RightToLeft = System.Windows.Forms.RightToLeft.No;
+			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			Text = "Main Menu";
+			Activated += new System.EventHandler(frmMain_Activated);
+			Closed += new System.EventHandler(Form_Closed);
+			ResumeLayout(false);
 		}
 		void ReLoadForm(bool addEvents) => InitializeHelp();
 
