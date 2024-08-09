@@ -67,345 +67,345 @@ namespace StarCarsManagement
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			components = new System.ComponentModel.Container();
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreateNewStaff));
-			ToolTipMain = new System.Windows.Forms.ToolTip(components);
-			dtDateBirth = new System.Windows.Forms.DateTimePicker();
-			txtDNI = new System.Windows.Forms.MaskedTextBox();
-			txtPhoneNumber = new System.Windows.Forms.MaskedTextBox();
-			btnCreate = new System.Windows.Forms.Button();
-			btnReset = new System.Windows.Forms.Button();
-			txtPassword = new System.Windows.Forms.TextBox();
-			txtUsername = new System.Windows.Forms.TextBox();
-			cmbRole = new System.Windows.Forms.ComboBox();
-			Label5 = new System.Windows.Forms.Label();
-			lblPhoneNumber = new System.Windows.Forms.Label();
-			txtLastName = new System.Windows.Forms.TextBox();
-			txtName = new System.Windows.Forms.TextBox();
-			lblTitle = new System.Windows.Forms.Label();
-			lblName = new System.Windows.Forms.Label();
-			lblLastName = new System.Windows.Forms.Label();
-			lblDNI = new System.Windows.Forms.Label();
-			lblRole = new System.Windows.Forms.Label();
-			lblUsername = new System.Windows.Forms.Label();
-			lblPassword = new System.Windows.Forms.Label();
-			SuspendLayout();
-			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
+			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
+			this.dtDateBirth = new System.Windows.Forms.DateTimePicker();
+			this.txtDNI = new System.Windows.Forms.MaskedTextBox();
+			this.txtPhoneNumber = new System.Windows.Forms.MaskedTextBox();
+			this.btnCreate = new System.Windows.Forms.Button();
+			this.btnReset = new System.Windows.Forms.Button();
+			this.txtPassword = new System.Windows.Forms.TextBox();
+			this.txtUsername = new System.Windows.Forms.TextBox();
+			this.cmbRole = new System.Windows.Forms.ComboBox();
+			this.Label5 = new System.Windows.Forms.Label();
+			this.lblPhoneNumber = new System.Windows.Forms.Label();
+			this.txtLastName = new System.Windows.Forms.TextBox();
+			this.txtName = new System.Windows.Forms.TextBox();
+			this.lblTitle = new System.Windows.Forms.Label();
+			this.lblName = new System.Windows.Forms.Label();
+			this.lblLastName = new System.Windows.Forms.Label();
+			this.lblDNI = new System.Windows.Forms.Label();
+			this.lblRole = new System.Windows.Forms.Label();
+			this.lblUsername = new System.Windows.Forms.Label();
+			this.lblPassword = new System.Windows.Forms.Label();
+			this.SuspendLayout();
+			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
 			// 
 			// dtDateBirth
 			// 
-			dtDateBirth.AllowDrop = true;
-			dtDateBirth.Checked = false;
-			dtDateBirth.CustomFormat = "MM/dd/yyyy";
-			dtDateBirth.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			dtDateBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-			dtDateBirth.Location = new System.Drawing.Point(24, 208);
-			dtDateBirth.Name = "dtDateBirth";
-			dtDateBirth.Size = new System.Drawing.Size(209, 33);
-			dtDateBirth.TabIndex = 4;
+			this.dtDateBirth.AllowDrop = true;
+			this.dtDateBirth.Checked = false;
+			this.dtDateBirth.CustomFormat = "MM/dd/yyyy";
+			this.dtDateBirth.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.dtDateBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+			this.dtDateBirth.Location = new System.Drawing.Point(24, 208);
+			this.dtDateBirth.Name = "dtDateBirth";
+			this.dtDateBirth.Size = new System.Drawing.Size(209, 33);
+			this.dtDateBirth.TabIndex = 4;
 			// 
 			// txtDNI
 			// 
-			txtDNI.AllowDrop = true;
-			txtDNI.AllowPromptAsInput = false;
-			txtDNI.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			txtDNI.Location = new System.Drawing.Point(24, 144);
-			txtDNI.Name = "txtDNI";
-			txtDNI.PromptChar = '_';
-			txtDNI.Size = new System.Drawing.Size(209, 33);
-			txtDNI.TabIndex = 2;
-			txtDNI.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
-			txtDNI.Enter += new System.EventHandler(txtDNI_Enter);
-			txtDNI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(txtDNI_KeyPress);
-			txtDNI.Leave += new System.EventHandler(txtDNI_Leave);
+			this.txtDNI.AllowDrop = true;
+			this.txtDNI.AllowPromptAsInput = false;
+			this.txtDNI.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.txtDNI.Location = new System.Drawing.Point(24, 144);
+			this.txtDNI.Name = "txtDNI";
+			this.txtDNI.PromptChar = '_';
+			this.txtDNI.Size = new System.Drawing.Size(209, 33);
+			this.txtDNI.TabIndex = 2;
+			this.txtDNI.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
+			this.txtDNI.Enter += new System.EventHandler(this.txtDNI_Enter);
+			this.txtDNI.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDNI_KeyPress);
+			this.txtDNI.Leave += new System.EventHandler(this.txtDNI_Leave);
 			// 
 			// txtPhoneNumber
 			// 
-			txtPhoneNumber.AllowDrop = true;
-			txtPhoneNumber.AllowPromptAsInput = false;
-			txtPhoneNumber.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			txtPhoneNumber.Location = new System.Drawing.Point(280, 144);
-			txtPhoneNumber.Name = "txtPhoneNumber";
-			txtPhoneNumber.PromptChar = '_';
-			txtPhoneNumber.Size = new System.Drawing.Size(209, 33);
-			txtPhoneNumber.TabIndex = 3;
-			txtPhoneNumber.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
-			txtPhoneNumber.Enter += new System.EventHandler(txtPhoneNumber_Enter);
-			txtPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(txtPhoneNumber_KeyPress);
-			txtPhoneNumber.Leave += new System.EventHandler(txtPhoneNumber_Leave);
+			this.txtPhoneNumber.AllowDrop = true;
+			this.txtPhoneNumber.AllowPromptAsInput = false;
+			this.txtPhoneNumber.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.txtPhoneNumber.Location = new System.Drawing.Point(280, 144);
+			this.txtPhoneNumber.Name = "txtPhoneNumber";
+			this.txtPhoneNumber.PromptChar = '_';
+			this.txtPhoneNumber.Size = new System.Drawing.Size(209, 33);
+			this.txtPhoneNumber.TabIndex = 3;
+			this.txtPhoneNumber.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
+			this.txtPhoneNumber.Enter += new System.EventHandler(this.txtPhoneNumber_Enter);
+			this.txtPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhoneNumber_KeyPress);
+			this.txtPhoneNumber.Leave += new System.EventHandler(this.txtPhoneNumber_Leave);
 			// 
 			// btnCreate
 			// 
-			btnCreate.AllowDrop = true;
-			btnCreate.BackColor = System.Drawing.SystemColors.Control;
-			btnCreate.Font = new System.Drawing.Font("Consolas", 14.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			btnCreate.ForeColor = System.Drawing.Color.Empty;
-			btnCreate.Location = new System.Drawing.Point(64, 328);
-			btnCreate.Name = "btnCreate";
-			btnCreate.Size = new System.Drawing.Size(169, 65);
-			btnCreate.TabIndex = 8;
-			btnCreate.Text = "&Create";
-			btnCreate.Click += new System.EventHandler(btnCreate_Click);
+			this.btnCreate.AllowDrop = true;
+			this.btnCreate.BackColor = System.Drawing.SystemColors.Control;
+			this.btnCreate.Font = new System.Drawing.Font("Consolas", 14.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.btnCreate.ForeColor = System.Drawing.Color.Empty;
+			this.btnCreate.Location = new System.Drawing.Point(64, 328);
+			this.btnCreate.Name = "btnCreate";
+			this.btnCreate.Size = new System.Drawing.Size(169, 65);
+			this.btnCreate.TabIndex = 8;
+			this.btnCreate.Text = "&Create";
+			this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
 			// 
 			// btnReset
 			// 
-			btnReset.AllowDrop = true;
-			btnReset.BackColor = System.Drawing.SystemColors.Control;
-			btnReset.Font = new System.Drawing.Font("Consolas", 14.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			btnReset.ForeColor = System.Drawing.Color.Empty;
-			btnReset.Location = new System.Drawing.Point(280, 328);
-			btnReset.Name = "btnReset";
-			btnReset.Size = new System.Drawing.Size(169, 65);
-			btnReset.TabIndex = 9;
-			btnReset.Text = "&Reset";
-			btnReset.Click += new System.EventHandler(btnReset_Click);
+			this.btnReset.AllowDrop = true;
+			this.btnReset.BackColor = System.Drawing.SystemColors.Control;
+			this.btnReset.Font = new System.Drawing.Font("Consolas", 14.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.btnReset.ForeColor = System.Drawing.Color.Empty;
+			this.btnReset.Location = new System.Drawing.Point(280, 328);
+			this.btnReset.Name = "btnReset";
+			this.btnReset.Size = new System.Drawing.Size(169, 65);
+			this.btnReset.TabIndex = 9;
+			this.btnReset.Text = "&Reset";
+			this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
 			// 
 			// txtPassword
 			// 
-			txtPassword.AllowDrop = true;
-			txtPassword.BackColor = System.Drawing.SystemColors.Window;
-			txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			txtPassword.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			txtPassword.ForeColor = System.Drawing.SystemColors.WindowText;
-			txtPassword.Location = new System.Drawing.Point(280, 272);
-			txtPassword.Name = "txtPassword";
-			txtPassword.PasswordChar = (char) 42;
-			txtPassword.Size = new System.Drawing.Size(209, 33);
-			txtPassword.TabIndex = 7;
+			this.txtPassword.AllowDrop = true;
+			this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
+			this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.txtPassword.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.txtPassword.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.txtPassword.Location = new System.Drawing.Point(280, 272);
+			this.txtPassword.Name = "txtPassword";
+			this.txtPassword.PasswordChar = (char) 42;
+			this.txtPassword.Size = new System.Drawing.Size(209, 33);
+			this.txtPassword.TabIndex = 7;
 			// 
 			// txtUsername
 			// 
-			txtUsername.AllowDrop = true;
-			txtUsername.BackColor = System.Drawing.SystemColors.Window;
-			txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			txtUsername.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			txtUsername.ForeColor = System.Drawing.SystemColors.WindowText;
-			txtUsername.Location = new System.Drawing.Point(24, 272);
-			txtUsername.Name = "txtUsername";
-			txtUsername.Size = new System.Drawing.Size(209, 33);
-			txtUsername.TabIndex = 6;
+			this.txtUsername.AllowDrop = true;
+			this.txtUsername.BackColor = System.Drawing.SystemColors.Window;
+			this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.txtUsername.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.txtUsername.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.txtUsername.Location = new System.Drawing.Point(24, 272);
+			this.txtUsername.Name = "txtUsername";
+			this.txtUsername.Size = new System.Drawing.Size(209, 33);
+			this.txtUsername.TabIndex = 6;
 			// 
 			// cmbRole
 			// 
-			cmbRole.AllowDrop = true;
-			cmbRole.BackColor = System.Drawing.SystemColors.Window;
-			cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			cmbRole.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			cmbRole.ForeColor = System.Drawing.SystemColors.WindowText;
-			cmbRole.Location = new System.Drawing.Point(280, 208);
-			cmbRole.Name = "cmbRole";
-			cmbRole.Size = new System.Drawing.Size(209, 26);
-			cmbRole.TabIndex = 5;
-			cmbRole.Text = "cmbRole";
+			this.cmbRole.AllowDrop = true;
+			this.cmbRole.BackColor = System.Drawing.SystemColors.Window;
+			this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cmbRole.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.cmbRole.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.cmbRole.Location = new System.Drawing.Point(280, 208);
+			this.cmbRole.Name = "cmbRole";
+			this.cmbRole.Size = new System.Drawing.Size(209, 26);
+			this.cmbRole.TabIndex = 5;
+			this.cmbRole.Text = "cmbRole";
 			// 
 			// Label5
 			// 
-			Label5.AllowDrop = true;
-			Label5.BackColor = System.Drawing.SystemColors.Control;
-			Label5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			Label5.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			Label5.ForeColor = System.Drawing.SystemColors.ControlText;
-			Label5.Location = new System.Drawing.Point(24, 192);
-			Label5.MinimumSize = new System.Drawing.Size(81, 17);
-			Label5.Name = "Label5";
-			Label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			Label5.Size = new System.Drawing.Size(81, 17);
-			Label5.TabIndex = 15;
-			Label5.Text = "Date of birth";
+			this.Label5.AllowDrop = true;
+			this.Label5.BackColor = System.Drawing.SystemColors.Control;
+			this.Label5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.Label5.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.Label5.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.Label5.Location = new System.Drawing.Point(24, 192);
+			this.Label5.MinimumSize = new System.Drawing.Size(81, 17);
+			this.Label5.Name = "Label5";
+			this.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.Label5.Size = new System.Drawing.Size(81, 17);
+			this.Label5.TabIndex = 15;
+			this.Label5.Text = "Date of birth";
 			// 
 			// lblPhoneNumber
 			// 
-			lblPhoneNumber.AllowDrop = true;
-			lblPhoneNumber.BackColor = System.Drawing.SystemColors.Control;
-			lblPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblPhoneNumber.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblPhoneNumber.ForeColor = System.Drawing.SystemColors.ControlText;
-			lblPhoneNumber.Location = new System.Drawing.Point(280, 128);
-			lblPhoneNumber.MinimumSize = new System.Drawing.Size(81, 17);
-			lblPhoneNumber.Name = "lblPhoneNumber";
-			lblPhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblPhoneNumber.Size = new System.Drawing.Size(81, 17);
-			lblPhoneNumber.TabIndex = 14;
-			lblPhoneNumber.Text = "Phone Number";
+			this.lblPhoneNumber.AllowDrop = true;
+			this.lblPhoneNumber.BackColor = System.Drawing.SystemColors.Control;
+			this.lblPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblPhoneNumber.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblPhoneNumber.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.lblPhoneNumber.Location = new System.Drawing.Point(280, 128);
+			this.lblPhoneNumber.MinimumSize = new System.Drawing.Size(81, 17);
+			this.lblPhoneNumber.Name = "lblPhoneNumber";
+			this.lblPhoneNumber.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblPhoneNumber.Size = new System.Drawing.Size(81, 17);
+			this.lblPhoneNumber.TabIndex = 14;
+			this.lblPhoneNumber.Text = "Phone Number";
 			// 
 			// txtLastName
 			// 
-			txtLastName.AllowDrop = true;
-			txtLastName.BackColor = System.Drawing.SystemColors.Window;
-			txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			txtLastName.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			txtLastName.ForeColor = System.Drawing.SystemColors.WindowText;
-			txtLastName.Location = new System.Drawing.Point(280, 80);
-			txtLastName.Name = "txtLastName";
-			txtLastName.Size = new System.Drawing.Size(209, 33);
-			txtLastName.TabIndex = 1;
+			this.txtLastName.AllowDrop = true;
+			this.txtLastName.BackColor = System.Drawing.SystemColors.Window;
+			this.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.txtLastName.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.txtLastName.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.txtLastName.Location = new System.Drawing.Point(280, 80);
+			this.txtLastName.Name = "txtLastName";
+			this.txtLastName.Size = new System.Drawing.Size(209, 33);
+			this.txtLastName.TabIndex = 1;
 			// 
 			// txtName
 			// 
-			txtName.AllowDrop = true;
-			txtName.BackColor = System.Drawing.SystemColors.Window;
-			txtName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			txtName.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			txtName.ForeColor = System.Drawing.SystemColors.WindowText;
-			txtName.Location = new System.Drawing.Point(24, 80);
-			txtName.Name = "txtName";
-			txtName.Size = new System.Drawing.Size(209, 33);
-			txtName.TabIndex = 0;
+			this.txtName.AllowDrop = true;
+			this.txtName.BackColor = System.Drawing.SystemColors.Window;
+			this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.txtName.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.txtName.ForeColor = System.Drawing.SystemColors.WindowText;
+			this.txtName.Location = new System.Drawing.Point(24, 80);
+			this.txtName.Name = "txtName";
+			this.txtName.Size = new System.Drawing.Size(209, 33);
+			this.txtName.TabIndex = 0;
 			// 
 			// lblTitle
 			// 
-			lblTitle.AllowDrop = true;
-			lblTitle.BackColor = System.Drawing.SystemColors.Control;
-			lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblTitle.Font = new System.Drawing.Font("Javanese Text", 24f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
-			lblTitle.Location = new System.Drawing.Point(16, 0);
-			lblTitle.MinimumSize = new System.Drawing.Size(481, 49);
-			lblTitle.Name = "lblTitle";
-			lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblTitle.Size = new System.Drawing.Size(481, 49);
-			lblTitle.TabIndex = 10;
-			lblTitle.Text = "Staff";
-			lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.lblTitle.AllowDrop = true;
+			this.lblTitle.BackColor = System.Drawing.SystemColors.Control;
+			this.lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblTitle.Font = new System.Drawing.Font("Javanese Text", 24f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.lblTitle.Location = new System.Drawing.Point(16, 0);
+			this.lblTitle.MinimumSize = new System.Drawing.Size(481, 49);
+			this.lblTitle.Name = "lblTitle";
+			this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblTitle.Size = new System.Drawing.Size(481, 49);
+			this.lblTitle.TabIndex = 10;
+			this.lblTitle.Text = "Staff";
+			this.lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// lblName
 			// 
-			lblName.AllowDrop = true;
-			lblName.BackColor = System.Drawing.SystemColors.Control;
-			lblName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblName.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblName.ForeColor = System.Drawing.SystemColors.ControlText;
-			lblName.Location = new System.Drawing.Point(24, 64);
-			lblName.MinimumSize = new System.Drawing.Size(81, 17);
-			lblName.Name = "lblName";
-			lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblName.Size = new System.Drawing.Size(81, 17);
-			lblName.TabIndex = 11;
-			lblName.Text = "Name";
+			this.lblName.AllowDrop = true;
+			this.lblName.BackColor = System.Drawing.SystemColors.Control;
+			this.lblName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblName.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblName.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.lblName.Location = new System.Drawing.Point(24, 64);
+			this.lblName.MinimumSize = new System.Drawing.Size(81, 17);
+			this.lblName.Name = "lblName";
+			this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblName.Size = new System.Drawing.Size(81, 17);
+			this.lblName.TabIndex = 11;
+			this.lblName.Text = "Name";
 			// 
 			// lblLastName
 			// 
-			lblLastName.AllowDrop = true;
-			lblLastName.BackColor = System.Drawing.SystemColors.Control;
-			lblLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblLastName.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblLastName.ForeColor = System.Drawing.SystemColors.ControlText;
-			lblLastName.Location = new System.Drawing.Point(280, 64);
-			lblLastName.MinimumSize = new System.Drawing.Size(81, 17);
-			lblLastName.Name = "lblLastName";
-			lblLastName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblLastName.Size = new System.Drawing.Size(81, 17);
-			lblLastName.TabIndex = 12;
-			lblLastName.Text = "Last Name";
+			this.lblLastName.AllowDrop = true;
+			this.lblLastName.BackColor = System.Drawing.SystemColors.Control;
+			this.lblLastName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblLastName.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblLastName.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.lblLastName.Location = new System.Drawing.Point(280, 64);
+			this.lblLastName.MinimumSize = new System.Drawing.Size(81, 17);
+			this.lblLastName.Name = "lblLastName";
+			this.lblLastName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblLastName.Size = new System.Drawing.Size(81, 17);
+			this.lblLastName.TabIndex = 12;
+			this.lblLastName.Text = "Last Name";
 			// 
 			// lblDNI
 			// 
-			lblDNI.AllowDrop = true;
-			lblDNI.BackColor = System.Drawing.SystemColors.Control;
-			lblDNI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblDNI.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblDNI.ForeColor = System.Drawing.SystemColors.ControlText;
-			lblDNI.Location = new System.Drawing.Point(24, 128);
-			lblDNI.MinimumSize = new System.Drawing.Size(81, 17);
-			lblDNI.Name = "lblDNI";
-			lblDNI.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblDNI.Size = new System.Drawing.Size(81, 17);
-			lblDNI.TabIndex = 13;
-			lblDNI.Text = "DNI";
+			this.lblDNI.AllowDrop = true;
+			this.lblDNI.BackColor = System.Drawing.SystemColors.Control;
+			this.lblDNI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblDNI.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblDNI.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.lblDNI.Location = new System.Drawing.Point(24, 128);
+			this.lblDNI.MinimumSize = new System.Drawing.Size(81, 17);
+			this.lblDNI.Name = "lblDNI";
+			this.lblDNI.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblDNI.Size = new System.Drawing.Size(81, 17);
+			this.lblDNI.TabIndex = 13;
+			this.lblDNI.Text = "DNI";
 			// 
 			// lblRole
 			// 
-			lblRole.AllowDrop = true;
-			lblRole.BackColor = System.Drawing.SystemColors.Control;
-			lblRole.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblRole.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblRole.ForeColor = System.Drawing.SystemColors.ControlText;
-			lblRole.Location = new System.Drawing.Point(280, 192);
-			lblRole.MinimumSize = new System.Drawing.Size(81, 17);
-			lblRole.Name = "lblRole";
-			lblRole.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblRole.Size = new System.Drawing.Size(81, 17);
-			lblRole.TabIndex = 16;
-			lblRole.Text = "Role";
+			this.lblRole.AllowDrop = true;
+			this.lblRole.BackColor = System.Drawing.SystemColors.Control;
+			this.lblRole.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblRole.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblRole.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.lblRole.Location = new System.Drawing.Point(280, 192);
+			this.lblRole.MinimumSize = new System.Drawing.Size(81, 17);
+			this.lblRole.Name = "lblRole";
+			this.lblRole.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblRole.Size = new System.Drawing.Size(81, 17);
+			this.lblRole.TabIndex = 16;
+			this.lblRole.Text = "Role";
 			// 
 			// lblUsername
 			// 
-			lblUsername.AllowDrop = true;
-			lblUsername.BackColor = System.Drawing.SystemColors.Control;
-			lblUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblUsername.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblUsername.ForeColor = System.Drawing.SystemColors.ControlText;
-			lblUsername.Location = new System.Drawing.Point(24, 256);
-			lblUsername.MinimumSize = new System.Drawing.Size(81, 17);
-			lblUsername.Name = "lblUsername";
-			lblUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblUsername.Size = new System.Drawing.Size(81, 17);
-			lblUsername.TabIndex = 17;
-			lblUsername.Text = "Username";
+			this.lblUsername.AllowDrop = true;
+			this.lblUsername.BackColor = System.Drawing.SystemColors.Control;
+			this.lblUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblUsername.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblUsername.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.lblUsername.Location = new System.Drawing.Point(24, 256);
+			this.lblUsername.MinimumSize = new System.Drawing.Size(81, 17);
+			this.lblUsername.Name = "lblUsername";
+			this.lblUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblUsername.Size = new System.Drawing.Size(81, 17);
+			this.lblUsername.TabIndex = 17;
+			this.lblUsername.Text = "Username";
 			// 
 			// lblPassword
 			// 
-			lblPassword.AllowDrop = true;
-			lblPassword.BackColor = System.Drawing.SystemColors.Control;
-			lblPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			lblPassword.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			lblPassword.ForeColor = System.Drawing.SystemColors.ControlText;
-			lblPassword.Location = new System.Drawing.Point(280, 256);
-			lblPassword.MinimumSize = new System.Drawing.Size(81, 17);
-			lblPassword.Name = "lblPassword";
-			lblPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			lblPassword.Size = new System.Drawing.Size(81, 17);
-			lblPassword.TabIndex = 18;
-			lblPassword.Text = "Password";
+			this.lblPassword.AllowDrop = true;
+			this.lblPassword.BackColor = System.Drawing.SystemColors.Control;
+			this.lblPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.lblPassword.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.lblPassword.Location = new System.Drawing.Point(280, 256);
+			this.lblPassword.MinimumSize = new System.Drawing.Size(81, 17);
+			this.lblPassword.Name = "lblPassword";
+			this.lblPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.lblPassword.Size = new System.Drawing.Size(81, 17);
+			this.lblPassword.TabIndex = 18;
+			this.lblPassword.Text = "Password";
 			// 
 			// frmCreateNewStaff
 			// 
-			AllowDrop = true;
-			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			BackColor = System.Drawing.SystemColors.Control;
-			ClientSize = new System.Drawing.Size(514, 406);
-			Controls.Add(dtDateBirth);
-			Controls.Add(txtDNI);
-			Controls.Add(txtPhoneNumber);
-			Controls.Add(btnCreate);
-			Controls.Add(btnReset);
-			Controls.Add(txtPassword);
-			Controls.Add(txtUsername);
-			Controls.Add(cmbRole);
-			Controls.Add(Label5);
-			Controls.Add(lblPhoneNumber);
-			Controls.Add(txtLastName);
-			Controls.Add(txtName);
-			Controls.Add(lblTitle);
-			Controls.Add(lblName);
-			Controls.Add(lblLastName);
-			Controls.Add(lblDNI);
-			Controls.Add(lblRole);
-			Controls.Add(lblUsername);
-			Controls.Add(lblPassword);
-			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			Icon = (System.Drawing.Icon) resources.GetObject("frmCreateNewStaff.Icon");
-			Location = new System.Drawing.Point(3, 26);
-			MaximizeBox = false;
-			MinimizeBox = false;
-			Name = "frmCreateNewStaff";
-			RightToLeft = System.Windows.Forms.RightToLeft.No;
-			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			Text = "Create New Employee";
-			commandButtonHelper1.SetStyle(btnCreate, 0);
-			commandButtonHelper1.SetStyle(btnReset, 0);
-			ToolTipMain.SetToolTip(txtDNI, "DNI of the new employee");
-			ToolTipMain.SetToolTip(txtPhoneNumber, "Phone number of the new employee");
-			ToolTipMain.SetToolTip(txtPassword, "Password to enter the application");
-			ToolTipMain.SetToolTip(txtUsername, "Username to enter the application");
-			ToolTipMain.SetToolTip(cmbRole, "Role of the new employee");
-			ToolTipMain.SetToolTip(txtLastName, "Last name of the new employee");
-			ToolTipMain.SetToolTip(txtName, "Name of the new employee");
-			Activated += new System.EventHandler(frmCreateNewStaff_Activated);
-			Closed += new System.EventHandler(Form_Closed);
-			ResumeLayout(false);
+			this.AllowDrop = true;
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackColor = System.Drawing.SystemColors.Control;
+			this.ClientSize = new System.Drawing.Size(514, 406);
+			this.Controls.Add(this.dtDateBirth);
+			this.Controls.Add(this.txtDNI);
+			this.Controls.Add(this.txtPhoneNumber);
+			this.Controls.Add(this.btnCreate);
+			this.Controls.Add(this.btnReset);
+			this.Controls.Add(this.txtPassword);
+			this.Controls.Add(this.txtUsername);
+			this.Controls.Add(this.cmbRole);
+			this.Controls.Add(this.Label5);
+			this.Controls.Add(this.lblPhoneNumber);
+			this.Controls.Add(this.txtLastName);
+			this.Controls.Add(this.txtName);
+			this.Controls.Add(this.lblTitle);
+			this.Controls.Add(this.lblName);
+			this.Controls.Add(this.lblLastName);
+			this.Controls.Add(this.lblDNI);
+			this.Controls.Add(this.lblRole);
+			this.Controls.Add(this.lblUsername);
+			this.Controls.Add(this.lblPassword);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = (System.Drawing.Icon) resources.GetObject("frmCreateNewStaff.Icon");
+			this.Location = new System.Drawing.Point(3, 26);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
+			this.Name = "frmCreateNewStaff";
+			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			this.Text = "Create New Employee";
+			this.commandButtonHelper1.SetStyle(this.btnCreate, 0);
+			this.commandButtonHelper1.SetStyle(this.btnReset, 0);
+			this.ToolTipMain.SetToolTip(this.txtDNI, "DNI of the new employee");
+			this.ToolTipMain.SetToolTip(this.txtPhoneNumber, "Phone number of the new employee");
+			this.ToolTipMain.SetToolTip(this.txtPassword, "Password to enter the application");
+			this.ToolTipMain.SetToolTip(this.txtUsername, "Username to enter the application");
+			this.ToolTipMain.SetToolTip(this.cmbRole, "Role of the new employee");
+			this.ToolTipMain.SetToolTip(this.txtLastName, "Last name of the new employee");
+			this.ToolTipMain.SetToolTip(this.txtName, "Name of the new employee");
+			this.Activated += new System.EventHandler(this.frmCreateNewStaff_Activated);
+			this.Closed += new System.EventHandler(this.Form_Closed);
+			this.ResumeLayout(false);
 		}
 		void ReLoadForm(bool addEvents) => InitializeHelp();
 
