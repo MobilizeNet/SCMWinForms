@@ -67,342 +67,342 @@ namespace StarCarsManagement
 		[System.Diagnostics.DebuggerStepThrough()]
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreateNewBrand));
-			this.ToolTipMain = new System.Windows.Forms.ToolTip(this.components);
-			this.dtFounded = new System.Windows.Forms.DateTimePicker();
-			this.cmbParent = new System.Windows.Forms.ComboBox();
-			this.txtNumberEmployees = new System.Windows.Forms.TextBox();
-			this.btnReset = new System.Windows.Forms.Button();
-			this.txtName = new System.Windows.Forms.TextBox();
-			this.Label9 = new System.Windows.Forms.Label();
-			this.btnCreate = new System.Windows.Forms.Button();
-			this.txtWebsite = new System.Windows.Forms.TextBox();
-			this.txtAreaServed = new System.Windows.Forms.TextBox();
-			this.txtHeadquarters = new System.Windows.Forms.TextBox();
-			this.txtOwner = new System.Windows.Forms.TextBox();
-			this.lblTitle = new System.Windows.Forms.Label();
-			this.lblOwner = new System.Windows.Forms.Label();
-			this.lblHeadquarter = new System.Windows.Forms.Label();
-			this.lblAreaServed = new System.Windows.Forms.Label();
-			this.Label6 = new System.Windows.Forms.Label();
-			this.lblWebsite = new System.Windows.Forms.Label();
-			this.lblNumberEmployees = new System.Windows.Forms.Label();
-			this.lblName = new System.Windows.Forms.Label();
-			this.SuspendLayout();
-			this.commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(this.components);
+			ToolTipMain = new System.Windows.Forms.ToolTip(components);
+			dtFounded = new System.Windows.Forms.DateTimePicker();
+			cmbParent = new System.Windows.Forms.ComboBox();
+			txtNumberEmployees = new System.Windows.Forms.TextBox();
+			btnReset = new System.Windows.Forms.Button();
+			txtName = new System.Windows.Forms.TextBox();
+			Label9 = new System.Windows.Forms.Label();
+			btnCreate = new System.Windows.Forms.Button();
+			txtWebsite = new System.Windows.Forms.TextBox();
+			txtAreaServed = new System.Windows.Forms.TextBox();
+			txtHeadquarters = new System.Windows.Forms.TextBox();
+			txtOwner = new System.Windows.Forms.TextBox();
+			lblTitle = new System.Windows.Forms.Label();
+			lblOwner = new System.Windows.Forms.Label();
+			lblHeadquarter = new System.Windows.Forms.Label();
+			lblAreaServed = new System.Windows.Forms.Label();
+			Label6 = new System.Windows.Forms.Label();
+			lblWebsite = new System.Windows.Forms.Label();
+			lblNumberEmployees = new System.Windows.Forms.Label();
+			lblName = new System.Windows.Forms.Label();
+			SuspendLayout();
+			commandButtonHelper1 = new UpgradeHelpers.Gui.Controls.CommandButtonHelper(components);
 			// 
 			// dtFounded
 			// 
-			this.dtFounded.AllowDrop = true;
-			this.dtFounded.Checked = false;
-			this.dtFounded.CustomFormat = "MM/dd/yyyy";
-			this.dtFounded.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.dtFounded.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-			this.dtFounded.Location = new System.Drawing.Point(280, 208);
-			this.dtFounded.Name = "dtFounded";
-			this.dtFounded.Size = new System.Drawing.Size(209, 33);
-			this.dtFounded.TabIndex = 5;
+			dtFounded.AllowDrop = true;
+			dtFounded.Checked = false;
+			dtFounded.CustomFormat = "MM/dd/yyyy";
+			dtFounded.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			dtFounded.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+			dtFounded.Location = new System.Drawing.Point(280, 208);
+			dtFounded.Name = "dtFounded";
+			dtFounded.Size = new System.Drawing.Size(209, 33);
+			dtFounded.TabIndex = 5;
 			// 
 			// cmbParent
 			// 
-			this.cmbParent.AllowDrop = true;
-			this.cmbParent.BackColor = System.Drawing.SystemColors.Window;
-			this.cmbParent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cmbParent.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.cmbParent.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.cmbParent.Location = new System.Drawing.Point(24, 272);
-			this.cmbParent.Name = "cmbParent";
-			this.cmbParent.Size = new System.Drawing.Size(209, 26);
-			this.cmbParent.TabIndex = 6;
-			this.cmbParent.Text = "cmbParent";
+			cmbParent.AllowDrop = true;
+			cmbParent.BackColor = System.Drawing.SystemColors.Window;
+			cmbParent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			cmbParent.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			cmbParent.ForeColor = System.Drawing.SystemColors.WindowText;
+			cmbParent.Location = new System.Drawing.Point(24, 272);
+			cmbParent.Name = "cmbParent";
+			cmbParent.Size = new System.Drawing.Size(209, 26);
+			cmbParent.TabIndex = 6;
+			cmbParent.Text = "cmbParent";
 			// 
 			// txtNumberEmployees
 			// 
-			this.txtNumberEmployees.AllowDrop = true;
-			this.txtNumberEmployees.BackColor = System.Drawing.SystemColors.Window;
-			this.txtNumberEmployees.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtNumberEmployees.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtNumberEmployees.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtNumberEmployees.Location = new System.Drawing.Point(280, 272);
-			this.txtNumberEmployees.Name = "txtNumberEmployees";
-			this.txtNumberEmployees.Size = new System.Drawing.Size(209, 33);
-			this.txtNumberEmployees.TabIndex = 7;
-			this.txtNumberEmployees.Enter += new System.EventHandler(this.txtNumberEmployees_Enter);
-			this.txtNumberEmployees.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumberEmployees_KeyPress);
-			this.txtNumberEmployees.Leave += new System.EventHandler(this.txtNumberEmployees_Leave);
+			txtNumberEmployees.AllowDrop = true;
+			txtNumberEmployees.BackColor = System.Drawing.SystemColors.Window;
+			txtNumberEmployees.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtNumberEmployees.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtNumberEmployees.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtNumberEmployees.Location = new System.Drawing.Point(280, 272);
+			txtNumberEmployees.Name = "txtNumberEmployees";
+			txtNumberEmployees.Size = new System.Drawing.Size(209, 33);
+			txtNumberEmployees.TabIndex = 7;
+			txtNumberEmployees.Enter += new System.EventHandler(txtNumberEmployees_Enter);
+			txtNumberEmployees.KeyPress += new System.Windows.Forms.KeyPressEventHandler(txtNumberEmployees_KeyPress);
+			txtNumberEmployees.Leave += new System.EventHandler(txtNumberEmployees_Leave);
 			// 
 			// btnReset
 			// 
-			this.btnReset.AllowDrop = true;
-			this.btnReset.BackColor = System.Drawing.SystemColors.Control;
-			this.btnReset.Font = new System.Drawing.Font("Consolas", 14.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.btnReset.ForeColor = System.Drawing.Color.Empty;
-			this.btnReset.Location = new System.Drawing.Point(280, 328);
-			this.btnReset.Name = "btnReset";
-			this.btnReset.Size = new System.Drawing.Size(169, 65);
-			this.btnReset.TabIndex = 9;
-			this.btnReset.Text = "&Reset";
-			this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+			btnReset.AllowDrop = true;
+			btnReset.BackColor = System.Drawing.SystemColors.Control;
+			btnReset.Font = new System.Drawing.Font("Consolas", 14.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			btnReset.ForeColor = System.Drawing.Color.Empty;
+			btnReset.Location = new System.Drawing.Point(280, 328);
+			btnReset.Name = "btnReset";
+			btnReset.Size = new System.Drawing.Size(169, 65);
+			btnReset.TabIndex = 9;
+			btnReset.Text = "&Reset";
+			btnReset.Click += new System.EventHandler(btnReset_Click);
 			// 
 			// txtName
 			// 
-			this.txtName.AllowDrop = true;
-			this.txtName.BackColor = System.Drawing.SystemColors.Window;
-			this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtName.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtName.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtName.Location = new System.Drawing.Point(24, 80);
-			this.txtName.Name = "txtName";
-			this.txtName.Size = new System.Drawing.Size(209, 33);
-			this.txtName.TabIndex = 0;
+			txtName.AllowDrop = true;
+			txtName.BackColor = System.Drawing.SystemColors.Window;
+			txtName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtName.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtName.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtName.Location = new System.Drawing.Point(24, 80);
+			txtName.Name = "txtName";
+			txtName.Size = new System.Drawing.Size(209, 33);
+			txtName.TabIndex = 0;
 			// 
 			// Label9
 			// 
-			this.Label9.AllowDrop = true;
-			this.Label9.BackColor = System.Drawing.SystemColors.Control;
-			this.Label9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label9.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label9.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label9.Location = new System.Drawing.Point(24, 256);
-			this.Label9.MinimumSize = new System.Drawing.Size(209, 17);
-			this.Label9.Name = "Label9";
-			this.Label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label9.Size = new System.Drawing.Size(209, 17);
-			this.Label9.TabIndex = 17;
-			this.Label9.Text = "Parent Company";
+			Label9.AllowDrop = true;
+			Label9.BackColor = System.Drawing.SystemColors.Control;
+			Label9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label9.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label9.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label9.Location = new System.Drawing.Point(24, 256);
+			Label9.MinimumSize = new System.Drawing.Size(209, 17);
+			Label9.Name = "Label9";
+			Label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label9.Size = new System.Drawing.Size(209, 17);
+			Label9.TabIndex = 17;
+			Label9.Text = "Parent Company";
 			// 
 			// btnCreate
 			// 
-			this.btnCreate.AllowDrop = true;
-			this.btnCreate.BackColor = System.Drawing.SystemColors.Control;
-			this.btnCreate.Font = new System.Drawing.Font("Consolas", 14.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.btnCreate.ForeColor = System.Drawing.Color.Empty;
-			this.btnCreate.Location = new System.Drawing.Point(64, 328);
-			this.btnCreate.Name = "btnCreate";
-			this.btnCreate.Size = new System.Drawing.Size(169, 65);
-			this.btnCreate.TabIndex = 8;
-			this.btnCreate.Text = "&Create";
-			this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+			btnCreate.AllowDrop = true;
+			btnCreate.BackColor = System.Drawing.SystemColors.Control;
+			btnCreate.Font = new System.Drawing.Font("Consolas", 14.25f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			btnCreate.ForeColor = System.Drawing.Color.Empty;
+			btnCreate.Location = new System.Drawing.Point(64, 328);
+			btnCreate.Name = "btnCreate";
+			btnCreate.Size = new System.Drawing.Size(169, 65);
+			btnCreate.TabIndex = 8;
+			btnCreate.Text = "&Create";
+			btnCreate.Click += new System.EventHandler(btnCreate_Click);
 			// 
 			// txtWebsite
 			// 
-			this.txtWebsite.AllowDrop = true;
-			this.txtWebsite.BackColor = System.Drawing.SystemColors.Window;
-			this.txtWebsite.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtWebsite.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtWebsite.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtWebsite.Location = new System.Drawing.Point(24, 208);
-			this.txtWebsite.Name = "txtWebsite";
-			this.txtWebsite.Size = new System.Drawing.Size(209, 33);
-			this.txtWebsite.TabIndex = 4;
+			txtWebsite.AllowDrop = true;
+			txtWebsite.BackColor = System.Drawing.SystemColors.Window;
+			txtWebsite.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtWebsite.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtWebsite.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtWebsite.Location = new System.Drawing.Point(24, 208);
+			txtWebsite.Name = "txtWebsite";
+			txtWebsite.Size = new System.Drawing.Size(209, 33);
+			txtWebsite.TabIndex = 4;
 			// 
 			// txtAreaServed
 			// 
-			this.txtAreaServed.AllowDrop = true;
-			this.txtAreaServed.BackColor = System.Drawing.SystemColors.Window;
-			this.txtAreaServed.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtAreaServed.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtAreaServed.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtAreaServed.Location = new System.Drawing.Point(280, 144);
-			this.txtAreaServed.Name = "txtAreaServed";
-			this.txtAreaServed.Size = new System.Drawing.Size(209, 33);
-			this.txtAreaServed.TabIndex = 3;
+			txtAreaServed.AllowDrop = true;
+			txtAreaServed.BackColor = System.Drawing.SystemColors.Window;
+			txtAreaServed.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtAreaServed.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtAreaServed.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtAreaServed.Location = new System.Drawing.Point(280, 144);
+			txtAreaServed.Name = "txtAreaServed";
+			txtAreaServed.Size = new System.Drawing.Size(209, 33);
+			txtAreaServed.TabIndex = 3;
 			// 
 			// txtHeadquarters
 			// 
-			this.txtHeadquarters.AllowDrop = true;
-			this.txtHeadquarters.BackColor = System.Drawing.SystemColors.Window;
-			this.txtHeadquarters.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtHeadquarters.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtHeadquarters.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtHeadquarters.Location = new System.Drawing.Point(24, 144);
-			this.txtHeadquarters.Name = "txtHeadquarters";
-			this.txtHeadquarters.Size = new System.Drawing.Size(209, 33);
-			this.txtHeadquarters.TabIndex = 2;
+			txtHeadquarters.AllowDrop = true;
+			txtHeadquarters.BackColor = System.Drawing.SystemColors.Window;
+			txtHeadquarters.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtHeadquarters.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtHeadquarters.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtHeadquarters.Location = new System.Drawing.Point(24, 144);
+			txtHeadquarters.Name = "txtHeadquarters";
+			txtHeadquarters.Size = new System.Drawing.Size(209, 33);
+			txtHeadquarters.TabIndex = 2;
 			// 
 			// txtOwner
 			// 
-			this.txtOwner.AllowDrop = true;
-			this.txtOwner.BackColor = System.Drawing.SystemColors.Window;
-			this.txtOwner.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.txtOwner.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.txtOwner.ForeColor = System.Drawing.SystemColors.WindowText;
-			this.txtOwner.Location = new System.Drawing.Point(280, 80);
-			this.txtOwner.Name = "txtOwner";
-			this.txtOwner.Size = new System.Drawing.Size(209, 33);
-			this.txtOwner.TabIndex = 1;
+			txtOwner.AllowDrop = true;
+			txtOwner.BackColor = System.Drawing.SystemColors.Window;
+			txtOwner.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			txtOwner.Font = new System.Drawing.Font("Consolas", 11.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			txtOwner.ForeColor = System.Drawing.SystemColors.WindowText;
+			txtOwner.Location = new System.Drawing.Point(280, 80);
+			txtOwner.Name = "txtOwner";
+			txtOwner.Size = new System.Drawing.Size(209, 33);
+			txtOwner.TabIndex = 1;
 			// 
 			// lblTitle
 			// 
-			this.lblTitle.AllowDrop = true;
-			this.lblTitle.BackColor = System.Drawing.SystemColors.Control;
-			this.lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblTitle.Font = new System.Drawing.Font("Javanese Text", 24f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblTitle.Location = new System.Drawing.Point(16, 0);
-			this.lblTitle.MinimumSize = new System.Drawing.Size(481, 49);
-			this.lblTitle.Name = "lblTitle";
-			this.lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblTitle.Size = new System.Drawing.Size(481, 49);
-			this.lblTitle.TabIndex = 10;
-			this.lblTitle.Text = "Brand";
-			this.lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+			lblTitle.AllowDrop = true;
+			lblTitle.BackColor = System.Drawing.SystemColors.Control;
+			lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblTitle.Font = new System.Drawing.Font("Javanese Text", 24f, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblTitle.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblTitle.Location = new System.Drawing.Point(16, 0);
+			lblTitle.MinimumSize = new System.Drawing.Size(481, 49);
+			lblTitle.Name = "lblTitle";
+			lblTitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblTitle.Size = new System.Drawing.Size(481, 49);
+			lblTitle.TabIndex = 10;
+			lblTitle.Text = "Brand";
+			lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
 			// lblOwner
 			// 
-			this.lblOwner.AllowDrop = true;
-			this.lblOwner.BackColor = System.Drawing.SystemColors.Control;
-			this.lblOwner.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblOwner.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblOwner.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblOwner.Location = new System.Drawing.Point(280, 64);
-			this.lblOwner.MinimumSize = new System.Drawing.Size(209, 17);
-			this.lblOwner.Name = "lblOwner";
-			this.lblOwner.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblOwner.Size = new System.Drawing.Size(209, 17);
-			this.lblOwner.TabIndex = 11;
-			this.lblOwner.Text = "Owner";
+			lblOwner.AllowDrop = true;
+			lblOwner.BackColor = System.Drawing.SystemColors.Control;
+			lblOwner.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblOwner.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblOwner.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblOwner.Location = new System.Drawing.Point(280, 64);
+			lblOwner.MinimumSize = new System.Drawing.Size(209, 17);
+			lblOwner.Name = "lblOwner";
+			lblOwner.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblOwner.Size = new System.Drawing.Size(209, 17);
+			lblOwner.TabIndex = 11;
+			lblOwner.Text = "Owner";
 			// 
 			// lblHeadquarter
 			// 
-			this.lblHeadquarter.AllowDrop = true;
-			this.lblHeadquarter.BackColor = System.Drawing.SystemColors.Control;
-			this.lblHeadquarter.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblHeadquarter.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblHeadquarter.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblHeadquarter.Location = new System.Drawing.Point(24, 128);
-			this.lblHeadquarter.MinimumSize = new System.Drawing.Size(209, 17);
-			this.lblHeadquarter.Name = "lblHeadquarter";
-			this.lblHeadquarter.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblHeadquarter.Size = new System.Drawing.Size(209, 17);
-			this.lblHeadquarter.TabIndex = 12;
-			this.lblHeadquarter.Text = "Headquarter";
+			lblHeadquarter.AllowDrop = true;
+			lblHeadquarter.BackColor = System.Drawing.SystemColors.Control;
+			lblHeadquarter.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblHeadquarter.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblHeadquarter.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblHeadquarter.Location = new System.Drawing.Point(24, 128);
+			lblHeadquarter.MinimumSize = new System.Drawing.Size(209, 17);
+			lblHeadquarter.Name = "lblHeadquarter";
+			lblHeadquarter.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblHeadquarter.Size = new System.Drawing.Size(209, 17);
+			lblHeadquarter.TabIndex = 12;
+			lblHeadquarter.Text = "Headquarter";
 			// 
 			// lblAreaServed
 			// 
-			this.lblAreaServed.AllowDrop = true;
-			this.lblAreaServed.BackColor = System.Drawing.SystemColors.Control;
-			this.lblAreaServed.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblAreaServed.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblAreaServed.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblAreaServed.Location = new System.Drawing.Point(280, 128);
-			this.lblAreaServed.MinimumSize = new System.Drawing.Size(209, 17);
-			this.lblAreaServed.Name = "lblAreaServed";
-			this.lblAreaServed.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblAreaServed.Size = new System.Drawing.Size(209, 17);
-			this.lblAreaServed.TabIndex = 13;
-			this.lblAreaServed.Text = "Area Served";
+			lblAreaServed.AllowDrop = true;
+			lblAreaServed.BackColor = System.Drawing.SystemColors.Control;
+			lblAreaServed.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblAreaServed.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblAreaServed.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblAreaServed.Location = new System.Drawing.Point(280, 128);
+			lblAreaServed.MinimumSize = new System.Drawing.Size(209, 17);
+			lblAreaServed.Name = "lblAreaServed";
+			lblAreaServed.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblAreaServed.Size = new System.Drawing.Size(209, 17);
+			lblAreaServed.TabIndex = 13;
+			lblAreaServed.Text = "Area Served";
 			// 
 			// Label6
 			// 
-			this.Label6.AllowDrop = true;
-			this.Label6.BackColor = System.Drawing.SystemColors.Control;
-			this.Label6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.Label6.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.Label6.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.Label6.Location = new System.Drawing.Point(280, 192);
-			this.Label6.MinimumSize = new System.Drawing.Size(209, 17);
-			this.Label6.Name = "Label6";
-			this.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.Label6.Size = new System.Drawing.Size(209, 17);
-			this.Label6.TabIndex = 14;
-			this.Label6.Text = "Founded";
+			Label6.AllowDrop = true;
+			Label6.BackColor = System.Drawing.SystemColors.Control;
+			Label6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			Label6.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			Label6.ForeColor = System.Drawing.SystemColors.ControlText;
+			Label6.Location = new System.Drawing.Point(280, 192);
+			Label6.MinimumSize = new System.Drawing.Size(209, 17);
+			Label6.Name = "Label6";
+			Label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			Label6.Size = new System.Drawing.Size(209, 17);
+			Label6.TabIndex = 14;
+			Label6.Text = "Founded";
 			// 
 			// lblWebsite
 			// 
-			this.lblWebsite.AllowDrop = true;
-			this.lblWebsite.BackColor = System.Drawing.SystemColors.Control;
-			this.lblWebsite.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblWebsite.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblWebsite.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblWebsite.Location = new System.Drawing.Point(24, 192);
-			this.lblWebsite.MinimumSize = new System.Drawing.Size(209, 17);
-			this.lblWebsite.Name = "lblWebsite";
-			this.lblWebsite.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblWebsite.Size = new System.Drawing.Size(209, 17);
-			this.lblWebsite.TabIndex = 15;
-			this.lblWebsite.Text = "Website";
+			lblWebsite.AllowDrop = true;
+			lblWebsite.BackColor = System.Drawing.SystemColors.Control;
+			lblWebsite.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblWebsite.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblWebsite.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblWebsite.Location = new System.Drawing.Point(24, 192);
+			lblWebsite.MinimumSize = new System.Drawing.Size(209, 17);
+			lblWebsite.Name = "lblWebsite";
+			lblWebsite.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblWebsite.Size = new System.Drawing.Size(209, 17);
+			lblWebsite.TabIndex = 15;
+			lblWebsite.Text = "Website";
 			// 
 			// lblNumberEmployees
 			// 
-			this.lblNumberEmployees.AllowDrop = true;
-			this.lblNumberEmployees.BackColor = System.Drawing.SystemColors.Control;
-			this.lblNumberEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblNumberEmployees.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblNumberEmployees.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblNumberEmployees.Location = new System.Drawing.Point(280, 256);
-			this.lblNumberEmployees.MinimumSize = new System.Drawing.Size(209, 17);
-			this.lblNumberEmployees.Name = "lblNumberEmployees";
-			this.lblNumberEmployees.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblNumberEmployees.Size = new System.Drawing.Size(209, 17);
-			this.lblNumberEmployees.TabIndex = 16;
-			this.lblNumberEmployees.Text = "Number of Employees";
+			lblNumberEmployees.AllowDrop = true;
+			lblNumberEmployees.BackColor = System.Drawing.SystemColors.Control;
+			lblNumberEmployees.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblNumberEmployees.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblNumberEmployees.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblNumberEmployees.Location = new System.Drawing.Point(280, 256);
+			lblNumberEmployees.MinimumSize = new System.Drawing.Size(209, 17);
+			lblNumberEmployees.Name = "lblNumberEmployees";
+			lblNumberEmployees.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblNumberEmployees.Size = new System.Drawing.Size(209, 17);
+			lblNumberEmployees.TabIndex = 16;
+			lblNumberEmployees.Text = "Number of Employees";
 			// 
 			// lblName
 			// 
-			this.lblName.AllowDrop = true;
-			this.lblName.BackColor = System.Drawing.SystemColors.Control;
-			this.lblName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.lblName.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.lblName.ForeColor = System.Drawing.SystemColors.ControlText;
-			this.lblName.Location = new System.Drawing.Point(24, 64);
-			this.lblName.MinimumSize = new System.Drawing.Size(209, 17);
-			this.lblName.Name = "lblName";
-			this.lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.lblName.Size = new System.Drawing.Size(209, 17);
-			this.lblName.TabIndex = 18;
-			this.lblName.Text = "Name";
+			lblName.AllowDrop = true;
+			lblName.BackColor = System.Drawing.SystemColors.Control;
+			lblName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			lblName.Font = new System.Drawing.Font("Consolas", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			lblName.ForeColor = System.Drawing.SystemColors.ControlText;
+			lblName.Location = new System.Drawing.Point(24, 64);
+			lblName.MinimumSize = new System.Drawing.Size(209, 17);
+			lblName.Name = "lblName";
+			lblName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			lblName.Size = new System.Drawing.Size(209, 17);
+			lblName.TabIndex = 18;
+			lblName.Text = "Name";
 			// 
 			// frmCreateNewBrand
 			// 
-			this.AllowDrop = true;
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.SystemColors.Control;
-			this.ClientSize = new System.Drawing.Size(514, 406);
-			this.Controls.Add(this.dtFounded);
-			this.Controls.Add(this.cmbParent);
-			this.Controls.Add(this.txtNumberEmployees);
-			this.Controls.Add(this.btnReset);
-			this.Controls.Add(this.txtName);
-			this.Controls.Add(this.Label9);
-			this.Controls.Add(this.btnCreate);
-			this.Controls.Add(this.txtWebsite);
-			this.Controls.Add(this.txtAreaServed);
-			this.Controls.Add(this.txtHeadquarters);
-			this.Controls.Add(this.txtOwner);
-			this.Controls.Add(this.lblTitle);
-			this.Controls.Add(this.lblOwner);
-			this.Controls.Add(this.lblHeadquarter);
-			this.Controls.Add(this.lblAreaServed);
-			this.Controls.Add(this.Label6);
-			this.Controls.Add(this.lblWebsite);
-			this.Controls.Add(this.lblNumberEmployees);
-			this.Controls.Add(this.lblName);
-			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Icon = (System.Drawing.Icon) resources.GetObject("frmCreateNewBrand.Icon");
-			this.Location = new System.Drawing.Point(3, 26);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "frmCreateNewBrand";
-			this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Create New Brand";
-			this.commandButtonHelper1.SetStyle(this.btnReset, 0);
-			this.commandButtonHelper1.SetStyle(this.btnCreate, 0);
-			this.ToolTipMain.SetToolTip(this.dtFounded, "Date when the brand was created");
-			this.ToolTipMain.SetToolTip(this.cmbParent, "Manufacturer");
-			this.ToolTipMain.SetToolTip(this.txtNumberEmployees, "Number of employees working there");
-			this.ToolTipMain.SetToolTip(this.txtName, "Name of the brand");
-			this.ToolTipMain.SetToolTip(this.txtWebsite, "Website");
-			this.ToolTipMain.SetToolTip(this.txtAreaServed, "Countries where this brand is selling products");
-			this.ToolTipMain.SetToolTip(this.txtHeadquarters, "Country where the headquarter is located");
-			this.ToolTipMain.SetToolTip(this.txtOwner, "Name of the brand owner");
-			this.Activated += new System.EventHandler(this.frmCreateNewBrand_Activated);
-			this.Closed += new System.EventHandler(this.Form_Closed);
-			this.ResumeLayout(false);
+			AllowDrop = true;
+			AutoScaleDimensions = new System.Drawing.SizeF(6, 13);
+			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			BackColor = System.Drawing.SystemColors.Control;
+			ClientSize = new System.Drawing.Size(514, 406);
+			Controls.Add(dtFounded);
+			Controls.Add(cmbParent);
+			Controls.Add(txtNumberEmployees);
+			Controls.Add(btnReset);
+			Controls.Add(txtName);
+			Controls.Add(Label9);
+			Controls.Add(btnCreate);
+			Controls.Add(txtWebsite);
+			Controls.Add(txtAreaServed);
+			Controls.Add(txtHeadquarters);
+			Controls.Add(txtOwner);
+			Controls.Add(lblTitle);
+			Controls.Add(lblOwner);
+			Controls.Add(lblHeadquarter);
+			Controls.Add(lblAreaServed);
+			Controls.Add(Label6);
+			Controls.Add(lblWebsite);
+			Controls.Add(lblNumberEmployees);
+			Controls.Add(lblName);
+			Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25f, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+			FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			Icon = (System.Drawing.Icon) resources.GetObject("frmCreateNewBrand.Icon");
+			Location = new System.Drawing.Point(3, 26);
+			MaximizeBox = false;
+			MinimizeBox = false;
+			Name = "frmCreateNewBrand";
+			RightToLeft = System.Windows.Forms.RightToLeft.No;
+			StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			Text = "Create New Brand";
+			commandButtonHelper1.SetStyle(btnReset, 0);
+			commandButtonHelper1.SetStyle(btnCreate, 0);
+			ToolTipMain.SetToolTip(dtFounded, "Date when the brand was created");
+			ToolTipMain.SetToolTip(cmbParent, "Manufacturer");
+			ToolTipMain.SetToolTip(txtNumberEmployees, "Number of employees working there");
+			ToolTipMain.SetToolTip(txtName, "Name of the brand");
+			ToolTipMain.SetToolTip(txtWebsite, "Website");
+			ToolTipMain.SetToolTip(txtAreaServed, "Countries where this brand is selling products");
+			ToolTipMain.SetToolTip(txtHeadquarters, "Country where the headquarter is located");
+			ToolTipMain.SetToolTip(txtOwner, "Name of the brand owner");
+			Activated += new System.EventHandler(frmCreateNewBrand_Activated);
+			Closed += new System.EventHandler(Form_Closed);
+			ResumeLayout(false);
 		}
 		void ReLoadForm(bool addEvents) => InitializeHelp();
 
