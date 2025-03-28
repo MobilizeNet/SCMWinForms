@@ -17,11 +17,7 @@ C:\A1\_work\out\Upgraded\bin\UpgradeHelpers.Utils.dll
 C:\A1\_work\out\Upgraded\bin\UpgradeHelpers.Utils.ReflectionHelper.dll
 C:\A1\_work\out\Upgraded\bin\Newtonsoft.Json.dll
 C:\A1\_work\out\Upgraded\bin\SCMSupport.pdb
-C:\A1\_work\out\Upgraded\bin\Interop.MSComCtl2.dll
-C:\A1\_work\out\Upgraded\bin\AxInterop.MSComCtl2.dll
 C:\A1\_work\out\Upgraded\obj\x86\Debug\StarCarsManagement.csproj.AssemblyReference.cache
-C:\A1\_work\out\Upgraded\obj\x86\Debug\Interop.MSComCtl2.dll
-C:\A1\_work\out\Upgraded\obj\x86\Debug\AxInterop.MSComCtl2.dll
 C:\A1\_work\out\Upgraded\obj\x86\Debug\StarCarsManagement.csproj.ResolveComReference.cache
 C:\A1\_work\out\Upgraded\obj\x86\Debug\StarCarsManagement.frmChangeStock.resources
 C:\A1\_work\out\Upgraded\obj\x86\Debug\StarCarsManagement.frmDetailedInformation.resources

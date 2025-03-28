@@ -95,20 +95,6 @@
       <HintPath>..\UpgradeSupport\UpgradeHelpers.Utils.CursorHelper.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
-    <COMReference Include="MSComCtl2">
-      <Guid>{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}</Guid>
-      <Lcid>0</Lcid>
-      <VersionMajor>2</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <WrapperTool>tlbimp</WrapperTool>
-    </COMReference>
-    <COMReference Include="AxMSComCtl2">
-      <Guid>{86CF1D34-0C5F-11D2-A9FC-0000F8754DA1}</Guid>
-      <Lcid>0</Lcid>
-      <VersionMajor>2</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <WrapperTool>aximp</WrapperTool>
-    </COMReference>
     <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
     <Reference Include="MSDATASRC">
       <Name>MSDATASRC</Name>
